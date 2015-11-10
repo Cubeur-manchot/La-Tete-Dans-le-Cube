@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Menu Blind</title>
+    </head>
+    <body>
+	<header><h1>Le Blindfolded</h1></header>
+        <h3 style="font-style:italic;">La partie émergée du blind...</h3>
+	<p>Que vous soyez débutant ou expert en blind, cette partie est faite pour vous !</p>
+	<ul>
+		<ul><h4>Débutant</h4>
+			<li>Débutant en Blind : Tout pour résoudre le Rubik's Cube les yeux fermés !</li>
+		</ul>
+		<ul><h4>Intermédiaire</h4>
+			<li>Techniques de Mémorisation</li>
+			<li>Méthode Pochmann coins</li>
+			<li>Méthode Pochmann arêtes</li>
+			<li>Méthode 3OP coins</li>
+			<li>Méthode 3OP arêtes</li>
+			<li>Méthode M2 (arêtes)</li>
+			<li>Méthode R2 (coins)</li>
+		</ul>
+		<ul><h4>Expert</h4>
+			<li>Méthode 3-style coins</li>
+			<li>Méthode 3-style arêtes</li>
+			<li>Méthode BH coins</li>
+			<li>Méthode BH arêtes</li>
+		</ul>
+		<ul><h4>BigBlind</h4>
+			<li>Techniques de mémorisation</li>
+			<li>Méthode r2 (wings)</li>
+			<li>Méthode U2 (centres)</li>
+			<li>Méthode 3-cycles wings</li>
+			<li>Méthode 3-cycles centres</li>
+		</ul>
+	</ul>
+	<footer><h5>Site en développement par Cubeur-Manchot et Bushizo.</h5><p>Copyright 2015. Pour toute demande, suggestion ou menace de mort, allez à l'adresse superadresse@trucbidule.com</p></footer>
+    </body>
+</html>
