@@ -1,20 +1,21 @@
 body
 {
-	background-color : #F0F977;
-	border : 4px black solid;
-	
+	background-color:blue;
 }
 
-.cadre
+div
 {
-	background-color : white;
+	border : 2px black solid;
+	background-color:white;
 }
+
 p
 {
 	color : black;
 	font-size : 16px;
 	font-family : Verdana;
 	text-align : left;
+	background-color : black;
 }
 
 ul
@@ -22,6 +23,7 @@ ul
 	color : black;
 	font-size : 16px;
 	font-family : Verdana;
+	background-color : black;
 }
 
 h5
