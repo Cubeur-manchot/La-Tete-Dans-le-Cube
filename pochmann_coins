@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Méthode Pochmann (coins)</title>
+		<style>
+			td
+			{
+				border: 1px solid black;
+			}
+			table
+			{
+				border-collapse: collapse;
+			}
+			.liens_externes
+			{
+				border: 1px solid green;
+			}
+		</style>
+	</head>
+	<body>
+	<header><h1>La méthode Pochmann (coins)</h1></header>
+	<p>Ceci est un tutoriel sur la résolution des coins avec la méthode Pochmann.<br/>
+	L'idée générale est de résoudre les coins un par un, en résolvant en même temps l'orientation et la permutation.</p>
+	<p>On notera un coin avec 3 lettres selon la position des faces adjacentes.
+	La première des trois lettres est obligatoirement celle du sticker en question (et l'ordre des deux autres on s'en fiche).
+	Par exemple, si on place le cube tel que la face jaune se retrouve au-dessus et la face vert se retrouve devant,
+	la pièce appartenant aux faces U, B et L est le coin jaune-bleu-rouge.
+	UBL désignera alors le sticker jaune de cette pièce (appartenant à la face U),
+	alors que LBU désignera le sticker rouge (appartenant à la face L) et BLU le sticker bleu (appartenant à la face B).</p>
+	<p>De manière générale en blind, il va être essentiel de parler en tant que sticker et pas en tant que pièce.<p>
+	<ul>Les pré-requis pour la méthode Pochmann (coins) :
+	<li>connaitre la PLL Y : F R U' R' U' R U F' R U R' U' R' F R F'</li>
+	<li>avoir bien compris la notion de sticker, qui est différente de la notion de pièce</li>
+	<li>oublier tout ce qu'on vous a appris sur la PLL Y modifiée et la PLL J modifiée, on ne va pas se compliquer les choses inutilement
+	</ul>
+	<p>Pour ce tutoriel, nous allons prendre le sticker UBL comme buffer.<p>
+	<dl>L'exécution va se décomposer en 3 étapes distinctes :
+	<dt>Setup : </dt><dd>on va amener "l'emplacement cible" en UFR</dd>
+	<dt>PLL Y : </dt><dd>on va échanger le sticker du buffer avec le sticker en UFR</dd>
+	<dt>Dé-Setup : </dt><dd>on va replacer le sticker UFR à l'emplacement cible du départ</dd>
+	</ul>
+	<p>C'est parti, vous pouvez mélanger votre cube.<p>
+	<h3>Étape 1 : Setup</h3>
+	<p><em>Déjà, c'est quoi l'emplacement cible ?</em><br/>
+	A l'emplacement de notre buffer, c'est-à-dire UBL, on a un certain sticker. La question à se poser c'est "où va ce sticker ?".<br/>
+	Par exemple, dans mon buffer j'ai le sticker orange du coin orange-bleu-blanc.
+	Ce sticker doit aller en LBD pour être résolu, l'emplacement cible est donc LBD, c'est aussi simple que ça.</p>
+	<p>Maintenant qu'on a notre emplacement cible, le but va être d'amener cet emplacement en UFR. Mais attention, il ne faut pas toucher aux pièces UL, UBL et UB !<br/>
+	Rassurez-vous, c'est plus facile qu'on ne le pense, et ça se fait en au pire 3 mouvements.
+	Vous verrez qu'il y a plusieurs possibilités à chaque fois, à vous de choisir celle que vous voulez.<br/>
+	Prenons un exemple : reprenons notre sticker orange qui va en LBD. Une façon possible d'amener LBD en UFR sans toucher à UL, UBL et UB, est par exemple de faire D' R.<br/>
+	Si vraiment vous n'y arrivez pas, voici un tableau vous donnant un setup possible pour chaque emplacement cible. Ne l'apprenez pas, comprenez comment ça marche !</p>
+	<table>
+	<tr><th>Emplacement cible</th><th>un Setup possible</th></tr>
+	<tr><td>UFR</td><td>rien</td></tr>
+	<tr><td>FDR</td><td>R</td></tr>
+	<tr><td>DBR</td><td>R2</td></tr>
+	<tr><td>BLU</td><td>R'</td></tr>
+	<tr><td>LFU</td><td>F</td></tr>
+	<tr><td>DFL</td><td>F2</td></tr>
+	<tr><td>RFD</td><td>F'</td></tr>
+	<tr><td>DFR</td><td>D R2</td></tr>
+	<tr><td>DBL</td><td>D' R2</td></tr>
+	<tr><td>FUL</td><td>F2 R</td></tr>
+	<tr><td>FUR</td><td>F R</td></tr>
+	<tr><td>RUF</td><td>R' F'</td></tr>
+	<tr><td>RUB</td><td>R2 F'</td></tr>
+	<tr><td>FDL</td><td>D' F'</td></tr>
+	<tr><td>RDB</td><td>D' R</td></tr>
+	<tr><td>LFD</td><td>D R</td></tr>
+	<tr><td>LBD</td><td>D2 F'</td></tr>
+	<tr><td>BDR</td><td>D' F'</td></tr>
+	<tr><td>BDL</td><td>D2 R</td></tr>
+	<tr><td>UBR</td><td>R2 D F2</td></tr>
+	<tr><td>UFL</td><td>F2 D R2</td></tr>
+	</table>
+	<p>Si vous avez compris cette étape, vous avez fait le plus dur !<br/></p>
+	<h3>Étape 2 : PLL Y</h3>
+	<p>C'est l'étape la plus facile. Exécutez simplement une PLL Y, et vous avez fini l'étape !<br/>
+	Concrètement, on a fait quoi ?<br/>
+	On a amené l'emplacement cible en UFR, c'est à dire prêt à être échangé avec la PLL Y.
+	Ensuite, la PLL Y a échangé le buffer avec le sticker de l'emplacement cible.
+	On a donc placé le sticker dans son emplacement, il suffit donc de remettre l'emplacement à sa place, et c'est justement le but de l'étape 3.<br/>
+	Si vous n'avez pas compris, essayez d'imaginer deux personnes A et B qui veulent échanger des livres. 
+	B va se rendre chez A (setup), ensuite ils vont s'échanger les livres en main propre (PLL Y), et ensuite B rentre chez lui (désetup). 
+	A la fin, le livre de A est bin chez B et le livre de B est bien chez A.</p>
+	<h3>Étape 3 : Dé-Setup</h3>
+	<p>Il faut faire les mouvements inverses du setup. Par exemple, si votre setup était D' R, il faut faire R' D.<br/>
+	La seule difficulté de l'étape : ne pas l'oublier ! Ça peut paraître bête mais vous verrez, votre premier DNF avec cette méthode sera dû à l'oubli d'un dé-setup. 
+	Il suffit donc d'y penser, sinon inverser 2 mouvements c'est facile.</p>
+	<div class="liens_externes">
+	<a href="http://www.stefan-pochmann.info/spocc/blindsolving/3x3/old.php">Tutoriel écrit sur le site de Stefan Pochmann (en anglais)</a><br/>
+	<a href="https://www.youtube.com/watch?v=r4_wVbKkWpA">Tutoriel vidéo fait par Victor Cullot (en français)</a><br/>
+	<a href="https://www.youtube.com/watch?v=iRV0CkD2Zx8">Tutoriel vidéo fait par Titi au cube (en français)</a><br/>
+	
+	</div>
+	<footer><h5>Site en développement par Cubeur-Manchot et Bushizo.</h5>
+	<p>Copyright 2015. Pour toute demande, suggestion ou menace de mort, allez à l'adresse superadresse@trucbidule.com</p></footer>
+    </body>
+</html>
