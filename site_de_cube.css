@@ -1,16 +1,24 @@
 body
 {
-	background-color:blue;
+	background-color:#A7FAAD;
 }
 
+.cadre
+{
+	position:absolute;
+	right:25%;
+	left:0%;
+}
 .accueil
 {
 	position:absolute;
+	border-radius:5px;	
 	float:right;
 	width:990px;
-	height:200px;
+	height:150px;
 	margin-right:5px;
 	margin-left:5px;
+	margin-bottom:10px;
 	position:absolute;
 	z-index:1;
 }
@@ -23,30 +31,35 @@ p
 	text-align:left;
 }
 
-texte
+.texte
 {
 	position:absolute;
 	background-color:white;
 	width:990px;
-	border:2px black solid;
+	border:1px black solid;
+	border-radius:5px;
 	margin-top:10px;
 	margin-bottom:10px;
-	margin-right:300px;
-	top:210px;
+	margin-left:5px;
+	top:150px;
 	left:5px;
 	right:5px;
 }
 nav ul
 {
-	border:2px black solid;
+	border:1px black solid;
+	border-radius:5px;
+	background-color:white;	
 	float:right;
 	color:black;
+	width:240px;
 	list-style-type: none;
 	font-size:16px;
 	font-family:Verdana;
 	margin-top:0px;
-	margin-left:1000px;
+	margin-left:1010px;
 	padding-left:5px;
+	padding-right:5px;
 	position:absolute;
 	z-index:2;
 }
@@ -57,7 +70,8 @@ footer
 	color:black;
 	font-size:10px;
 	font-family:Verdana;
-	border:2px black solid;
+	border:1px black solid;
+	border-radius:5px;
 	background-color:white;
 	position:absolute;
 	top:450px;
