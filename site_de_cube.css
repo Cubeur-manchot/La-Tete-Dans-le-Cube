@@ -1,23 +1,25 @@
 body
 {
 	background-color:#A7FAAD;
+	width:1280px;
+	margin:auto;
+	
 }
 
-.cadre
+#cadre
 {
-	position:absolute;
-	right:25%;
-	left:0%;
+	/*display:block;
+	margin-right:auto;
+	margin-left:auto;*/
 }
 .accueil
 {
 	position:absolute;
 	border-radius:5px;	
-	float:right;
 	width:990px;
 	height:150px;
-	margin-right:5px;
 	margin-left:5px;
+	margin-top:5px;
 	margin-bottom:10px;
 	position:absolute;
 	z-index:1;
@@ -41,9 +43,8 @@ p
 	margin-top:10px;
 	margin-bottom:10px;
 	margin-left:5px;
+	margin-right:auto;
 	top:150px;
-	left:5px;
-	right:5px;
 }
 nav ul
 {
@@ -56,10 +57,10 @@ nav ul
 	list-style-type: none;
 	font-size:16px;
 	font-family:Verdana;
-	margin-top:0px;
-	margin-left:1010px;
+	margin-top:5px;
+	margin-left:1013px;
+	margin-right:auto;
 	padding-left:5px;
-	padding-right:5px;
 	position:absolute;
 	z-index:2;
 }
@@ -73,12 +74,11 @@ footer
 	border:1px black solid;
 	border-radius:5px;
 	background-color:white;
+	margin-left:5px;
+	margin-right:5px;
+	margin-bottom:5px;
 	position:absolute;
 	top:450px;
-	margin-top:1000px;
-	margin-right:10px;
-	margin-bottom:5px;
-	right:5px;
-	left:5px;
+	width:1270px;
 }
 
