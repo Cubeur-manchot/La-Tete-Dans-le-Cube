@@ -7,7 +7,12 @@ body
 {
 	position:absolute;
 	float:right;
+	width:990px;
+	height:200px;
 	margin-right:5px;
+	margin-left:5px;
+	position:absolute;
+	z-index:1;
 }
 
 p
@@ -22,6 +27,7 @@ texte
 {
 	position:absolute;
 	background-color:white;
+	width:990px;
 	border:2px black solid;
 	margin-top:10px;
 	margin-bottom:10px;
@@ -41,6 +47,8 @@ nav ul
 	margin-top:0px;
 	margin-left:1000px;
 	padding-left:5px;
+	position:absolute;
+	z-index:2;
 }
 
 footer
