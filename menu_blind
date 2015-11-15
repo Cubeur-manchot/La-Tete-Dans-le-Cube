@@ -2,38 +2,42 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+		<link rel="icon" type="ico" href="favicon.ico"/>
+		<link href="site_de_cube_2.css" type="text/css" rel="stylesheet" media="all">
 		<title>Menu Blind</title>
-		<style>
-			.columns_left
-			{
-				width: 250px;
-				border: 1px blue solid;
-				display: inline-block;
-				vertical-align: middle;
-			}
-			.columns_right
-			{
-				width: 250px;
-				border: 1px red solid;
-				display: inline-block;
-				vertical-align: middle;
-			}
-			footer
-			{
-				vertical-align: bottom;
-				position: absolute;
-				border: 1px black solid;
-			}
-		</style>
 	</head>
 	<body>
-	<header><h1>Le Blindfolded</h1></header>
-		<h3 style="font-style:italic;">La partie émergée du blind...</h3>
-	<p>Que vous soyez débutant ou expert en blind, cette partie est faite pour vous !</p>
-	<ul>
-		<div class="columns_left">
+		<header><img src="banniere.png" alt="banniere du site" class="bannière" />
+		</header>
+		<nav>
+			<ul>
+				<li>Actualités</li>
+				<li>Histoire du Rubik's Cube</li>
+				<li>Méthodes du Rubik's Cube</li>
+				<li>Méthodes du Rubik's Pocket</li>
+				<li>Méthodes du Rubik's Revenge</li>
+				<li>Méthodes du Rubik's Professor</li>
+				<li>Méthodes du 6*6</li>
+				<li>Méthodes du 7*7</li>
+				<li>Méthodes du 8*8</li>
+				<li>Méthodes des autres puzzles</li>
+				<li>Méthodes des autres puzzles</li>
+				<li>Méthodes des autres puzzles</li>
+				<li>Méthodes des autres puzzles</li>
+				<li>Méthodes des autres puzzles</li>
+				<li>Méthodes des autres puzzles</li>
+				<li>Méthodes des autres puzzles</li>
+				<li>Méthodes des autres puzzles</li>
+			</ul>
+		</nav>
+		<div class="titre_de_page">
+			<h1>Le Blind</h1>
+			<h2 style="font-style:italic;">La partie émergée du blind...</h2>
+			<p>Que vous soyez débutant ou expert en blind, cette partie est faite pour vous !</p>
+		</div>
+		<div class="colonne">
 			<ul><h4>Débutant</h4>
-				<li>Débutant en Blind : Tout pour résoudre le Rubik's Cube les yeux fermés !</li>
+				<li>Tout pour résoudre le Rubik's Cube les yeux fermés !</li>
 			</ul>
 			<ul><h4>Intermédiaire</h4>
 				<li>Techniques de Mémorisation</li>
@@ -45,7 +49,7 @@
 				<li>Méthode R2 (coins)</li>
 			</ul>
 		</div>
-		<div class="columns_right">
+		<div class="colonne">
 			<ul><h4>Expert</h4>
 				<li>Méthode 3-style coins</li>
 				<li>Méthode 3-style arêtes</li>
@@ -63,7 +67,9 @@
 				<li>Techniques de mémorisation</li>
 			</ul>
 		</div>
-	</ul>
-	<footer><h5>Site en développement par Cubeur-Manchot et Bushizo.</h5><p>Copyright 2015. Pour toute demande, suggestion ou menace de mort, allez à l'adresse superadresse@trucbidule.com</p></footer>
+		<footer>
+			<h5>Site en développement par Cubeur-Manchot et Bushizo.</h5>
+			<div class="copyright">Copyright 2015. Pour toute demande, suggestion ou menace de mort, allez à l'adresse superadresse@trucbidule.com</div>
+		</footer>
 	</body>
 </html>
