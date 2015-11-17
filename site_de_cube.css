@@ -1,84 +1,81 @@
 body
 {
-	background-color:#A7FAAD;
+	background-color:#DFF2FE;
 	width:1280px;
 	margin:auto;
 	
 }
 
-#cadre
-{
-	/*display:block;
-	margin-right:auto;
-	margin-left:auto;*/
-}
 .accueil
 {
 	position:absolute;
+	z-index:1;
 	border-radius:5px;	
 	width:990px;
 	height:150px;
 	margin-left:5px;
 	margin-top:5px;
 	margin-bottom:10px;
-	position:absolute;
-	z-index:1;
 }
 
 p
 {
+	text-align:left;
 	color:black;
 	font-size:16px;
 	font-family:Verdana;
-	text-align:left;
 }
 
 .texte
 {
+	background-color:#DFF2FE;
 	position:absolute;
-	background-color:white;
+	top:150px;
 	width:990px;
-	border:1px black solid;
-	border-radius:5px;
+	border:1px /*black*/#868686 solid;
+	border-left:none;
+	border-right:none;
+	border-radius:/*5px*/;
 	margin-top:10px;
 	margin-bottom:10px;
 	margin-left:5px;
 	margin-right:auto;
-	top:150px;
 }
 nav ul
 {
-	border:1px black solid;
-	border-radius:5px;
-	background-color:white;	
-	float:right;
-	color:black;
-	width:240px;
-	list-style-type: none;
-	font-size:16px;
-	font-family:Verdana;
-	margin-top:5px;
-	margin-left:1013px;
-	margin-right:auto;
-	padding-left:5px;
+	background-color:#DFF2FE;	
 	position:absolute;
 	z-index:2;
+	border:1px /*black*/#868686 solid;
+	border-right:none;
+	border-radius:/*5px*/;
+	color:black;
+	font-size:16px;
+	font-family:Verdana;
+	list-style-type:none;
+	width:240px;
+	margin-top:5px;
+	margin-left:1005px;
+	margin-right:auto;
+	padding-left:5px;
 }
 
 footer
 {
+	background-color:;
+	position:absolute;
+	border:1px /*black*/#868686 solid;
+	border-left:none;
+	border-right:none;
+	border-radius:/*5px*/;
 	text-align:center;
 	color:black;
 	font-size:10px;
 	font-family:Verdana;
-	border:1px black solid;
-	border-radius:5px;
-	background-color:white;
-	margin-left:5px;
-	margin-right:5px;
+	width:600px;
+	margin-left:340px;
+	margin-right:340px;
 	margin-bottom:5px;
-	position:absolute;
 	top:450px;
-	width:1270px;
 }
 
