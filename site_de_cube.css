@@ -44,7 +44,7 @@ p
 
 .menu
 {
-	position:absolute;
+	position:fixed;
 	z-index:2;
 	margin-top:6px;
 	margin-left:1005px;
@@ -53,7 +53,7 @@ p
 nav ul
 {
 	background-color:#DFF2FE;	
-	position:absolute;
+	position:fixed;
 	z-index:2;
 	border:1px /*black*/#868686 solid;
 	border-right:none;
@@ -85,6 +85,6 @@ footer
 	margin-left:340px;
 	margin-right:340px;
 	margin-bottom:5px;
-	top:550px;
+	top:2700px;
 }
 
