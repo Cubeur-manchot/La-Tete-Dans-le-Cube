@@ -12,13 +12,13 @@
 
 .accueil
 {
-	position:float;
-	border-radius:5px;
+	position:absolute;
+	z-index:1;
+	border-radius:5px;	
 	width:990px;
 	height:150px;
 	margin-left:5px;
-	top:5px;
-	display: inline-block;
+	margin-top:5px;
 	margin-bottom:10px;
 }
 
@@ -156,7 +156,7 @@
 .texte  /* classe d'un gros bloc paragraphe dans index_1.html */
 {
 	background-color:#DFF2FE;
-	position:float;
+	position:absolute;
 	top:150px;
 	width:990px;
 	border:1px /*black*/#868686 solid;
@@ -167,7 +167,6 @@
 	margin-bottom:10px;
 	margin-left:5px;
 	margin-right:auto;
-	display: inline-block;
 }
 
 
@@ -318,9 +317,9 @@
 
 .footer-Enzo
 {
-	position:float;
-	display: inline-block;
-	border:1px /*black*/ #868686 solid;
+	background-color:;
+	position:absolute;
+	border:1px /*black*/#868686 solid;
 	border-left:none;
 	border-right:none;
 	border-radius:/*5px*/;
@@ -332,5 +331,5 @@
 	margin-left:340px;
 	margin-right:340px;
 	margin-bottom:5px;
-	bottom: 5px;
+	top:2700px;
 }
