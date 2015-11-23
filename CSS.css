@@ -1,0 +1,336 @@
+/*____________ LES HEADERS ET HAUTS DE PAGE ____________*/
+
+.header-Florian
+{
+	display: inline-block;
+	text-align: center;
+	background-color: grey;
+	margin: auto;
+	width: 1000px;
+	border-bottom: 1px black solid;
+}
+
+.accueil
+{
+	position:float;
+	border-radius:5px;
+	width:990px;
+	height:150px;
+	margin-left:5px;
+	top:5px;
+	display: inline-block;
+	margin-bottom:10px;
+}
+
+.bannière  /* classe de la bannière de index_1.html */
+{
+	display: inline-block;
+	margin-top: 5px;
+	margin-left: 5%;
+	border-radius: 5px;
+	width: 90%;
+	max-height: 150px;
+	min-height: 50px;
+	height: 10%;
+	margin-bottom: 10px;
+}
+
+.menu  /* classe de l'icône de menu de index_1.html */
+{
+	position:float;
+	display: inline-block;
+	margin-top:6px;
+	margin-left:1005px;
+	margin-right:auto;
+}
+
+.titre_de_page  /* classe des titres de page de menu_blind.html */
+{
+	position: inline-block;
+	top: 160px;
+	border: 1px solid white;
+	height: 160px;
+	vertical-align: top;
+	margin-left: 25%;
+}
+
+
+
+
+/*____________ LES MENUS DE NAVIGATION ET LISTES____________*/
+
+.nav-Enzo ul
+{
+	background-color:#DFF2FE;	
+	position:fixed;
+	z-index:2;
+	border:1px /*black*/#868686 solid;
+	border-right:none;
+	border-radius:/*5px*/;
+	color:black;
+	font-size:16px;
+	font-family:Verdana;
+	list-style-type:none;
+	width:240px;
+	top:10px;
+	margin-left:1005px;
+	margin-right:auto;
+	padding-left:5px;
+}
+
+.nav-Matthieu
+{
+	border:1px black solid;
+	border-radius:5px;
+	background-color:white;	
+	float:left;
+	color:black;
+	width:25%;
+	min-width: 150px;
+	max-width: 240px;
+	list-style-type: none;
+	font-size:16px;
+	font-family:Verdana;
+	margin-top:5px;
+	margin-right:auto;
+	padding: 5px;
+	display: inline-block;
+}
+
+.nav-Florian
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.ul-Florian
+{
+	margin: 2px;
+	padding: 2px;
+}
+
+.li-Florian
+{
+	display: inline-block;
+}
+
+
+
+
+/*____________ LES BLOCS DE CORPS DE PAGE ____________*/
+
+.body-Enzo
+{
+	background-color:#DFF2FE;
+	width:1280px;
+	margin:auto;
+}
+
+.body-Matthieu
+{
+	background-color:#A7FAAD;
+	margin:auto;
+}
+
+.body-Florian
+{
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	
+	background-color: white;
+	border: 1px black solid;
+}
+
+.colonne  /* classe d'une colonne d'un menu en colonnes dans menu_blind.html */
+{
+	float: top;
+	width: 35%;
+	min-width: 250px;
+	border: 1px blue solid;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 5px;
+}
+
+.texte  /* classe d'un gros bloc paragraphe dans index_1.html */
+{
+	background-color:#DFF2FE;
+	position:float;
+	top:150px;
+	width:990px;
+	border:1px /*black*/#868686 solid;
+	border-left:none;
+	border-right:none;
+	border-radius:/*5px*/;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:5px;
+	margin-right:auto;
+	display: inline-block;
+}
+
+
+
+
+/*____________ LES TITRES, PARAGRAPHES ET MARQUAGES ____________*/
+
+.h1-1, .h2-1  /* dans menu_blind.html et pochmann_coins.html */
+{
+	top: 150px;
+}
+
+.p-1  /* dans menu_blind.html et pochmann_coins.html */
+{
+	color:black;
+	font-size:16px;
+	font-family:Verdana;
+	text-align:left;
+}
+
+.p-2  /* dans index_2.html */
+{
+	margin-left: 3px;
+	font-family:"Comic sans MS";
+	font-size: 0.85em;
+	text-align: justify;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.h1-2  /* dans index_2.html */
+{
+	text-align: center;
+	color: blue;
+}
+
+.strong-2  /* dans index_2.html */
+{
+	display: block;
+	margin-top: 0.6em;
+	margin-bottom: 0.6em;
+}
+
+
+
+
+/*____________ LES FONDS, COULEURS, TABLEAUX ET AUTRES ____________*/
+
+.gradient  /* dégradé bleu clair */
+{
+	/* Anciens navigateurs */
+	background: white url("gradient-bg.png") repeat-x top;
+	-o-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	/* Navigateurs récents */
+	background: -webkit-gradient(
+		linear,
+		left top, left bottom,
+		from(white),
+		to(#3399cc)
+	);
+	background: -webkit-linear-gradient(
+		top,
+		white,
+		#3399cc
+	);
+	background: -moz-linear-gradient(
+		top,
+		white,
+		#3399cc
+	);
+	background: -o-linear-gradient(
+		top,
+		white,
+		#3399cc
+	);
+	background: linear-gradient(
+		top,
+		white,
+		#3399cc
+	);
+}
+
+#color
+{
+	color: blue;
+}
+
+.table-Matthieu
+{
+	border-collapse: collapse;
+}
+
+.td-Matthieu
+{
+	border: 1px solid black;
+}
+
+
+
+
+/*____________ LES FOOTERS ET BAS DE PAGE ____________*/
+
+.liens_externes  /* bloc des liens externes en bas de page, dans pochmann_coins.html */
+{
+	border: 1px solid green;
+}
+
+.copyright  /* texte du copyright dans le pied de page */
+{
+	text-align: center;
+	font-size: 0.5em;
+}
+
+.footer-Florian
+{
+	background: url("images/separator.png") repeat-x top;
+}
+
+.footer-Matthieu
+{
+	text-align:center;
+	
+	color:black;
+	font: normal normal 12px normal Verdana;
+	
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	border-radius: 15px 15px 0px 0px;
+	
+	background-color:white;
+	
+	margin-left: 10%;
+	margin-top: 50px;
+	
+	width: 80%;
+	min-width: 500px;
+	
+	padding: 5px;
+	
+	display: inline-block;
+	position: float;
+	bottom: 0px;
+}
+
+.footer-Enzo
+{
+	position:float;
+	display: inline-block;
+	border:1px /*black*/ #868686 solid;
+	border-left:none;
+	border-right:none;
+	border-radius:/*5px*/;
+	text-align:center;
+	color:black;
+	font-size:10px;
+	font-family:Verdana;
+	width:600px;
+	margin-left:340px;
+	margin-right:340px;
+	margin-bottom:5px;
+	bottom: 5px;
+}
