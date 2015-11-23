@@ -37,7 +37,7 @@
 
 .menu  /* classe de l'icône de menu de index_1.html */
 {
-	position:float;
+	position:fixed;
 	display: inline-block;
 	margin-top:6px;
 	margin-left:1005px;
