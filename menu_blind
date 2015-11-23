@@ -3,13 +3,13 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="ico" href="favicon.ico"/>
-		<link href="site_de_cube_2.css" type="text/css" rel="stylesheet" media="all">
+		<link href="CSS.css" type="text/css" rel="stylesheet" media="all">
 		<title>Menu Blind</title>
 	</head>
-	<body>
-		<header><img src="banniere.png" alt="banniere du site" class="bannière" />
+	<body class="body-Matthieu">
+		<header><img src="images/banniere_1.png" alt="banniere du site" class="bannière" />
 		</header>
-		<nav>
+		<nav class="nav-Matthieu">
 			<ul>
 				<li>Actualités</li>
 				<li>Histoire du Rubik's Cube</li>
@@ -31,9 +31,9 @@
 			</ul>
 		</nav>
 		<div class="titre_de_page">
-			<h1>Le Blind</h1>
-			<h2 style="font-style:italic;">La partie émergée du blind...</h2>
-			<p>Que vous soyez débutant ou expert en blind, cette partie est faite pour vous !</p>
+			<h1 class="h1-1">Le Blind</h1>
+			<h2 class="h2-1" style="font-style:italic;">La partie émergée du blind...</h2>
+			<p class="p-1">Que vous soyez débutant ou expert en blind, cette partie est faite pour vous !</p>
 		</div>
 		<div class="colonne">
 			<ul><h4>Débutant</h4>
@@ -67,8 +67,8 @@
 				<li>Techniques de mémorisation</li>
 			</ul>
 		</div>
-		<footer>
-			<h5>Site en développement par Cubeur-Manchot et Bushizo.</h5>
+		<footer class="footer-Matthieu">
+			<h5>Site en développement par Cubeur-Manchot, Bushizo et Blenderiste09.</h5>
 			<div class="copyright">Copyright 2015. Pour toute demande, suggestion ou menace de mort, allez à l'adresse superadresse@trucbidule.com</div>
 		</footer>
 	</body>
