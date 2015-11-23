@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="gradient">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="ico" href="favicon.ico"/>
@@ -10,17 +10,24 @@
 		<header>
 			<img src="images/banniere_1.png" alt="banniere du site" class="bannière" />
 			<h1 class="h1-1">La méthode Pochmann (coins)</h1>
+			<div class="chemin">
+				<a href="index_2.html">Accueil</a>
+				<span class="separateur"> > </span>
+				<a href="menu_blind.html">Blindfolded</a>
+				<span class="separateur"> > </span>
+				<a href="pochmann_coins.html">Pochmann (coins)</a>
+			</div>
 		</header>
 		<section>
 			<p class="p-1">Ceci est un tutoriel sur la résolution des coins avec la méthode Pochmann.<br/>
 			L'idée générale est de résoudre les coins un par un, en résolvant en même temps l'orientation et la permutation.</p>
 			<p class="p-1">On notera un coin avec 3 lettres selon la position des faces adjacentes.
 			La première des trois lettres est obligatoirement celle du sticker en question (et l'ordre des deux autres on s'en fiche).
-			Par exemple, si on place le cube tel que la face jaune se retrouve au-dessus et la face vert se retrouve devant,
+			Par exemple, si on place le cube résolus tel que la face jaune se retrouve au-dessus et la face vert se retrouve devant,
 			la pièce appartenant aux faces U, B et L est le coin jaune-bleu-rouge.
 			UBL désignera alors le sticker jaune de cette pièce (appartenant à la face U),
 			alors que LBU désignera le sticker rouge (appartenant à la face L) et BLU le sticker bleu (appartenant à la face B).</p>
-			<p class="p-1">De manière générale en blind, il va être essentiel de parler en tant que sticker et pas en tant que pièce.<p class="p-1">
+			<p class="p-1">De manière générale en blind, il va être essentiel de parler en terme de sticker et non pas en terme de pièce.<p class="p-1">
 			<ul>Les pré-requis pour la méthode Pochmann (coins) :
 				<li>connaitre la PLL Y : F R U' R' U' R U F' R U R' U' R' F R F'</li>
 				<li>avoir bien compris la notion de sticker, qui est différente de la notion de pièce</li>
@@ -44,7 +51,7 @@
 			Prenons un exemple : reprenons notre sticker orange qui va en LBD. Une façon possible d'amener LBD en UFR sans toucher à UL, UBL et UB, est par exemple de faire D' R.<br/>
 			Si vraiment vous n'y arrivez pas, voici un tableau vous donnant un setup possible pour chaque emplacement cible. Ne l'apprenez pas, comprenez comment ça marche !</p>
 			<table class="table-Matthieu">
-				<tr class="td-Matthieu"><th>Emplacement cible</th><th>un Setup possible</th></tr>
+				<tr class="td-Matthieu"><th class="th-Matthieu">Emplacement cible</th><th class="th-Matthieu">un Setup possible</th></tr>
 				<tr class="td-Matthieu"><td class="td-Matthieu">UFR</td><td class="td-Matthieu">rien</td></tr>
 				<tr class="td-Matthieu"><td class="td-Matthieu">FDR</td><td class="td-Matthieu">R</td></tr>
 				<tr class="td-Matthieu"><td class="td-Matthieu">DBR</td><td class="td-Matthieu">R2</td></tr>
