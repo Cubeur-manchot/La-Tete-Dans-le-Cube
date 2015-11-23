@@ -54,6 +54,20 @@
 	margin-left: 25%;
 }
 
+.chemin  /* indique le chemin d'accès à l'intérieur du site */
+{
+	border-radius: 5px;
+	border: 1px solid black;
+	background-color: rgba(255, 231, 170, 0.7);
+	display: inline-block;
+	position: float;
+	margin-left: 5%;
+	text-decoration: none;
+	padding: 5px;
+	padding-left: 9px;
+	padding-right: 9px;
+}
+
 
 
 
@@ -128,7 +142,9 @@
 
 .body-Matthieu
 {
-	background-color:#A7FAAD;
+	width: 92%; 
+	background-color: white;
+	border: 1px black solid;
 	margin:auto;
 }
 
@@ -210,6 +226,11 @@
 	margin-bottom: 0.6em;
 }
 
+.chemin a
+{
+	text-decoration: none;
+}
+
 
 
 
@@ -265,6 +286,12 @@
 .td-Matthieu
 {
 	border: 1px solid black;
+}
+
+.th-Matthieu
+{
+	border: 2px solid black;
+	background-color: grey;
 }
 
 
