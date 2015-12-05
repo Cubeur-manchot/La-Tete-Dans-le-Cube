@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <link href="CSS.css" type="text/css" rel="stylesheet" media="all">
+    <link rel="icon" type="image/png" href="favicon.ico"/>
+        <meta charset="utf-8" />
+        <title>La Tête Dans le Cube</title>
+    </head>
+    <body class="body-Enzo">
+	<div id="cadre">
+	<header><img src="images/banniere.png" alt="banniere du site" class="accueil" /></header>
+
+	<img src="images/menu.png" alt="icone de menu" class="menu" />
+	<nav class="nav-Enzo">
+	<ul>
+		<li>Actualités</li>
+		<li>Histoire du Rubik's Cube</li>
+		<li>Méthodes du Rubik's Cube</li>
+		<li>Méthodes du Rubik's Pocket</li>
+		<li>Méthodes du Rubik's Revenge</li>
+		<li>Méthodes du Rubik's Professor</li>
+		<li>Méthodes du 6*6</li>
+		<li>Méthodes du 7*7</li>
+		<li>Méthodes du 8*8</li>
+		<li>Méthodes des autres puzzles</li>
+		<li>Méthodes des autres puzzles</li>
+		<li>Méthodes des autres puzzles</li>
+		<li>Méthodes des autres puzzles</li>
+		<li>Méthodes des autres puzzles</li>
+		<li>Méthodes des autres puzzles</li>
+		<li>Méthodes des autres puzzles</li>
+		<li>Méthodes des autres puzzles</li>
+	</ul>
+	</nav>
+	<h1 class="titre-Enzo">Résoudre le Rubik's Cube pour la première fois !</h1>
+        <div class="texte"><p>Si vous êtes ici, c'est parce que vous voulez apprendre à résoudre le Rubik's Cube, soit pour enfin venir à bout de ce casse-tête mythique, soit pour avoir l'air intelligent X).<br /><br />Ce tutoriel est garanti réussite, qui que vous soyez, vous pouvez résoudre le "casse-tête parfait" sans trop d'encombres (ou même avec, la satisfaction à la fin n'en sera que plus grande!) et assez rapidement si vous y mettez le temps.<br />Si vous avez des questions ou que vous ne comprenez pas une partie de ce tutoriel, n'hésitez pas à consulter la partie "Aide et rapports" où vous trouverez un chat (du verbe Anglais "to chat"="discuter", pas l'animal bien sûr!) et où vous pourrez dire aux gentils webmasters ce qui ne va pas. Toutefois, ne les spammez pas, patientez, ils finiront par vous répondre ;). <br /><br />On va résoudre le Cube de manière méthodique, c'est à dire pas n'importe comment : on peut le faire tranche par tranche, face par face, en agrandissant des bloc, etc... Nous allons nous intéresser à la méthode la plus facile à assimiler, la Méthode Tranche par Tranche pour Débutants, que l'on abrègera "MTTD".<br />Pour arriver à nos fins, nous aurons besoin certes d'intuition, mais aussi d'algorithmes, des suites de mouvement qui on une action spécifique sur le cube. Exemple : faire tourner trois coins dans le sens des aiguilles d'une montre. <br />Pour les transcrire, nous utiliserons la notation internationale, la plus utilisée, partout. Mais si vous êtes fâchés avec l'Anglais, nous utiliserons aussi la notation "Made in LTDC" ;), qui est tout en Français. Il est cependant recommandé d'utiliser la notation internationale.<br />Enfin, vous devrez connaitre le nom des pièces du Cube ainsi que leur spécifités. Sur ce, on commence tout de suite, c'est parti!<br /><br /><h2>0.1 : La notation</h2><br /><br /><div class="au-dessus">Comme dit plus haut, pour faire des suites de mouvements, nous allons utiliser un code :</div> <img src="images/rubiks_cube.jpg" alt="notations du cube" class="cubes"/ ><br />C'est simple :<br />
+	<ul>
+		<li>On note "U" pour la face haute car "haut" en Anglais se dit "up"</li>
+		<li>On note "D" pour la face du bas car "bas" en Anglais se dit "down"</li>
+		<li>On note "R" pour la face droite car "droite" en Anglais se dit "right"</li>
+		<li>On note "L" pour la face gauche car "gauche" en Anglais se dit "left"</li>
+		<li>On note "F" pour la face de devant car "devant" en Anglais se dit "front"</li>
+		<li>Et enfin, on note "B" pour la face de derrière car "derrière" en Anglais se dit "back"</li>
+	</ul>Code en Français :<ul>
+		<li>On note "H" pour la face haute</li>
+		<li>On note "B" pour la face du bas</li>
+		<li>On note "D" pour la face droite</li>
+		<li>On note "G" pour la face gauche</li>
+		<li>On note "Av" pour la face avant</li>
+		<li>Et enfin, on note "Ar" pour la face arrière</li>
+	</ul>Deux autres petites règles : si la lettre est suivie d'un "2", on tourne la face d'un demi-tour. Sinon on tourne la face d'un quart de tour seulement.<br /> Si la lettre est suivie d'un apostrophe «'», on tourne la face d'un quart de tour dans le sens inverse des aiguilles d'une montre. Sinon on tourne la face dans le sens des aiguilles d'une montre.<br />Exemple : R U2 F' D R' L2 ou D H2 Av' Ar D' G2 : <ol>
+		<li>tourner la face droite d'un quart de tour dans le sens des aiguilles d'une montre</li>
+		<li>tourner la face haute d'un demi tour (le sens n'a pas d'importance puisque c'est un demi-tour)</li>
+		<li>tourner la face avant d'un quart de tour dans le sens inverse des aguilles d'une montre</li>
+		<li>tourner la face du bas d'un quart de tour dans le sens des aiguilles d'une montre</li>
+		<li>tourner la face droite d'un quart de tour dans le sens inverse des aiguilles d'une montre</li>
+		<li>enfin, tourner la face gauche d'un demi tour</li>
+	</ol><br /><h2>0.2 : Les pièces qui composent le rubik's cube</h2><br />Le Rubik's Cube est composé de 26 pièces cubiques, ainsi que d'un centre au cœur du cube, le "core" dont nous ne nous occuperons pas, vu qu'il n'a pas beaucoup d'intérêt. Autrement, sur ces 26 pièces, il y a : <ul>
+		<li>6 pièces de centres, immobiles, qui ont une seule couleur</li>
+		<li>8 pièces de coins, qui ont trois couleurs</li>
+		<li>Ainsi que 12 pièces d'arête, qui ont deux couleurs</li>
+</ul>Il est important de préciser le nom des pièces, puisque je vais les appeler ainsi, et croyez-moi, "coin", "arête" et "centre", ce sont des mots que vous entendrez très souvent dans le monde du Cube!<br />À partir de maintenant, nous pouvons enfin rentrer au cœur du sujet, la RÉSOLUTION!!<br /><br /><h2>1.1 : La croix</h2><br />C'est parti!<br />Commencez par choisir une couleur présente sur votre Rubik's Cube et on va tenter de faire une croix de même couleur avec un centre et quatre arêtes : <br /><img src="images/la_croix.png" alt="croix de couleur sur un rubik's cube" class="cubes" /><br /> Attention à bien faire correspondre les couleur des arêtes et celles des centres sur les côtés, c'est important. Pour cette partie, je ne peux pas vraiment vous aider car cette étape est intuitive : il y a plusieurs millions de cas, je ne peux pas tous les expliquer ;). Mais avec un peu d'entraînement, vous y arriverez de plus en plus vite et de plus en plus facilement! Courage!<br /><br /><h2>1.2 : La face avec la couronne</h2><br />Maintenant que vous avez votre croix, il faut maintenant mettre en place les coins, eux aussi à la bonne place : <br /><img src="images/la_couronne.gif" alt="couronne de couleur sur un rubik's cube" class="cubes" /><br />Il y a là aussi une part d'intuitivité, mais si vous bloquez, voici un peu d'aide : trouvez le coin qui a les mêmes couleurs que les trois face sur lequel vous voulez le placer, mettez-le ensuite dessous de là où vous voulez le mettre, et répétez cet algorithme jusqu'à ce que le coin se positionne dans le bon sens là où vous le souhaitez : R' D' R D ou D' B' D B ; si au bout de six répétitions cela n'a pas fonctionné, c'est que vous avez fait une erreur quelque part. Retrouvez votre coin et recommencez, la persévérence paie toujours :)</p></div>
+	<footer class="footer-Enzo"><h5>Site en développement par Cubeur-Manchot et Bushizo.</h5><div class="copyright">Copyright 2015. Pour toute demande, suggestion ou menace de mort, allez à l'adresse superadresse@trucbidule.com</div></footer>
+    </div>
+    </body>
+</html>
