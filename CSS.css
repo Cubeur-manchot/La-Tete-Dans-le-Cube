@@ -31,10 +31,10 @@
 	position:absolute;
 	z-index:1;
 	border-radius:5px;	
-	width:990px;
+	width:610px;
 	height:150px;
-	margin-left:265px;
-	margin-right:5px;
+	margin-left:250px;
+	margin-right:20px;
 	margin-top:5px;
 	margin-bottom:10px;
 }
@@ -43,8 +43,9 @@
 {
 	position:fixed;
 	margin-top:6px;
-	margin-right:1005px;
-	margin-left:5px;
+	width:206px;
+	margin-right:5px;
+	margin-left:30px;
 	z-index:2;
 }
 
@@ -52,10 +53,11 @@
 {
 	position:absolute;
 	top:127px;
-	left:470px;p
+	margin-left:300px;
+	margin-right:0px;
 	color:black;
 	font-size:45px;
-	width:750px;
+	width:610px;
 	font-family:boomerang;
 }
 	
@@ -96,13 +98,13 @@
 	border:1px #868686 solid;
 	border-left:none;
 	color:black;
-	font-size:16px;
+	font-size:12px;
 	font-family:Verdana;
 	list-style-type:none;
-	width:240px;
-	top:10px;
-	margin-right:1005px;
-	margin-left:5px;
+	width:200px;
+	top:11px;
+	margin-right:615px;
+	margin-left:30px;
 	padding-left:5px;
 }
 
@@ -150,7 +152,7 @@
 .body-Enzo
 {
 	background-color:#DFF2FE;
-	width:1280px;
+	width:890px;
 	margin:auto;
 }
 
@@ -183,22 +185,22 @@
 	margin: 5px;
 }
 
-.texte  /* classe d'un gros bloc paragraphe dans index_1.html */
+.texte  /* classe d'un gros bloc paragraphe dans index.html */
 {
 	background-color:#DFF2FE;
 	position:absolute;
 	top:195px;
-	width:990px;
+	width:610px;
 	border:1px #868686 solid;
 	color:black;
-	font-size:16px;
+	font-size:12px;
 	font-family:Verdana;
 	border-left:none;
 	border-right:none;
 	margin-top:10px;
 	margin-bottom:10px;
-	margin-left:265px;
-	margin-right:5px;
+	margin-left:250px;
+	margin-right:20px;
 }
 
 
@@ -368,27 +370,22 @@
 	color:black;
 	font-size:10px;
 	font-family:Verdana;
-	width:600px;
+	width:400px;
 	margin-left:340px;
 	margin-right:340px;
 	margin-bottom:5px;
-	top:3000px;
+	top:5040px;
 }
 
 .cubes /*taille et position de l'image expliquant les notations du rubik's cube*/
 {
 	width:200px;
 	height:205px;
-	margin-left:350px;
+	margin-left:200px;
 }
 
-.au-dessus
-{
-	position:absolute;
-	top:480px;
-}
 /*____________CACHER LE MENU SI L'ÉCRAN EST TROP PETIT ET LE METTRE AUTRE PART_________*/
-    @media all and (max-width: 1279px) {
+    @media all and (max-width: 889px) {
       .body-Enzo {
 	width:50%;
       }
