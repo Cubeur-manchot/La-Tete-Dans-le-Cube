@@ -1,0 +1,326 @@
+/*Intégration des polices à télécharger*/
+
+@font-face {
+    font-family: 'boomerang';
+    src: url('fonts/boomeran.eot');
+    src: url('fonts/boomeran.eot?#iefix') format('embedded-opentype'),
+         url('fonts/boomeran.woff2') format('woff2'),
+         url('fonts/boomeran-.woff') format('woff'),
+         url('fonts/boomeran.ttf') format('truetype'),
+         url('fonts/boomeran.svg#boomerangregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*____________ LES HEADERS ET HAUTS DE PAGE ____________*/
+
+header
+{
+	display: inline-block;
+	text-align: center;
+	background-color: grey;
+	margin: auto;
+	border-bottom: 1px black solid;
+	width: 100%;
+}
+
+#bannière  /* classe de la bannière de index_1.html */
+{
+	display: block;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	border-bottom: 1px solid black;
+}
+
+.titre-Enzo
+{
+	position: float;
+	left: 230px;
+	color:black;
+	font-size:45px;
+	font-family:boomerang;
+	margin-bottom: 30px;
+}
+
+
+
+
+/*____________ LES MENUS DE NAVIGATION ET LISTES____________*/
+
+body nav
+{
+	background-color:#DFF2FE;
+	position:absolute;
+	border:1px solid #868686;
+	border-radius: 7px 7px 0px 0px;
+	width: 200px;
+	color:black;
+	font-size: 14px;
+	font-family:Verdana;
+	margin-left: 15px;
+	margin-top: 15px;
+	padding: 0px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+body nav ul
+{
+	list-style-type:none;
+	margin: 0px;
+	padding: 0px;
+}
+
+body nav li
+{
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-top: 1px dotted #868686;
+}
+
+body nav li a
+{
+	text-decoration: none;
+	color: blue;
+}
+
+body nav a:hover
+{
+	color: red;
+}
+
+#rose_menu
+{
+	position:float;
+	top: 0px;
+	margin-top: 0px;
+	width: 200px;
+	height: 15px;
+}
+
+header ul
+{
+	list-style: none;
+	margin: 3px;
+	/*display: none;*/
+}
+
+header li
+{
+	display: inline-block;
+}
+
+.chemin  /* indique le chemin d'accès à l'intérieur du site */
+{
+	border-radius: 5px;
+	background-color: rgba(255, 200, 120, 0.7);
+	display: inline-block;
+	position: float;
+	margin-top: 15px;
+	margin-left: 15px;
+	text-decoration: none;
+	padding: 5px;
+	padding-left: 9px;
+	padding-right: 9px;
+}
+
+
+
+
+/*____________ LES BLOCS DE CORPS DE PAGE ____________*/
+
+.body-normal
+{
+	background-color:#CFE2EE;
+	margin:auto;
+}
+
+.body-dégradé #gros_bloc
+{
+	width: 92%; 
+	margin: auto;
+	background-color: white;
+	border: 1px black solid;
+}
+
+section
+{
+	margin-left: 230px;
+	margin-right: 15px;
+	padding: 10px;
+	display: inline-block;
+}
+
+.texte
+{
+	position:float;
+	color:black;
+	font-size:16px;
+	font-family:Verdana;
+}
+
+
+
+
+/*____________ LES TITRES, PARAGRAPHES ET MARQUAGES ____________*/
+
+p
+{
+	margin-left: 3px;
+	font-family: "Verdana";
+	font-size: 0.85em;
+	text-align: justify;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+h1
+{
+	text-align: center;
+	color: blue;
+	font-size: 20px;
+}
+
+strong  /* dans index_2.html */
+{
+	display: block;
+	margin-top: 0.6em;
+	margin-bottom: 0.6em;
+}
+
+.chemin a
+{
+	text-decoration: none;
+}
+
+.cubes /*taille et position de l'image expliquant les notations du rubik's cube*/
+{
+	width:200px;
+	height:205px;
+	margin-left:350px;
+}
+
+.au-dessus
+{
+	position:absolute;
+	top:480px;
+}
+
+
+
+
+/*___________________ LES FONDS ET COULEURS ___________________*/
+
+.body-dégradé
+{
+	/* Anciens navigateurs */
+	background: white url("gradient-bg.png") repeat-x top;
+	-o-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+	/* Navigateurs récents */
+	background: -webkit-gradient(
+		linear,
+		left top, left bottom,
+		from(white),
+		to(#3399cc)
+	);
+	background: -webkit-linear-gradient(
+		top,
+		white,
+		#3399cc
+	);
+	background: -moz-linear-gradient(
+		top,
+		white,
+		#3399cc
+	);
+	background: -o-linear-gradient(
+		top,
+		white,
+		#3399cc
+	);
+	background: linear-gradient(
+		top,
+		white,
+		#3399cc
+	);
+}
+
+#color
+{
+	color: blue;
+}
+
+
+
+
+/*____________ LES FOOTERS ET BAS DE PAGE ____________*/
+
+.liens_externes  /* bloc des liens externes en bas de page, dans pochmann_coins.html */
+{
+	border: 1px solid green;
+}
+
+.copyright  /* texte du copyright dans le pied de page */
+{
+	text-align: center;
+	font-size: 8px;
+}
+
+footer
+{
+	position:float;
+	border:1px #868686 solid;
+	border-left:none;
+	border-right:none;
+	border-radius:/*5px*/;
+	text-align:center;
+	color:black;
+	font-size:10px;
+	font-family:Verdana;
+	width:90%;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom:5px;
+}
+
+footer h1
+{
+	font-size: 12px;
+	color: blue;
+}
+
+/*____________MEDIA QUERIES : CACHER LE MENU SI L'ÉCRAN EST TROP PETIT ET LE METTRE AUTRE PART_________*/
+/*    @media all and (max-width: 1279px) {
+      .body-Enzo {
+	width:50%;
+      }
+      .accueil {
+	margin-right:-500px;
+	margin-left:-200px;
+      }
+      .titre-Enzo {
+	text-align:justify;
+      }
+      .texte {
+	margin-right:-500px;
+	margin-left:-200px;
+      }
+      .footer-Enzo {
+	margin-right:-500px;
+	margin-left:-200px;
+      }
+      .menu {
+        display:none;
+      }
+      .nav-Enzo ul {
+        display:none;
+      }
+    }*/
