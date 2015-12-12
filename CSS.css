@@ -231,6 +231,22 @@
 	margin-bottom: 3px;
 }
 
+a /* dans index.html */
+{
+	font-family:Verdana;
+	font-size: 10px;
+	color:green;
+	font-family:Verdana;
+	text-decoration:none;
+	
+}
+
+a:hover /* dans index.html */
+{
+	color:blue;
+	text-decoration:underline;
+}
+
 .h1-2  /* dans index_2.html */
 {
 	text-align: center;
@@ -358,23 +374,6 @@
 	display: inline-block;
 	position: float;
 	bottom: 0px;
-}
-
-.footer-Enzo
-{
-	position:absolute;
-	border:1px #868686 solid;
-	border-left:none;
-	border-right:none;
-	text-align:center;
-	color:black;
-	font-size:10px;
-	font-family:Verdana;
-	width:400px;
-	margin-left:340px;
-	margin-right:340px;
-	margin-bottom:5px;
-	top:5040px;
 }
 
 .cubes /*taille et position de l'image expliquant les notations du rubik's cube*/
