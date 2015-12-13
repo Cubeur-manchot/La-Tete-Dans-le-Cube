@@ -385,28 +385,10 @@ a:hover /* dans index.html */
 
 /*____________CACHER LE MENU SI L'ÉCRAN EST TROP PETIT ET LE METTRE AUTRE PART_________*/
     @media all and (max-width: 889px) {
-      .body-Enzo {
-	width:50%;
-      }
-      .accueil {
-	margin-right:-500px;
-	margin-left:-200px;
-      }
-      .titre-Enzo {
-	text-align:justify;
-      }
-      .texte {
-	margin-right:-500px;
-	margin-left:-200px;
-      }
-      .footer-Enzo {
-	margin-right:-500px;
-	margin-left:-200px;
-      }
       .menu {
-        display:none;
+        position:absolute;
       }
       .nav-Enzo ul {
-        display:none;
+        position:absolute;
       }
     }
