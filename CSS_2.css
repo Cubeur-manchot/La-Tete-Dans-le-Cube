@@ -14,6 +14,7 @@
 }
 
 
+
 /*____________ LES HEADERS ET HAUTS DE PAGE ____________*/
 
 header
@@ -21,50 +22,87 @@ header
 	display: inline-block;
 	text-align: center;
 	background-color: grey;
-	margin: auto;
-	border-bottom: 1px black solid;
-	width: 100%;
+	border-radius: 5px;
+	width: auto;
+	margin-top: 0px;
+	margin-left: 230px;
+	margin-right: 10px;
+	overflow: hidden;
 }
 
-#bannière  /* classe de la bannière de index_1.html */
+#bannière
 {
-	display: block;
 	top: 0px;
 	left: 0px;
 	width: 100%;
+	height: 150px;
 	border-bottom: 1px solid black;
 }
-
-.titre-Enzo
-{
-	position: float;
-	left: 230px;
-	color:black;
-	font-size:45px;
-	font-family:boomerang;
-	margin-bottom: 30px;
-}
-
 
 
 
 /*____________ LES MENUS DE NAVIGATION ET LISTES____________*/
 
+header ul
+{
+	list-style: none;
+	margin: 3px;
+}
+
+header li
+{
+	display: inline-block;
+}
+
+.chemin
+{
+	border-radius: 5px;
+	background-color: rgba(255, 200, 120, 0.7);
+	display: inline-block;
+	position: fixed;
+	margin-top: 15px;
+	margin-left: 15px;
+	text-decoration: none;
+	padding: 5px;
+	padding-left: 9px;
+	padding-right: 9px;
+}
+
+.chemin a
+{
+	text-decoration: none;
+	color: rgba(255,100,100,1);
+}
+
 body nav
 {
-	background-color:#DFF2FE;
-	position:absolute;
-	border:1px solid #868686;
-	border-radius: 7px 7px 0px 0px;
+	position:fixed;
 	width: 200px;
 	color:black;
 	font-size: 14px;
 	font-family:Verdana;
 	margin-left: 15px;
-	margin-top: 15px;
+	margin-top: 40px;
 	padding: 0px;
 	display: inline-block;
+}
+
+.bloc_nav
+{
+	border-radius: 4px;
+	border:1px solid #868686;
+	margin-bottom: 15px;
 	overflow: hidden;
+}
+
+.en-tête-nav
+{
+	background-color: rgba(237,153,216,1);
+	width: 100%;
+	margin: 0px;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px 3px black;
 }
 
 body nav ul
@@ -77,10 +115,10 @@ body nav ul
 body nav li
 {
 	margin-top: 3px;
-	margin-bottom: 3px;
+	margin-bottom: -1px;
 	margin-left: 10px;
 	margin-right: 10px;
-	border-top: 1px dotted #868686;
+	border-bottom: 1px dotted #868686;
 }
 
 body nav li a
@@ -94,41 +132,12 @@ body nav a:hover
 	color: red;
 }
 
-#rose_menu
+#scroll_to_top
 {
-	position:float;
-	top: 0px;
-	margin-top: 0px;
-	width: 200px;
-	height: 15px;
+	position: fixed;
+	right: 2px;
+	bottom: 2px;
 }
-
-header ul
-{
-	list-style: none;
-	margin: 3px;
-	/*display: none;*/
-}
-
-header li
-{
-	display: inline-block;
-}
-
-.chemin  /* indique le chemin d'accès à l'intérieur du site */
-{
-	border-radius: 5px;
-	background-color: rgba(255, 200, 120, 0.7);
-	display: inline-block;
-	position: float;
-	margin-top: 15px;
-	margin-left: 15px;
-	text-decoration: none;
-	padding: 5px;
-	padding-left: 9px;
-	padding-right: 9px;
-}
-
 
 
 
@@ -136,7 +145,7 @@ header li
 
 .body-normal
 {
-	background-color:#CFE2EE;
+	background-color:#DDF2FE;
 	margin:auto;
 }
 
@@ -160,7 +169,7 @@ section
 {
 	position:float;
 	color:black;
-	font-size:16px;
+	font-size:12px;
 	font-family:Verdana;
 }
 
@@ -182,20 +191,15 @@ p
 h1
 {
 	text-align: center;
-	color: blue;
-	font-size: 20px;
+	color: black;
+	font-size: 30px;
 }
 
-strong  /* dans index_2.html */
+strong
 {
 	display: block;
 	margin-top: 0.6em;
 	margin-bottom: 0.6em;
-}
-
-.chemin a
-{
-	text-decoration: none;
 }
 
 .cubes /*taille et position de l'image expliquant les notations du rubik's cube*/
@@ -214,7 +218,7 @@ strong  /* dans index_2.html */
 
 
 
-/*___________________ LES FONDS ET COULEURS ___________________*/
+/*___________________ FONDS, COULEURS ET AUTRES ___________________*/
 
 .body-dégradé
 {
@@ -258,6 +262,12 @@ strong  /* dans index_2.html */
 	color: blue;
 }
 
+.cubes /*taille et position de l'image expliquant les notations du rubik's cube*/
+{
+	width:200px;
+	height:205px;
+	margin-left:200px;
+}
 
 
 
@@ -278,49 +288,32 @@ footer
 {
 	position:float;
 	border:1px #868686 solid;
-	border-left:none;
-	border-right:none;
-	border-radius:/*5px*/;
-	text-align:center;
+	border-left:0px;
+	border-right:0px;
 	color:black;
-	font-size:10px;
 	font-family:Verdana;
-	width:90%;
+	width:55%;
 	margin: auto;
 	margin-top: 50px;
 	margin-bottom:5px;
+	text-align: center;
+	font-size: 10px;
 }
 
-footer h1
+footer p
 {
-	font-size: 12px;
-	color: blue;
+	text-align: center;
+	font-size: 10px;
 }
 
-/*____________MEDIA QUERIES : CACHER LE MENU SI L'ÉCRAN EST TROP PETIT ET LE METTRE AUTRE PART_________*/
-/*    @media all and (max-width: 1279px) {
-      .body-Enzo {
-	width:50%;
-      }
-      .accueil {
-	margin-right:-500px;
-	margin-left:-200px;
-      }
-      .titre-Enzo {
-	text-align:justify;
-      }
-      .texte {
-	margin-right:-500px;
-	margin-left:-200px;
-      }
-      .footer-Enzo {
-	margin-right:-500px;
-	margin-left:-200px;
-      }
-      .menu {
-        display:none;
-      }
-      .nav-Enzo ul {
-        display:none;
-      }
-    }*/
+/*____________ MEDIA QUERIES _________*/
+@media all and (max-width: 889px) {
+	.menu
+	{
+		position:absolute;
+	}
+	.nav-Enzo ul
+	{
+		position:absolute;
+	}
+}
