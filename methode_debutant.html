@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html>
 	<head>
-    <link href="CSS.css" type="text/css" rel="stylesheet" media="all">
-    <link rel="icon" type="image/png" href="favicon.ico"/>
-        <meta charset="utf-8" />
-        <title>La Tête Dans le Cube</title>
-    </head>
-    <body class="body-Enzo">
-	<div id="cadre">
-	<header><img src="images/banniere.png" alt="banniere du site" class="accueil" /></header>
-
-	<img src="images/menu.png" alt="icone de menu" class="menu" />
-	<nav class="nav-Enzo">
-	<ul>
-		<li>Actualités</li>
-		<li>Histoire du Rubik's Cube</li>
-		<li>Méthodes du Rubik's Cube</li>
-		<li>Méthodes du Rubik's Pocket</li>
-		<li>Méthodes du Rubik's Revenge</li>
-		<li>Méthodes du Rubik's Professor</li>
-		<li>Méthodes du 6*6</li>
-		<li>Méthodes du 7*7</li>
-		<li>Méthodes du 8*8</li>
-		<li>Méthodes des autres puzzles</li>
-		<li>Méthodes des autres puzzles</li>
-		<li>Méthodes des autres puzzles</li>
-		<li>Méthodes des autres puzzles</li>
-		<li>Méthodes des autres puzzles</li>
-		<li>Méthodes des autres puzzles</li>
-		<li>Méthodes des autres puzzles</li>
-		<li>Méthodes des autres puzzles</li>
-	</ul>
-	</nav>
-	<h1 class="titre-Enzo">Résoudre le Rubik's Cube pour la première fois !</h1>
-	<div class="contenu">
-        <div class="texte"><p>Si vous êtes ici, c'est parce que vous voulez apprendre à résoudre le Rubik's Cube, soit pour enfin venir à bout de ce casse-tête mythique, soit pour avoir l'air intelligent X).<br /><br />Ce tutoriel est garanti réussite, qui que vous soyez, vous pouvez résoudre le "casse-tête parfait" sans trop d'encombres (ou même avec, la satisfaction à la fin n'en sera que plus grande!) et assez rapidement si vous y mettez le temps.<br />Si vous avez des questions ou que vous ne comprenez pas une partie de ce tutoriel, n'hésitez pas à consulter la partie "Aide et rapports" où vous trouverez un chat (du verbe Anglais "to chat"="discuter", pas l'animal bien sûr!) et où vous pourrez dire aux gentils webmasters ce qui ne va pas. Toutefois, ne les spammez pas, patientez, ils finiront par vous répondre ;). <br /><br />On va résoudre le Cube de manière méthodique, c'est à dire pas n'importe comment : on peut le faire tranche par tranche, face par face, en agrandissant des bloc, etc... Nous allons nous intéresser à la méthode la plus facile à assimiler, la Méthode Tranche par Tranche pour Débutants, que l'on abrègera "MTTD".<br />Pour arriver à nos fins, nous aurons besoin certes d'intuition, mais aussi d'algorithmes, des suites de mouvement qui on une action spécifique sur le cube. Exemple : faire tourner trois coins dans le sens des aiguilles d'une montre. <br />Pour les transcrire, nous utiliserons la notation internationale, la plus utilisée, partout. Mais si vous êtes fâchés avec l'Anglais, nous utiliserons aussi la notation "Made in LTDC" ;), qui est tout en Français. Il est cependant recommandé d'utiliser la notation internationale.<br />Enfin, vous devrez connaitre le nom des pièces du Cube ainsi que leur spécifités. Sur ce, on commence tout de suite, c'est parti!<br />
+		<meta charset="utf-8" />
+		<title>La Tête Dans le Cube</title>
+		<link href="CSS_2.css" type="text/css" rel="stylesheet" media="all">
+		<link href="favicon.ico" type="img/ico" rel="icon"/>
+	</head>
+	<body class="body-normal">
+	<div id="gros_bloc">
+		<br/>
+		<nav>
+			<div class="bloc_nav">
+				<p class="en-tête-nav">MENU</p>
+				<ul>
+					<li><a href="#">Actualités</a></li>
+					<li><a href="#">Réussir le cube !</a></li>
+					<li><a href="#">Speedcubing 3x3</a></li>
+					<li><a href="#">Officiels WCA</a></li>
+					<li><a href="#">Encyclopédie</a></li>
+					<li><a href="#">Catalogue</a></li>
+					<li><a href="#">Entretient / Modding</a></li>
+					<li><a href="#">Cubes Exotiques</a></li>
+				</ul>
+			</div>
+			<div class="bloc_nav">
+				<p class="en-tête-nav">Nous contacter :</p>
+				<ul>
+					<li><a href="mailto:julien.combaz@gmail.com">akira1250</a></li>
+					<li><a href="mailto:matthieu.aubert17@gmail.com">Cubeur-manchot</a></li>
+					<li><a href="mailto:enzoguerin@gmail.com">Bushizo</a></li>
+					<li><a href="mailto:flodedge@gmail.com">Blenderiste09</a></li>
+				</ul>
+			</div>
+		</nav>
+		<header class="header-1">
+			<img id="bannière"  src="images/banniere.png" alt="bannière du site"/>
+			<ul>
+				<li><a href="#"><img src="images/encyclopedie.png" alt="encyclopedie" height="25"/></a></li>
+				<li><a href="#"><img src="images/reussir.png" alt="reussir" height="25"/></a></li>
+				<li><a href="#"><img src="images/performance.png" alt="performance" height="25"/></a></li>
+				<li><a href="#"><img src="images/classiques.png" alt="classiques" height="25"/></a></li>
+				<li><a href="#"><img src="images/exotiques.png" alt="exotiques" height="25"/></a></li>
+				<li><a href="#"><img src="images/entretien.png" alt="entretien" height="25"/></a></li>
+			</ul>
+		</header>
+		<a href="#" id="scroll_to_top"><img src="images/scroll-top.png" height="20" width="20"/></a>
+		<section>
+			<h1>Résoudre pour la première fois le Rubik's Cube !</h1>
+			<div class="texte"><p>Si vous êtes ici, c'est parce que vous voulez apprendre à résoudre le Rubik's Cube, soit pour enfin venir à bout de ce casse-tête mythique, soit pour avoir l'air intelligent X).<br /><br />Ce tutoriel est garanti réussite, qui que vous soyez, vous pouvez résoudre le "casse-tête parfait" sans trop d'encombres (ou même avec, la satisfaction à la fin n'en sera que plus grande!) et assez rapidement si vous y mettez le temps.<br />Si vous avez des questions ou que vous ne comprenez pas une partie de ce tutoriel, n'hésitez pas à consulter la partie "Aide et rapports" où vous trouverez un chat (du verbe Anglais "to chat"="discuter", pas l'animal bien sûr!) et où vous pourrez dire aux gentils webmasters ce qui ne va pas. Toutefois, ne les spammez pas, patientez, ils finiront par vous répondre ;). <br /><br />On va résoudre le Cube de manière méthodique, c'est à dire pas n'importe comment : on peut le faire tranche par tranche, face par face, en agrandissant des bloc, etc... Nous allons nous intéresser à la méthode la plus facile à assimiler, la Méthode Tranche par Tranche pour Débutants, que l'on abrègera "MTTD".<br />Pour arriver à nos fins, nous aurons besoin certes d'intuition, mais aussi d'algorithmes, des suites de mouvement qui on une action spécifique sur le cube. Exemple : faire tourner trois coins dans le sens des aiguilles d'une montre. <br />Pour les transcrire, nous utiliserons la notation internationale, la plus utilisée, partout. Mais si vous êtes fâchés avec l'Anglais, nous utiliserons aussi la notation "Made in LTDC" ;), qui est tout en Français. Il est cependant recommandé d'utiliser la notation internationale.<br />Enfin, vous devrez connaitre le nom des pièces du Cube ainsi que leur spécifités. Sur ce, on commence tout de suite, c'est parti!<br />
 <ul>
 <li><a href="#1.1">1.1 : La croix</a></li>
 <li><a href="#1.2">1.2 : La face avec la couronne</a></li>
@@ -43,7 +56,7 @@
 <li><a href="#3.2">3.2 : orienter la croix</a></li>
 <li><a href="#3.3">3.3 : permuter les coins</a></li>
 <li><a href="#3.4">3.4 : orienter les coins</a></li>
-</ul><h2>0.1 : La notation</h2><br /><br /><div class="au-dessus">Comme dit plus haut, pour faire des suites de mouvements, nous allons utiliser un code :</div> <img src="images/rubiks_cube.jpg" alt="notations du cube" class="cubes"/ ><br />C'est simple :<br />
+</ul><h2>0.1 : La notation</h2><br /><br />Comme dit plus haut, pour faire des suites de mouvements, nous allons utiliser un code : <br /><br /><img src="images/rubiks_cube.jpg" alt="notations du cube" class="cubes"/ ><br />C'est simple :<br />
 	<ul>
 		<li>On note "U" pour la face haute car "haut" en Anglais se dit "up"</li>
 		<li>On note "D" pour la face du bas car "bas" en Anglais se dit "down"</li>
@@ -93,28 +106,13 @@ Si aucun coin n'est préalablement bien placé, faites une ou deux fois un de ce
 <li>Anglais : R' D' R D</li>
 <li>Français : D' B' D B</li>
 </ul>
-Mais, me direz vous, «le cube est maintenant tout mélangé!» En effet, mais tournez la face haut pour le prochain coin non orienté et refaites la même chose avec tout les autres coins non orientés, et si vous avez tout fait correctement, bravo, VOTRE CUBE EST RÉSOLU!!!<br />J'éspère que ma méthode était claire, si vous avez eu des problèmes, surtout, n'hésitez pas à les signaler.<br />Vous pouvez maintenant être fier de vous, impressionner vos proches et essayer d'aller de plus en plus vite! Bienvenue dans le monde merveilleux du Rubik's Cube!<br /><img src="images/rubiks_cube.jpg" alt="notations du cube" class="cubes"/ ><br /></p></div>
-	<footer class="footer-Enzo">
-<style>
-/*désolé pour cette solution dégueu, on trouvera autre chose pour l'adaptation du footer par rapport au contenu...*/
-.footer-Enzo
-{
-	position:absolute;
-	border:1px #868686 solid;
-	border-left:none;
-	border-right:none;
-	text-align:center;
-	color:black;
-	font-size:10px;
-	font-family:Verdana;
-	width:400px;
-	margin-left:340px;
-	margin-right:340px;
-	margin-bottom:5px;
-	margin-top:5225px;
-}
-</style><h5>Site en développement par Cubeur-Manchot et Bushizo.</h5><div class="copyright">Copyright 2015. Pour toute demande, suggestion ou menace de mort, allez à l'adresse superadresse@trucbidule.com</div></footer>
-    </div>
-    </div>
-    </body>
+Mais, me direz vous, «le cube est maintenant tout mélangé!» En effet, mais tournez la face haut pour le prochain coin non orienté et refaites la même chose avec tout les autres coins non orientés, et si vous avez tout fait correctement, bravo, VOTRE CUBE EST RÉSOLU!!!<br />J'éspère que ma méthode était claire, si vous avez eu des problèmes, surtout, n'hésitez pas à les signaler.<br />Vous pouvez maintenant être fier de vous, impressionner vos proches et essayer d'aller de plus en plus vite! Bienvenue dans le monde merveilleux du Rubik's Cube!<br /><img src="images/rubiks_cube.jpg" alt="notations du cube" class="cubes"/ ><br /></p>
+			</div>
+		</section>
+		<footer>
+			<p>Site en développement par Cubeur-Manchot, Bushizo et Blenderiste09.</p>
+			<p class="copyright">Copyright 2015. Pour toute demande, suggestion ou menace de mort, envoyez à l'adresse combaz.julien@gmail.com</p>
+		</footer>
+	</div>
+	</body>
 </html>
