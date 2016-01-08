@@ -122,17 +122,6 @@ body nav li
 	border-bottom: 1px dotted #868686;
 }
 
-body nav li a
-{
-	text-decoration: none;
-	color: blue;
-}
-
-body nav a:hover
-{
-	color: red;
-}
-
 #scroll_to_top
 {
 	position: fixed;
@@ -168,7 +157,6 @@ section
 
 .texte
 {
-	position:float;
 	color:black;
 	font-size:12px;
 	font-family:Verdana;
@@ -205,13 +193,13 @@ h2
 
 a
 {
-	color:green;
+	color:blue;
 	text-decoration:none;
 }
 
 a:hover
 {
-	color:blue;
+	color:red;
 	text-decoration:underline;
 }
 strong
@@ -298,7 +286,6 @@ strong
 
 footer
 {
-	position:float;
 	border:1px #868686 solid;
 	border-left:0px;
 	border-right:0px;
