@@ -19,25 +19,29 @@
 
 header
 {
-	display: inline-block;
-	text-align: center;
+	display: block;
 	background-color: grey;
 	border-radius: 5px;
-	width: auto;
-	margin-top: 0px;
+	margin-top: 15px;
 	margin-left: 230px;
-	margin-right: 10px;
+	margin-right: 15px;
 	overflow: hidden;
+	padding: 0px;
 }
 
 #bannière
 {
-	top: 0px;
+	top: 15px;
 	left: 0px;
+<<<<<<< HEAD
 	right:0px;
 	width:100%;
+=======
+	width: 100%;
+>>>>>>> 67143e27629a71867c7abb168f0172a906ef5d42
 	height: 150px;
 	border-bottom: 1px solid black;
+	margin-bottom: -5px;
 }
 
 
@@ -55,26 +59,6 @@ header li
 	display: inline-block;
 }
 
-.chemin
-{
-	border-radius: 5px;
-	background-color: rgba(255, 200, 120, 0.7);
-	display: inline-block;
-	position: fixed;
-	margin-top: 15px;
-	margin-left: 15px;
-	text-decoration: none;
-	padding: 5px;
-	padding-left: 9px;
-	padding-right: 9px;
-}
-
-.chemin a
-{
-	text-decoration: none;
-	color: rgba(255,100,100,1);
-}
-
 body nav
 {
 	position:fixed;
@@ -83,7 +67,7 @@ body nav
 	font-size: 14px;
 	font-family:Verdana;
 	margin-left: 15px;
-	margin-top: 0px;
+	margin-top: 15px;
 	padding: 0px;
 	display: inline-block;
 }
@@ -120,13 +104,25 @@ body nav li
 	margin-left: 10px;
 	margin-right: 10px;
 	border-bottom: 1px dotted #868686;
+	font-size: 12px;
+}
+
+body nav li a
+{
+	text-decoration: none;
+	color: blue;
+}
+
+body nav a:hover
+{
+	color: red;
 }
 
 #scroll_to_top
 {
 	position: fixed;
-	right: 2px;
-	bottom: 2px;
+	left: 10px;
+	bottom: 5px;
 }
 
 
@@ -139,6 +135,11 @@ body nav li
 	margin:auto;
 }
 
+.body-normal #gros_bloc
+{
+	padding: 0px;
+}
+
 .body-dégradé #gros_bloc
 {
 	width: 92%; 
@@ -147,16 +148,27 @@ body nav li
 	border: 1px black solid;
 }
 
-section
+#corps_de_page
 {
 	margin-left: 230px;
 	margin-right: 15px;
-	padding: 10px;
 	display: inline-block;
+	padding: 0px;
+}
+
+section
+{
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	display: inline-block;
+	padding: 0px;
 }
 
 .texte
 {
+	position:float;
 	color:black;
 	font-size:12px;
 	font-family:Verdana;
@@ -171,7 +183,7 @@ p
 {
 	margin-left: 3px;
 	font-family: "Verdana";
-	font-size: 12px;
+	font-size: 0.85em;
 	text-align: justify;
 	margin-top: 3px;
 	margin-bottom: 3px;
@@ -181,32 +193,21 @@ h1
 {
 	text-align: center;
 	color: black;
-	font-size: 50px;
-	font-family: boomerang;
+	font-size: 30px;
 }
 
-h2
-{
-	font-family: Verdana;
-	font-size: 18px;
-}
-
-a
-{
-	color:blue;
-	text-decoration:none;
-}
-
-a:hover
-{
-	color:red;
-	text-decoration:underline;
-}
 strong
 {
 	display: block;
 	margin-top: 0.6em;
 	margin-bottom: 0.6em;
+}
+
+.cubes /*taille et position de l'image expliquant les notations du rubik's cube*/
+{
+	width:200px;
+	height:205px;
+	margin-left:350px;
 }
 
 .au-dessus
@@ -266,7 +267,7 @@ strong
 {
 	width:200px;
 	height:205px;
-	margin-left:340px;
+	margin-left:200px;
 }
 
 
@@ -286,6 +287,7 @@ strong
 
 footer
 {
+	position:float;
 	border:1px #868686 solid;
 	border-left:0px;
 	border-right:0px;
@@ -306,8 +308,12 @@ footer p
 }
 
 /*____________ MEDIA QUERIES _________*/
-@media all and (max-width: 679px) {
-	body nav
+@media all and (max-width: 889px) {
+	.menu
+	{
+		position:absolute;
+	}
+	.nav-Enzo ul
 	{
 		position:absolute;
 	}
