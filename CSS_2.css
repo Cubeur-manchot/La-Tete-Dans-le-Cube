@@ -1,4 +1,4 @@
-/*Integration des polices à telecharger*/
+/*Intégration des polices à télécharger*/
 
 @font-face {
     font-family: 'boomerang';
@@ -17,54 +17,31 @@
 
 /*____________ LES HEADERS ET HAUTS DE PAGE ____________*/
 
-.header_index
-{
-	display: inline-block;
-	text-align: center;
-	background-color: grey;
-	border-radius: 5px;
-	width: auto;
-	margin-top: 0px;
-	margin-left: 230px;
-	margin-right: 10px;
-	overflow: hidden;
-}
-
 header
 {
-	display: inline-block;
+	display: block;
+	background-color: grey;
 	border-radius: 5px;
-	width: auto;
-	margin-top: 0px;
-	margin-left: 230px;
-	margin-right: 10px;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
 	overflow: hidden;
+	padding: 0px;
+	min-width: 675px;
+	text-align: center;
 }
 
-#banniere
+#bannière
 {
-	top: 0px;
-	left: 0px;
-	right:0px;
 	width: 100%;
-	height: 150px;
+	height: 100px;
 	border-bottom: 1px solid black;
+	margin-bottom: -5px;
 }
 
 
 
 /*____________ LES MENUS DE NAVIGATION ET LISTES____________*/
-
-header ul
-{
-	list-style: none;
-	margin: 3px;
-}
-
-header li
-{
-	display: inline-block;
-}
 
 body nav
 {
@@ -74,7 +51,7 @@ body nav
 	font-size: 14px;
 	font-family:Verdana;
 	margin-left: 15px;
-	margin-top: 0px;
+	margin-top: 150px;
 	padding: 0px;
 	display: inline-block;
 }
@@ -89,12 +66,12 @@ body nav
 
 .en-tete-nav
 {
-	background-color: rgba(237,153,216,1);
+	background-color: rgb(160,0,30);
 	width: 100%;
 	margin: 0px;
 	text-align: center;
 	color: white;
-	text-shadow: 1px 1px 3px black;
+	text-shadow: black 1px 1px 2px;
 }
 
 body nav ul
@@ -111,6 +88,7 @@ body nav li
 	margin-left: 10px;
 	margin-right: 10px;
 	border-bottom: 1px dotted #868686;
+	font-size: 12px;
 }
 
 body nav li a
@@ -127,8 +105,8 @@ body nav a:hover
 #scroll_to_top
 {
 	position: fixed;
-	right: 2px;
-	bottom: 2px;
+	left: 10px;
+	bottom: 5px;
 }
 
 
@@ -141,7 +119,12 @@ body nav a:hover
 	margin:auto;
 }
 
-.body-degrade #gros_bloc
+.body-normal #gros_bloc
+{
+	padding: 0px;
+}
+
+.body-dégradé #gros_bloc
 {
 	width: 92%; 
 	margin: auto;
@@ -149,12 +132,23 @@ body nav a:hover
 	border: 1px black solid;
 }
 
-section
+#corps_de_page
 {
 	margin-left: 230px;
 	margin-right: 15px;
-	padding: 10px;
 	display: inline-block;
+	padding: 0px;
+	min-width: 460px;
+}
+
+section
+{
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	display: inline-block;
+	padding: 0px;
 }
 
 .texte
@@ -174,7 +168,7 @@ p
 {
 	margin-left: 3px;
 	font-family: "Verdana";
-	font-size: 12px;
+	font-size: 0.85em;
 	text-align: justify;
 	margin-top: 3px;
 	margin-bottom: 3px;
@@ -186,30 +180,34 @@ h1
 	color: black;
 	font-size: 50px;
 	font-family: boomerang;
+	text-shadow: grey 2px 2px 2px;
 }
 
-h2
-{
-	font-family: Verdana;
-	font-size: 18px;
-}
-
-a
-{
-	color:green;
-	text-decoration:none;
-}
-
-a:hover
-{
-	color:blue;
-	text-decoration:underline;
-}
 strong
 {
 	display: block;
 	margin-top: 0.6em;
 	margin-bottom: 0.6em;
+}
+
+.bouton_animation
+{
+	font-size: 14px;
+	display: inline-block;
+	background-color: orange;
+	border: 1px solid rgb(100,100,100);
+	border-radius: 3px;
+	text-decoration: none;
+	color: black;
+	padding: 3px 3px 3px 3px;
+	margin: 4px;
+}
+
+.cubes /*taille et position de l'image expliquant les notations du rubik's cube*/
+{
+	width:200px;
+	height:205px;
+	margin-left:350px;
 }
 
 .au-dessus
@@ -223,7 +221,7 @@ strong
 
 /*___________________ FONDS, COULEURS ET AUTRES ___________________*/
 
-.body-degrade
+.body-dégradé
 {
 	/* Anciens navigateurs */
 	background: white url("gradient-bg.png") repeat-x top;
@@ -231,7 +229,7 @@ strong
 	-moz-background-size: 100% 100%;
 	-webkit-background-size: 100% 100%;
 	background-size: 100% 100%;
-	/* Navigateurs recents */
+	/* Navigateurs récents */
 	background: -webkit-gradient(
 		linear,
 		left top, left bottom,
@@ -263,13 +261,6 @@ strong
 #color
 {
 	color: blue;
-}
-
-.cubes /*taille et position de l'image expliquant les notations du rubik's cube*/
-{
-	width:200px;
-	height:205px;
-	margin-left:340px;
 }
 
 
@@ -308,182 +299,30 @@ footer p
 	text-align: center;
 	font-size: 10px;
 }
-/*____________ GLOSSAIRE________________*/
-table
-{
-	border-collapse: collapse;
-	font-size: 12px;
-	border-radius: 10px;
-}
 
-td
-{
-	border: 1px solid black;
-	background-color: #F3F3F3;
-	padding-left: 5px;
-	padding-right: 5px;
-	text-align: center;
-}
-
-.categorie
-{
-	border: 1px solid black;
-	background-color: #F3F3F3;
-	padding-left: 5px;
-	padding-right: 5px;
-	text-align: left;
-}
-
-.categorie p
-{
-	vertical-align: middle;
-	display: inline-block;
-	font-family: none;
-	font-size: 12px;
-}
-
-th
-{
-	border: 1px solid black;
-	background-color: #FFA000;
-	min-width: 100px;
-	height: 20px;
-	text-shadow: 1px 1px 1px grey;
-	text-align: center;
-}
-
-#tableau-glossaire
-{
-	border: 1px solid black;
-	border-radius: 7px 7px 3px 3px;
-	overflow:hidden;
-	padding: 0px;
-	box-shadow: 3px 3px 2px grey;
-	margin-right: 0px;
-	margin-left: 0px;
-	margin-top: 12px;
-}
-
-.carre-puzzle
-{
-	height: 10px;
-	width: 10px;
-	border: 1px solid black;
-	border-radius: 3px;
-	background-color: rgba(0,255,0,1);
-	display: inline-block;
-	margin-left: 5px;
-	margin-right: 3px;
-	vertical-align: middle;
-}
-
-.carre-methode
-{
-	height: 10px;
-	width: 10px;
-	border: 1px solid black;
-	border-radius: 3px;
-	background-color: rgba(0,0,255,1);
-	display: inline-block;
-	margin-left: 5px;
-	margin-right: 3px;
-	vertical-align: middle;
-}
-
-.carre-piece
-{
-	height: 10px;
-	width: 10px;
-	border: 1px solid black;
-	border-radius: 3px;
-	background-color: rgba(255,255,0,1);
-	display: inline-block;
-	margin-left: 5px;
-	margin-right: 3px;
-	vertical-align: middle;
-}
-
-.carre-algos
-{
-	height: 10px;
-	width: 10px;
-	border: 1px solid black;
-	border-radius: 3px;
-	background-color: rgba(255,0,0,1);
-	display: inline-block;
-	margin-left: 5px;
-	margin-right: 3px;
-	vertical-align: middle;
-}
-
-.carre-technique
-{
-	height: 10px;
-	width: 10px;
-	border: 1px solid black;
-	border-radius: 3px;
-	background-color: rgba(255,145,0,1);
-	display: inline-block;
-	margin-left: 5px;
-	margin-right: 3px;
-	vertical-align: middle;
-}
-
-.carre-autre
-{
-	height: 10px;
-	width: 10px;
-	border: 1px solid black;
-	border-radius: 3px;
-	background-color: white;
-	display: inline-block;
-	margin-left: 5px;
-	margin-right: 3px;
-	vertical-align: middle;
-}
-
-.carre-wca
-{
-	height: 10px;
-	width: 10px;
-	border: 1px solid black;
-	border-radius: 3px;
-	background-color: rgba(175,0,175,1);
-	display: inline-block;
-	margin-left: 5px;
-	margin-right: 3px;
-	vertical-align: middle;
-}
-
-a
-{
-	text-decoration: none;
-	color: blue;
-}
-
-a:hover
-{
-	color:red;
-	text-decoration:underline;
-}
-
-.description
-{
-	text-align: left;
-	padding: 5px;
-}
-
-.lien_discret
-{
-	font-family: none;
-	font-size: 12px;
-	text-align: center;
-	color: black;
-}
 /*____________ MEDIA QUERIES _________*/
-@media all and (max-width: 679px) {
-	body nav
+@media all and (max-width: 889px) {
+	.menu
 	{
 		position:absolute;
 	}
+	.nav-Enzo ul
+	{
+		position:absolute;
+	}
+}
+
+/*Integration des polices à telecharger*/
+
+@font-face {
+    font-family: 'boomerang';
+    src: url('fonts/boomeran.eot');
+    src: url('fonts/boomeran.eot?#iefix') format('embedded-opentype'),
+         url('fonts/boomeran.woff2') format('woff2'),
+         url('fonts/boomeran-.woff') format('woff'),
+         url('fonts/boomeran.ttf') format('truetype'),
+         url('fonts/boomeran.svg#boomerangregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
