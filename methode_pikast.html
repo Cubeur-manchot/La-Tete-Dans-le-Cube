@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Pikas**t</title>
+		<link href="CSS_2.css" type="text/css" rel="stylesheet" media="all">
+		<link href="images/favicon.ico" type="img/ico" rel="icon"/>
+	</head>
+	<body class="body-normal">
+	<div id="gros_bloc">
+		<nav>
+			<div class="bloc_nav">
+				<p class="en-tete-nav">MENU</p>
+				<ul>
+					<li><a href="#">Actualités</a></li>
+					<li><a href="#">Réussir le cube !</a></li>
+					<li><a href="#">Speedcubing 3x3</a></li>
+					<li><a href="#">Officiels WCA</a></li>
+					<li><a href="#">Encyclopédie</a></li>
+					<li><a href="#">Catalogue</a></li>
+					<li><a href="#">Entretient / Modding</a></li>
+					<li><a href="#">Cubes Exotiques</a></li>
+				</ul>
+			</div>
+			<div class="bloc_nav">
+				<p class="en-tete-nav">Nous contacter :</p>
+				<ul>
+					<li><a href="mailto:julien.combaz@gmail.com">akira1250</a></li>
+					<li><a href="mailto:matthieu.aubert17@gmail.com">Cubeur-manchot</a></li>
+					<li><a href="mailto:enzoguerin@gmail.com">Bushizo</a></li>
+					<li><a href="mailto:flodedge@gmail.com">Blenderiste09</a></li>
+					<li><a href="mailto:daktlas@gmail.com">Antarès</a></li>
+				</ul>
+			</div>
+		</nav>
+		<header>
+			<img id="bannière"  src="images/banniere.png" alt="bannière du site"/>
+		</header>
+		<a href="#" id="scroll_to_top" title="Haut de page"><img src="images/scroll-top.png" height="40" width="40" alt=""/></a>
+		<section id="corps_de_page">
+			<h1>La méthode Pikas**t</h1>
+			<p>Pikas**t est une méthode inventée par Justin Harder en 2013 pour résoudre le rubik's cube 3x3. 
+			C'est une variante de la méthode Petrus, qui utilise le blockbuilding à fond en s'inspirant à la fois de Petrus et de Roux. 
+			A l'origine, on l'écrivait sans les astérisques.</p>
+			<ul>Les étapes :
+				<li>Bloc 2x2x3</li>
+				<li>Coin + Paire</li>
+				<li>CLL</li>
+				<li>LSE</li>
+			</ul>
+			ICI METTRE UN SCHÉMA DES ÉTAPES
+			<h2>Étape 1 : Bloc 2x2x3</h2>
+				<p>Cette étape se déroule comme pour la méthode Petrus en deux sous-étapes :</p>
+				<ul>
+					<li>Construction d'un bloc 2x2x2</li>
+					<li>Extension à un bloc 2x2x3</li>
+				</ul>
+				<p>Pour avoir des détails sur la construction du bloc 2x2x2 ou sur son extension à un bloc 2x2x3, 
+				vous pouvez aller voir directement sur <a href="#">le tutoriel de la méthode Petrus</a>.</p>
+				</br>
+			<h2>Étape 2 : Coin DFR + Paire BRD</h2>
+				<p>D'abord plaçons le bloc 2x2x3 en DL (comme sur la photo). Il faut maintenant résoudre le coin DFR, et la paire constituée du coin DBR et de l'arête BR. 
+				Pour celà, il n'y a pas d'ordre particulier, on peut commencer par le coin puis résoudre la paire, 
+				ou bien commencer par la paire puis résoudre le coin, le mieux étant toujours de faire les deux en même temps. 
+				Ceci se fait intuitivement : pour résoudre la paire, c'est comme résoudre un <a href="#">F2L</a> avec plus de liberté dans les mouvements, 
+				et pour le coin c'est encore plus facile. Vous devriez avoir quelque chose comme sur cette image :</p>
+				<img src="images/paire_coin.png" alt="Résolution de paire et du coin"/>
+				<br/>
+			<h2>Étape 3 : CLL</h2>
+				<p>Il s'agit ici de résoudre les coins du dernier étage en utilisant une CLL (Corners of the Last Layer). 
+				Il y a 42 cas de CLL différents, que vous pouvez trouver sur <a href="#">la page des CLL</a>.
+				<ul class="notes">Notes :
+					<li>Ces algos ne préservent pas les arêtes du dernier étage, contrairement aux COLL par exemple 
+					qui conservent l'orientation des arêtes. On peut utiliser une COLL à la place d'une CLL, mais pas l'inverse.</li>
+					<li>Il ne faut pas les confondre avec les CLL du 2x2. Les CLL du 3x3 sont utilisables au 2x2, mais pas l'inverse.</li>
+					<li>Techniquement, pour les algos de CLL on n'a pas besoin de préserver l'arête DR et l'arête FR. 
+					On pourrait donc utiliser un set de CLL particuliers qui ne préservent pas ces pièces, afin de faciliter les algos. 
+					Ces algos n'étant pas utilisables pour les autres méthodes, quitte à apprendre des algos autant en apprendre qui seront utilisables pour d'autres méthodes. 
+					Peut-être qu'à l'avenir une liste de CLL spécifiques à Pikas**t sera ajoutée ici.</li>
+				</ul>
+				<br/>
+			<h2>Étape 4 : LSE</h2>
+				<p>Il s'agit ici de résoudre les LSE (Last Six Edges).
+				<br/>
+				Pour faire ceci, plusieurs approches sont possibles. Bien sûr, si vous les maîtrisez toutes vous serez d'autant meilleur.</p>
+				<ul>Les approches possibles sont les suivantes :
+					<li>Résolution en 2-look orientation + permutation, un peu comme en OLL/PLL.</li>
+					<li>Résolution en mode Roux : on fait un setup, on résout les LSE comme avec la méthode Roux, et on fait le désetup.</li>
+					<li>Insertion de l'arête FR puis L5E : on résout l'arête FR, on fait une rotation y puis on se retrouve avec un L5E (Last 5 Edges).</li>
+				</ul>
+				<h3>Orientation + Permutation</h3>
+					<h4>Orientation</h4>
+						<p>Il y a 16 cas d'orientation des arêtes. Voici la liste des cas avec les algos correspondants :
+						</br>ICI METTRE UN SPOILER</p>
+					<h4>Permutation</h4>
+						<p>Il y a ?? cas de permutation des coins. Voici la liste des cas avec les algos correspondants :
+						<br/>ICI METTRE UN SPOILER</p>
+						<br/>
+				<h3>LSE en mode Roux</h3>
+					<p>D'abord faire le setup : faites les mouvements D2 R' D R. Ceci a pour effet d'amener l'emplacement DR en DF et l'emplacement FR en DB.
+					<br/>
+					Ensuite résolvez les LSE comme en Roux, en n'oubliant pas qu'il faut mettre en DF ce qui initialement devait aller en DR, 
+					et en DB ce qui initialement devait aller en FR. 
+					Pour plus d'informations sur comment résoudre les LSE en Roux, allez directement voir <a href="#">la page de la méthode Roux</a>.
+					<br/>
+					Ensuite faire le désetup en faisant les mouvements R' D' R D2.</p>
+				<h3>Insertion de FR puis L5E</h3>
+					<h4>Insertion de FR</h4>
+						<p>Voici les cas possibles, selon la position de l'arête qui doit aller en FR :
+						<br/>ICI METTRE UN SPOILER</p>
+					<h4>L5E</h4>
+						<p>Je vous conseille d'aller voir directement la page du site qui explique <a href="#">les différentes approches pour les L5E</a>.</p>
+		</section>
+		<footer>
+			<p>Site en développement par Cubeur-Manchot, Bushizo et Blenderiste09.</p>
+			<p class="copyright">Copyright 2016. Pour toute demande, suggestion ou menace de mort, envoyez à l'adresse matthieu.aubert17@gmail.com</p>
+		</footer>
+	</div>
+	</body>
+</html>
