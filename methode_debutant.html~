@@ -11,7 +11,7 @@
 		<br/>
 		<nav>
 			<div class="bloc_nav">
-				<p class="en-tête-nav">MENU</p>
+				<p class="en-tete-nav">MENU</p>
 				<ul>
 					<li><a href="#">Actualités</a></li>
 					<li><a href="#">Réussir le cube !</a></li>
@@ -24,7 +24,7 @@
 				</ul>
 			</div>
 			<div class="bloc_nav">
-				<p class="en-tête-nav">Nous contacter :</p>
+				<p class="en-tete-nav">Nous contacter :</p>
 				<ul>
 					<li><a href="mailto:julien.combaz@gmail.com">akira1250</a></li>
 					<li><a href="mailto:matthieu.aubert17@gmail.com">Cubeur-manchot</a></li>
@@ -34,7 +34,7 @@
 			</div>
 		</nav>
 		<header class="header-1">
-			<img id="bannière"  src="images/banniere.png" alt="bannière du site"/>
+			<img id="banniere"  src="images/banniere.png" alt="banniere du site"/>
 			<ul>
 				<li><a href="#"><img src="images/encyclopedie.png" alt="encyclopedie" height="25"/></a></li>
 				<li><a href="#"><img src="images/reussir.png" alt="reussir" height="25"/></a></li>
@@ -56,7 +56,7 @@
 <li><a href="#3.2">3.2 : orienter la croix</a></li>
 <li><a href="#3.3">3.3 : permuter les coins</a></li>
 <li><a href="#3.4">3.4 : orienter les coins</a></li>
-</ul><h2>0.1 : La notation</h2><br /><br />Comme dit plus haut, pour faire des suites de mouvements, nous allons utiliser un code : <br /><img src="images/rubiks_cube.jpg" alt="notations du cube" class="cubes"/ ><br />C'est simple :<br />
+</ul><h2>0.1 : La notation</h2><br /><br />Comme dit plus haut, pour faire des suites de mouvements, nous allons utiliser un code : <br /><br /><img src="images/rubiks_cube.jpg" alt="notations du cube" class="cubes"/ ><br />C'est simple :<br />
 	<ul>
 		<li>On note "U" pour la face haute car "haut" en Anglais se dit "up"</li>
 		<li>On note "D" pour la face du bas car "bas" en Anglais se dit "down"</li>

@@ -1,0 +1,49 @@
+header a
+{
+	display: inline-block;
+	width: 11.2%;
+	height: 40px;
+	vertical-align: top;
+	border: 1px solid black;
+	text-align: center;
+	border-radius: 3px;
+	box-shadow: black 1px 1px 1px;
+	margin: 0.2%;
+	font-size: 14px;
+	color: black;
+	text-decoration: none;
+	font-family: none;
+	text-shadow: white 1px 1px 1px;
+	line-height: 40px;
+}
+
+header .bouton_ma
+{
+	line-height: 20px;
+	display: block;
+	margin-top: 2px;
+}
+
+header .bouton_mb
+{
+	line-height: 20px;
+	display: block;
+	margin-top: -4px;
+}
+
+@media all and (max-width: 760px)
+{
+	header #encyclopedie
+	{
+		font-size: 13px;
+	}
+}
+
+#actualites { background-color: rgb(255,0,0); }
+#reussir { background-color: rgb(255,150,0); }
+#speedcubing { background-color: rgb(255,255,0); }
+#officielswca { background-color: rgb(0,255,0); }
+#encyclopedie { background-color: rgb(0,255,255); }
+#catalogue { background-color: rgb(60,60,255); }
+#entretient { background-color: rgb(150,0,255); }
+#exotiques { background-color: rgb(255,0,150); }

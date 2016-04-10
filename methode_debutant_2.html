@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Méthode débutante</title>
+		<link href="CSS_2.css" type="text/css" rel="stylesheet" media="all">
+		<link href="CSS_methodes.css" type="text/css" rel="stylesheet" media="all">
+		<link href="images/favicon.ico" type="img/ico" rel="icon"/>
+	</head>
+	<body class="body-normal">
+	<div id="gros_bloc">
+		<nav>
+			<div class="bloc_nav">
+				<p class="en-tete-nav">MENU</p>
+				<ul>
+					<li><a href="#">Actualités</a></li>
+					<li><a href="#">Réussir le cube !</a></li>
+					<li><a href="#">Speedcubing 3x3</a></li>
+					<li><a href="#">Officiels WCA</a></li>
+					<li><a href="#">Encyclopédie</a></li>
+					<li><a href="#">Catalogue</a></li>
+					<li><a href="#">Entretient / Modding</a></li>
+					<li><a href="#">Cubes Exotiques</a></li>
+				</ul>
+			</div>
+			<div class="bloc_nav">
+				<p class="en-tete-nav">Nous contacter :</p>
+				<ul>
+					<li><a href="mailto:julien.combaz@gmail.com">akira1250</a></li>
+					<li><a href="mailto:matthieu.aubert17@gmail.com">Cubeur-manchot</a></li>
+					<li><a href="mailto:enzoguerin@gmail.com">Bushizo</a></li>
+					<li><a href="mailto:flodedge@gmail.com">Blenderiste09</a></li>
+					<li><a href="mailto:daktlas@gmail.com">Antarès</a></li>
+				</ul>
+			</div>
+		</nav>
+		<header>
+			<img id="bannière"  src="images/banniere.png" alt="bannière du site"/>
+		</header>
+		<a href="#" id="scroll_to_top" title="Haut de page"><img src="images/scroll-top.png" height="40" width="40" alt=""/></a>
+		<section id="corps_de_page">
+		<h1>Résoudre le Rubik's Cube pour la première fois !
+		<br/>La méthode débutante (étage par étage)</h1>
+		<p>Si vous êtes ici, c'est parce que vous voulez apprendre à résoudre le Rubik's Cube, soit pour enfin venir à bout de ce casse-tête mythique, soit pour avoir l'air intelligent X).<br/>
+		Ce tutoriel est garanti réussite, qui que vous soyez, vous pouvez résoudre le "casse-tête parfait" sans trop d'encombres (ou même avec, la satisfaction à la fin n'en sera que plus grande!) et assez rapidement si vous y mettez le temps.<br/>
+		Si vous avez des questions ou que vous ne comprenez pas une partie de ce tutoriel, n'hésitez pas à consulter la partie "Aide et rapports" où vous trouverez un chat (du verbe Anglais "to chat"="discuter", pas l'animal bien sûr!) et où vous pourrez dire aux gentils webmasters ce qui ne va pas. 
+		Toutefois, ne les spammez pas, patientez, ils finiront par vous répondre ;).<br/>
+		On va résoudre le Cube de manière méthodique, c'est à dire pas n'importe comment : on peut le faire tranche par tranche, face par face, en agrandissant des bloc, etc... 
+		Nous allons nous intéresser à la méthode la plus facile à assimiler, la Méthode Tranche par Tranche pour Débutants.<br/>
+		Pour arriver à nos fins, nous aurons besoin certes d'intuition, mais aussi d'algorithmes, des suites de mouvement qui on une action spécifique sur le cube. 
+		Exemple : faire tourner trois coins dans le sens des aiguilles d'une montre.<br/>
+		Pour les transcrire, nous utiliserons la notation internationale, la plus utilisée, partout. Mais si vous êtes fâchés avec l'Anglais, nous utiliserons aussi la notation "Made in LTDC" ;), qui est tout en Français. 
+		Il est cependant recommandé d'utiliser la notation internationale.<br/>
+		Enfin, vous devrez connaitre le nom des pièces du Cube ainsi que leur spécifités. Sur ce, on commence tout de suite, c'est parti!<br/>
+		<ul class="liste_etapes">Les étapes :
+			<li>0: Préliminaires<ul>
+				<li>0.1: Les différentes pièces du cube</li>
+				<li>0.2: La notation internationale</li>
+			</ul></li>
+			<li>1: Première face avec premier étage</li>
+			<li>2: Tranche centrale</li>
+			<li><ul>3: Dernier étage
+				<li>3.1: Orienter les arêtes</li>
+				<li>3.2: Permuter les arêtes</li>
+				<li>3.3: Permuter les coins</li>
+				<li>3.4: Orienter les coins</li>
+			</ul></li>
+		</ul>
+		<h2>Étape 0 : Préliminaires</h2>
+		<h3>Étape 0.1 : Les pièces qui composent le rubik's cube</h3>
+		Le Rubik's Cube est composé de 26 pièces cubiques, ainsi que d'un "core" au centre du cube. 
+		Parmi ces 26 pièces, il y a :
+		<ul>
+			<li>6 pièces de centres, qui ont chacune une seule couleur, situés au milieu des faces</li>
+			<li>8 pièces de coins, qui ont chacune trois couleurs, situés aux angles du cube</li>
+			<li>12 pièces d'arête, qui ont chacune deux couleurs, ce sont les autres pièces</li>
+		</ul>
+		<h3>Étape 0.2 : La notation</h3>
+		Comme dit plus haut, pour faire des suites de mouvements, nous allons utiliser un code assez simple :
+		<ul>
+			<li>"U" pour la face du haut car "haut" en Anglais se dit "up"</li>
+			<li>"D" pour la face du bas car "bas" en Anglais se dit "down"</li>
+			<li>"R" pour la face de droite car "droite" en Anglais se dit "right"</li>
+			<li>"L" pour la face de gauche car "gauche" en Anglais se dit "left"</li>
+			<li>"F" pour la face de devant car "devant" en Anglais se dit "front"</li>
+			<li>"B" pour la face de derrière car "derrière" en Anglais se dit "back"</li>
+		</ul>
+		<img src="images/notations_3x3.jpg" alt="notations du cube" class="cubes"/><br/>
+		Enfin une autre petite règle :
+		<ul>
+			<li>si la lettre n'est suivie de rien, le mouvement associé est d'un quart de tour dans le sens horaire</li>
+			<li>si la lettre est suivie d'un apostrophe, le mouvement associé est d'un quart de tour dans le sens anti-horaire</li>
+			<li>si la lettre est suivie d'un 2, le mouvement associé est d'un demi tour (peu importe horaire ou anti-horaire, remarquez que c'est la même chose)</li>
+		</ul>
+		Exemple : R U2 F' D R' L2 :
+		<ol>
+			<li>tourner la face droite d'un quart de tour dans le sens des aiguilles d'une montre</li>
+			<li>tourner la face haute d'un demi tour (le sens n'a pas d'importance puisque c'est un demi-tour)</li>
+			<li>tourner la face avant d'un quart de tour dans le sens inverse des aguilles d'une montre</li>
+			<li>tourner la face du bas d'un quart de tour dans le sens des aiguilles d'une montre</li>
+			<li>tourner la face droite d'un quart de tour dans le sens inverse des aiguilles d'une montre</li>
+			<li>tourner la face gauche d'un demi tour</li>
+		</ol>
+		[IMAGE notation]
+		À partir de maintenant, nous pouvons enfin rentrer dans le cœur du sujet, la RÉSOLUTION!!<br/>
+		<h2>Étape 1 : Première face avec premier étage</h2>
+		Ici, c'est une grosse étape, mais tout de même intuitive. 
+		Il y a plusieurs façons de faire, je vais vous en montrer quelques-unes, 
+		afin que vous trouviez celle qui vous ira le mieux, 
+		mais vous n'en avez besoin que d'une seule !
+		<br/>
+		<h3>Croix bien faite puis ajout des coins</h3>
+		Ici on commence par faire une jolie croix, comme sur cette photo :
+		<br/>[Image]<br/>
+		Attention, il faut bien penser à faire correspondre les couleurs avec les autres centres. 
+		Cette partie est totalement intuitive, essayez par vous-mêmes, 
+		vous comprendrez très bien comment ça marche, il ne faut pas se précipiter et tout ira bien. 
+		La seule chose à laquelle penser c'est de ne pas casser ce qu'on a déjà fait.
+		<br/>
+		Ensuite il faut ajouter les coins un par un. 
+		On peut le faire intuitivement, c'est d'ailleurs recommandé, mais voici 
+		tout de même des petites animations pour vous aider pour les 5 cas possibles.
+		<br/>[ici mettre les animations]<br/>
+		<br/>
+		<h3>Coins bien mis puis ajout des arêtes</h3>
+		Pour faire notre première face, on peut décider de commencer par les coins et 
+		finir par les arêtes, c'est ce qu'on va faire ici.
+		<br/>
+		Pour les coins, essayez d'en placer le plus possible, et ensuite finissez en 
+		suivant les animations :
+		<br/>[ici mettre les animations]<br/>
+		Pour les arêtes, c'est aussi intuitif, mais voici les 5 cas possibles :
+		<br/>[ici mettre les animations]
+		<br/>
+		<h3>Face complète sans la première couronne puis première couronne</h3>
+		Peut-être qu'ici c'est plus facile quand on débute vraiment, ça dépend des gens. 
+		On va commencer par faire une face (sans la première couronne), c'est totalement intuitif.
+		<br/>
+		Ensuite on va résoudre de proche en proche en suivant les animations. 
+		On commence par choisir un coin de référence (par exemple le coin vert-orange-blanc), 
+		et on le place comme indiqué sur la photo, le coin de référence est en surbrillance.
+		<br/>[image]<br/>
+		Ensuite on va prendre successivement la pièce juste à droite de notre référence. 
+		Ici, à droite de notre coin blanc-orange-vert, on devrait avoir l'arête blanc-vert. 
+		On va donc aller chercher où elle se trouve, et l'enlever de la face comme dans l'animation :
+		<br/>[ici mettre l'animation]<br/>
+		Ensuite on va l'aligner à son emplacement, et la placer au bon endroit, comme sur l'animation :
+		<br/>[ici mettre l'animation]<br/>
+		Et on va finalement remettre cette mauvaise arête là on on avait trouvé notre arête blanc-vert :
+		<br/>[ici mettre l'animation]<br/>
+		Et on voit qu'on a désormais deux pièces à la suite ! 
+		Maintenant on prend comme référence cette nouvelle pièce, et notre prochaine pièce 
+		à résoudre sera un coin, plus précisément le coin vert-rouge-blanc ! 
+		On va refaire le même procédé : on commence par aller chercher où se trouve ce coin 
+		vert-rouge-blanc, puis on l'extrait de la face comme ceci :
+		<br/>[ici mettre l'animation]<br/>
+		Ensuite on l'aligne en dessous de son emplacement et on le met à sa place comme ceci :
+		<br/>[ici mettre l'animation]<br/>
+		Puis on remet le mauvais coin à la place où on a trouvé notre coin vert-rouge-blanc :
+		<br/>[ici mettre l'animation]<br/>
+		Et maintenant on a 3 pièces à la suite ! 
+		Notre pièce de référence devient ce nouveau coin, et on recommence pour placer l'arête qui doit suivre.
+		<br/>
+		Lorsque vous avez fini tout le tour de la face, eh bien vous aurez une face avec toute la première couronne !
+		<br/>
+		<h2>Étape 2 : Deuxième couronne</h2>
+		Ici, on va devoir placer les résoudre les arêtes du deuxième étage pour compléter celui-ci.
+		Pour cela on va apprendre et utiliser une formule qui s'appelle "le Belge".
+		Voyons ça tout de suite avec l'exemple suivant :
+		[IMAGE]
+		Ici on veut placer l'arête bleu-rouge dans son emplacement.
+		On commence par "aligner les couleurs", en bougeant la face du haut de façon à 
+		mettre en coïncidence les couleurs similaires, comme sur cette image :
+		[IMAGE]
+		Ensuite, on voit que la pièce juste devant nous doit aller à droite (le cas où la pièce doit aller à gauche sera vu juste après).
+		Depuis ce point de vue, on exécute la formule U R U' R' U' F' U F, c'est-à-dire :
+		<ul>
+			<li>Tourner la face du haut dans le sens horaire (on "part à gauche")</li>
+			<li>Tourner la face de droite dans le sens horaire (on "monte" la face)</li>
+			<li>Tourner la face du haut dans le sens anti-horaire (on "part à droite")</li>
+			<li>Tourner la face de droite dans le sens anti-horaire (on "descend" la face)</li>
+			<li>Tourner la face du haut dans le sens anti-horaire (on "part à droite")</li>
+			<li>Tourner la face avant dans le sens anti-horaire (on "tourne le volant à gauche")</li>
+			<li>Tourner la face du haut dans le sens horaire (on "part à gauche")</li>
+			<li>Tourner la face avant dans le sens horaire (on "tourne le volant à droite")</li>
+		</ul>
+		Pour voir l'animation de la formule, cliquez ici :
+		<a href="#" class="bouton_animation">Animation "Belge à droite"</a>
+		<br/>
+		<br/>
+		Si à l'opposé la pièce doit aller à gauche (cf photo ci-dessous), 
+		alors on va faire la formule symétrique au cas précédent : U' L' U L U F U' F', c'est-à-dire :
+		<ul>
+			<li>Tourner la face du haut dans le sens anti-horaire (on "part à droite")</li>
+			<li>Tourner la face de droite dans le sens anti-horaire (on "monte" la face)</li>
+			<li>Tourner la face du haut dans le sens horaire (on "part à gauche")</li>
+			<li>Tourner la face de droite dans le sens horaire (on "monte" la face)</li>
+			<li>Tourner la face du haut dans le sens horaire (on "part à gauche")</li>
+			<li>Tourner la face avant dans le sens horaire (on "tourne le volant à droite")</li>
+			<li>Tourner la face du haut dans le sens anti-horaire (on "part à droite")</li>
+			<li>Tourner la face avant dans le sens anti-horaire (on "tourne le volant à gauche")</li>
+		</ul>
+		Pour voir l'animation de la formule, cliquez ici :
+		<a href="#" class="bouton_animation">Animation "Belge à gauche"</a>
+		<br/>
+		<br/>
+		Il faut répéter ces algos et placer successivement toutes les arêtes du dernier étage. 
+		Il se peut qu'une pièce soit déjà dans son emplacement mais mal orientée, ou bien carrément dans le mauvais emplacement. 
+		Pour résoudre ce problème, il vous suffit de placer n'importe quelle autre arête du dernier étage (par exemple l'arête orange-jaune) 
+		dans l'emplacement en question en utilisant un belge, et ensuite votre arête mal placée se retrouvera sur le dernier étage. 
+		Il vous suffira donc de la réinsérer correctement en utilisant un belge comme montré ci-dessus.
+		<br/>
+		A la fin de cette étape, vous devriez avoir réussi à finir le second étage. 
+		Il ne reste donc plus que le troisième et dernier étage, mais c'est le plus difficile de tous. Allez on s'y attaque ?
+		<br/>
+		<h2>Étape 3 : Troisième couronne</h2>
+		<h3>Étape 3.1 : Orienter les arêtes</h3>
+		L'objectif de cette étape : obtenir une croix jaune sur la face du haut. Pour ceci il y a 3 cas différents, mais une seule formule à apprendre.
+		<br/>
+		<h4>Cas 1 : Le petit L</h4>
+		C'est le cas où on a deux arêtes bien orientées (le sticker jaune pointe vers le haut) adjacentes, 
+		et deux arêtes mal orientées adjacentes. On va se placer de façon à avoir les deux arêtes bien orientées derrière et à gauche, comme sur la photo :
+		<br/>
+		Ensuite on va faire la formule suivante : F U R U' R' F', c'est-à-dire :
+		<ul>
+			<li>Tourner la face avant dans le sens horaire (on "tourne le volant à droite")</li>
+			<li>Tourner la face du haut dans le sens horaire (on "part à gauche")</li>
+			<li>Tourner la face de droite dans le sens horaire (on "monte" la face)</li>
+			<li>Tourner la face du haut dans le sens anti-horaire (on "part à droite")</li>
+			<li>Tourner la face du droite dans le sens anti-horaire (on "descend" la face)</li>
+			<li>Tourner la face avant dans le sens anti-horaire (on "tourne le volant à gauche")</li>
+		</ul>
+		Pour voir l'animation de la formule, cliquez ici :
+		<a href="#" class="bouton_animation">Animation "Orientation des arêtes - Petit L"</a>
+		<br/>
+		<h4>Cas 2 : La grande barre</h4>
+		C'est le cas où on a deux arêtes bien orientées opposées et deux arêtes mal orientées opposées. 
+		On va se placer de façon à avoir la grande barre positionnée horizontalement, comme sur la photo :
+		<br/>
+		Et là on fait excatement la même formule que pour le cas 1, tout simplement ! 
+		Après avoir fait la formule, on tombe sur le cas 1, qu'on résout simplement en se référant au cas 1 ci-dessus.
+		<br/>
+		Pour voir l'animation de la formule, cliquez ici :
+		<a href="#" class="bouton_animation">Animation "Orientation des arêtes - Grande barre"</a>
+		<h4>Cas 3 : Le point</h4>
+		Ici vous n'avez pas de bol, c'est le cas le plus long, mais ne vous inquiétez pas on va y arriver ! 
+		Placez vous n'importe où et exécutez la formule du cas 1, tout simplement. 
+		Vous tomberez sur le cas 2, qui vous ramènera au cas 1, qui résoudra votre satané croix.
+		<br/>
+		Pour voir l'animation de la formule, cliquez ici :
+		<a href="#" class="bouton_animation">Animation "Orientation des arêtes - Point"</a>
+		Fastidieux ? Certes, mais le but est d'y arriver, pas de faire la course ! Du moins pas encore...
+		<h3>Étape 3.2 : Permuter les arêtes</h3>
+		On a déjà une belle croix jaune, mais maintenant ce qu'on veut c'est que les 4 arêtes de 
+		la croix soient alignées avec chacune des faces adjacentes, on appelle ça "permuter les arêtes".
+		<br/>Déjà, on va aligner la face du haut de façon à avoir au moins deux arêtes bien placées. 
+		Ensuite, à part le cas résolu il y a 2 cas différents : si les deux arêtes à échanger sont adjacentes 
+		(forment un "V") ou si elles sont opposées (forment un "I").
+		<br/>
+		<h4>Cas 1 : Échanger deux arêtes adjacentes</h4>
+		Ici une formule assez sympathique qui s'appelle "la chaise" : R U2 R' U' R U' R', c'est-à-dire :
+		<ul>
+			<li>Tourner la face de droite dans le sens horaire (on "monte" la face)</li>
+			<li>Tourner la face du haut d'un demi-tour (peu importe dans quel sens)</li>
+			<li>Tourner la face de droite dans le sens anti-horaire (on "descend" la face)</li>
+			<li>Tourner la face du haut dans le sens anti-horaire (on "part à droite")</li>
+			<li>Tourner la face du droite dans le sens horaire (on "monte" la face)</li>
+			<li>Tourner la face du haut dans le sens anti-horaire (on "part à droite")</li>
+			<li>Tourner la face de droite dans le sens anti-horaire (on "descend" la face)</li>
+		</ul>
+		Pour voir l'animation de la formule, cliquez ici :
+		<a href="#" class="bouton_animation">Animation "Échanger deux arêtes adjacentes"</a>
+		<br/>
+		<h4>Cas 2 : Échanger deux arêtes opposées</h4>
+		Ici c'est assez simple, rien de plus à apprendre ! 
+		Faites simplement une chaise (peu importe depuis quel angle), 
+		et vous retomberez sur le cas 1, que vous savez déjà résoudre en faisant une deuxième chaise.
+		<br/>
+		Pour voir l'animation de la formule, cliquez ici :
+		<a href="#" class="bouton_animation">Animation "Échanger deux arêtes opposées"</a>
+		<br/>
+		<h3>Étape 3.3 : Permuter les coins</h3>
+		On commence à voir le bout arriver non ? On s'attaque aux 4 derniers coins ? 
+		Ici on va permuter les coins, et la dernière étape sera de les orienter. 
+		On va commencer par regarder les pièces déjà bien placés. 
+		Ça nous aidera à déterminer dans quel cas on est. 
+		<h4>Cas 1 : Un coin déjà bien permuté</h4>
+		Ici encore, une seule formule est nécessaire pour cette étape, et celle-ci s'appelle "Les amis". 
+		Il faut placer le coin bien placé à droite et devant, comme sur la photo :
+		<br/>
+		Et à partir de là, on va faire la formule suivante : L' U R U' L U R' U', c'est-à-dire :
+		<ul>
+			<li>Tourner la face de gauche dans le sens anti-horaire (on "monte" la face)</li>
+			<li>Tourner la face du haut dans le sens horaire (on "part à gauche")</li>
+			<li>Tourner la face de droite dans le sens horaire (on "monte" la face)</li>
+			<li>Tourner la face du haut dans le sens anti-horaire (on "part à droite")</li>
+			<li>Tourner la face de gauche dans le sens horaire (on "descend" la face)</li>
+			<li>Tourner la face du haut dans le sens horaire (on "part à gauche")</li>
+			<li>Tourner la face de droite dans le sens anti-horaire (on "descend" la face)</li>
+			<li>Tourner la face du haut dans le sens anti-horaire (on "part à droite")</li>
+		</ul>
+		Pour voir l'animation de la formule, cliquez ici :
+		<a href="#" class="bouton_animation">Animation "Permutation des coins - 1 coin bien permuté"</a>
+		<br/>
+		Note : il est possible que vos 3 coins mal permutés ne soient toujours pas bien permutés après avoir fait les amis. 
+		C'est totalement normal, et il suffit simplement de refaire la formule une seconde fois et ce sera bon.
+		<br/>
+		<h4>Cas 2 : Aucun coin bien permuté</h4>
+		Vous commencez peut-être à comprendre le principe, c'est comme pour les autres étapes, 
+		il faut faire la formule une fois de n'importe quelle angle, 
+		et on tombera sur le cas 1, qu'on sait déjà résoudre.
+		<br/>
+		Pour voir l'animation de la formule, cliquez ici :
+		<a href="#" class="bouton_animation">Animation "Permutation des coins - aucun coin bien permuté"</a>
+		<br/>
+		<h3>Étape 3.4 : Orienter les coins</h3>
+		On y est presque, il ne reste plus qu'à orienter les derniers coins ! 
+		Toujours une seule formule, c'est la plus longue mais elle est très sympathique. 
+		Cette formule va orienter deux coins placés sur le côté droit, 
+		comme indiqué sur cette image :
+		<br/>
+		Après vous aurez à utiliser cette formule plusieurs fois pour orienter les 4 coins. 
+		Ne vous inquiétez pas, en faisant la formule deux ou trois fois 
+		vous devriez comprendre la formule et apprendre à bien l'utiliser.
+		Cette formule s'appelle la double-chaise, et pour une bonne raison : il suffit de faire la chaise 
+		(celle que vous connaissez déjà), puis enchaîner avec la symétrique de cette chaise. 
+		La formule donne donc R U2 R' U' R U' R' L' U2 L U L' U L, c'est-à-dire :
+		<ul>
+			<li>Tourner la face de droite dans le sens horaire (on "monte" la face)</li>
+			<li>Tourner la face du haut d'un demi-tour (peu importe dans quel sens)</li>
+			<li>Tourner la face de droite dans le sens anti-horaire (on "descend" la face)</li>
+			<li>Tourner la face du haut dans le sens anti-horaire (on "part à droite")</li>
+			<li>Tourner la face du droite dans le sens horaire (on "monte" la face)</li>
+			<li>Tourner la face du haut dans le sens anti-horaire (on "part à droite")</li>
+			<li>Tourner la face de droite dans le sens anti-horaire (on "descend" la face)</li>
+			<li>Tourner la face de gauche dans le sens anti-horaire (on "monte" la face)</li>
+			<li>Tourner la face du haut d'un demi-tour (peu importe dans quel sens)</li>
+			<li>Tourner la face de gauche dans le sens horaire (on "descend" la face)</li>
+			<li>Tourner la face du haut dans le sens horaire (on "part à gauche")</li>
+			<li>Tourner la face de gauche dans le sens anti-horaire (on "monte" la face)</li>
+			<li>Tourner la face du haut dans le sens horaire (on "part à gauche")</li>
+			<li>Tourner la face de gauche dans le sens horaire (on "descend" la face)</li>
+		</ul>
+		Pour voir l'animation de la formule, cliquez ici :
+		<a href="#" class="bouton_animation">Animation "Orientation des coins"</a>
+		<br/>
+		Au début c'est normal si vous trouvez cette formule horriblement fastidieuse, 
+		mais vous verrez avec le recul que finalement c'est une formule très confortable.
+		<br/>Regardez bien votre cube... Non vous ne rêvez pas, il est bel et bien résolu !
+		<br/>Félicitations :D
+		<br/>Petit conseil pour la suite : pour bien retenir les étapes et les formules, 
+		même si ça fait mal au coeur, le mieux est de remélanger le cube et le résoudre une nouvelle fois, 
+		voire quelques fois si vous êtes bien motivés . Bien sûr ce tutoriel ne va pas disparaître, 
+		vous avez toujours le droit de le garder sous les yeux pour vous aider !</p>
+		</section>
+		<footer>
+			<p>Site en développement par Cubeur-Manchot, Bushizo et Blenderiste09.</p>
+			<p class="copyright">Copyright 2016. Pour toute demande, suggestion ou menace de mort, envoyez à l'adresse matthieu.aubert17@gmail.com</p>
+		</footer>
+	</div>
+	</body>
+</html>
