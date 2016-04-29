@@ -44,6 +44,16 @@ header .bouton_mb
 #speedcubing { background-color: rgb(255,255,0); }
 #officielswca { background-color: rgb(0,255,0); }
 #encyclopedie { background-color: rgb(0,255,255); }
-#catalogue { background-color: rgb(60,60,255); }
+#catalogue { background-color: rgb(55,55,255); }
 #entretient { background-color: rgb(150,0,255); }
 #exotiques { background-color: rgb(255,0,150); }
+
+
+#actualites:hover { background: radial-gradient(rgb(255,0,0) 70%,rgb(255,120,120)); position: relative; left: 1px; top: 1px; }
+#reussir:hover { background: radial-gradient(rgb(255,150,0) 70%,rgb(255,180,70)); position: relative; left: 1px; top: 1px; }
+#speedcubing:hover { background: radial-gradient(rgb(255,255,0) 70%,rgb(255,255,210)); position: relative; left: 1px; top: 1px; }
+#officielswca:hover { background: radial-gradient(rgb(0,255,0) 70%,rgb(182,255,182)); position: relative; left: 1px; top: 1px; }
+#encyclopedie:hover { background: radial-gradient(rgb(0,255,255) 70%,rgb(220,255,255)); position: relative; left: 1px; top: 1px; }
+#catalogue:hover { background: radial-gradient(rgb(55,55,255) 70%,rgb(85,85,255)); position: relative; left: 1px; top: 1px; }
+#entretient:hover { background: radial-gradient(rgb(150,0,200) 70%,rgb(180,80,255)); position: relative; left: 1px; top: 1px; }
+#exotiques:hover { background: radial-gradient(rgb(255,0,150) 70%,rgb(255,110,210)); position: relative; left: 1px; top: 1px; }
