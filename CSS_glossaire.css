@@ -1,8 +1,58 @@
-table
+/* Éléments relatifs à la barre-alphabet */
+#alphabet
 {
+	display: inline-block;
+	position: fixed;
+	right: 15px;
+	top: 130px;
+	border-radius: 4px;
+	height: 70%;
+}
+
+#alphabet:hover
+{
+	transform: translate(0px,-5px);
+}
+
+#alphabet a
+{
+	display: block;
+	border: 1px solid rgb(100,100,100);
+	background-color: rgba(170,170,170,0.35);
+	border-radius: 3px;
+	height: 3.5%;
+	width: 15px;
+	font-size: 11px;
+	text-align: center;
+	line-height: 95%;
+	margin-top: -1px;
+	margin-bottom: -1px;
+}
+
+#alphabet a:hover
+{
+	height: 25px;
+	width: 25px;
+	font-size: 24px;
+	border-radius: 6px;
+	margin-right: -10px;
+	transform: translate(-5px,0px);
+	background-color: rgb(230,230,230);
+}
+
+/* Éléments relatifs au tableau */
+
+
+#tableau-glossaire
+{
+	border: 1px solid black;
+	border-radius: 7px 7px 3px 3px;
+	overflow: hidden;
 	border-collapse: collapse;
+	box-shadow: 3px 3px 2px grey;
 	font-size: 12px;
-	border-radius: 10px;
+	margin: 12px 30px 0px 0px;
+	padding: 0px;
 }
 
 td
@@ -12,23 +62,6 @@ td
 	padding-left: 5px;
 	padding-right: 5px;
 	text-align: center;
-}
-
-.catégorie
-{
-	border: 1px solid black;
-	background-color: #F3F3F3;
-	padding-left: 5px;
-	padding-right: 5px;
-	text-align: left;
-}
-
-.catégorie p
-{
-	vertical-align: middle;
-	display: inline-block;
-	font-family: none;
-	font-size: 12px;
 }
 
 th
@@ -41,119 +74,20 @@ th
 	text-align: center;
 }
 
-#tableau-glossaire
+.catégorie
 {
 	border: 1px solid black;
-	border-radius: 7px 7px 3px 3px;
-	overflow:hidden;
-	padding: 0px;
-	box-shadow: 3px 3px 2px grey;
-	margin-right: 0px;
-	margin-left: 0px;
-	margin-top: 12px;
-	padding: 0px;
+	background-color: #F3F3F3;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: left;
 }
-
-.carré-puzzle
+.catégorie p
 {
-	height: 10px;
-	width: 10px;
-	border: 1px solid black;
-	border-radius: 3px;
-	background-color: rgba(0,255,0,1);
 	display: inline-block;
-	margin-left: 5px;
-	margin-right: 3px;
 	vertical-align: middle;
-}
-
-.carré-méthode
-{
-	height: 10px;
-	width: 10px;
-	border: 1px solid black;
-	border-radius: 3px;
-	background-color: rgba(0,0,255,1);
-	display: inline-block;
-	margin-left: 5px;
-	margin-right: 3px;
-	vertical-align: middle;
-}
-
-.carré-pièce
-{
-	height: 10px;
-	width: 10px;
-	border: 1px solid black;
-	border-radius: 3px;
-	background-color: rgba(255,255,0,1);
-	display: inline-block;
-	margin-left: 5px;
-	margin-right: 3px;
-	vertical-align: middle;
-}
-
-.carré-algos
-{
-	height: 10px;
-	width: 10px;
-	border: 1px solid black;
-	border-radius: 3px;
-	background-color: rgba(255,0,0,1);
-	display: inline-block;
-	margin-left: 5px;
-	margin-right: 3px;
-	vertical-align: middle;
-}
-
-.carré-technique
-{
-	height: 10px;
-	width: 10px;
-	border: 1px solid black;
-	border-radius: 3px;
-	background-color: rgba(255,145,0,1);
-	display: inline-block;
-	margin-left: 5px;
-	margin-right: 3px;
-	vertical-align: middle;
-}
-
-.carré-autre
-{
-	height: 10px;
-	width: 10px;
-	border: 1px solid black;
-	border-radius: 3px;
-	background-color: white;
-	display: inline-block;
-	margin-left: 5px;
-	margin-right: 3px;
-	vertical-align: middle;
-}
-
-.carré-wca
-{
-	height: 10px;
-	width: 10px;
-	border: 1px solid black;
-	border-radius: 3px;
-	background-color: rgba(175,0,175,1);
-	display: inline-block;
-	margin-left: 5px;
-	margin-right: 3px;
-	vertical-align: middle;
-}
-
-a
-{
-	text-decoration: none;
-	color: blue;
-}
-
-a:hover
-{
-	color: green;
+	font-family: none;
+	font-size: 12px;
 }
 
 .description
@@ -162,10 +96,41 @@ a:hover
 	padding: 5px;
 }
 
+.puzzle, .méthode, .pièce, .algos, .technique, .autre, .wca
+{
+	height: 10px;
+	width: 10px;
+	border: 1px solid black;
+	border-radius: 3px;
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 3px;
+	vertical-align: middle;
+}
+
+.puzzle { background-color: rgba(0,255,0,1); }
+.méthode { background-color: rgba(0,0,255,1); }
+.pièce { background-color: rgba(255,255,0,1); }
+.algos { background-color: rgba(255,0,0,1); }
+.technique { background-color: rgba(255,145,0,1); }
+.autre { background-color: white; }
+.wca { background-color: rgba(175,0,175,1); }
+
+
+
+/* Éléments autres */
 .lien_discret
 {
 	font-family: none;
 	font-size: 12px;
 	text-align: center;
 	color: black;
+}
+
+a { text-decoration: none; color: blue; }
+a:hover { color: green; }
+
+#texte_debut
+{
+	margin-right:30px;
 }
