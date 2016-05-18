@@ -158,7 +158,7 @@ p
 {
 	margin-left: 3px;
 	font-family: "Verdana";
-	font-size: 0.85em;
+	font-size: 1em;
 	text-align: justify;
 	margin-top: 3px;
 	margin-bottom: 3px;
@@ -211,7 +211,7 @@ strong
 
 /*___________________ FONDS, COULEURS ET AUTRES ___________________*/
 
-.body-dégradé
+.body-degrade
 {
 	/* Anciens navigateurs */
 	background: white url("gradient-bg.png") repeat-x top;
@@ -290,6 +290,8 @@ footer p
 	font-size: 10px;
 }
 
+
+
 /*____________ MEDIA QUERIES _________*/
 @media all and (max-width: 889px) {
 	.menu
@@ -316,3 +318,6 @@ footer p
     font-style: normal;
 
 }
+
+
+

@@ -17,18 +17,12 @@ header a
 	line-height: 40px;
 }
 
+
 header .bouton_ma
 {
 	line-height: 20px;
-	display: block;
-	margin-top: 2px;
-}
-
-header .bouton_mb
-{
-	line-height: 20px;
-	display: block;
-	margin-top: -4px;
+    margin-top: -1px;
+    text-align: center;
 }
 
 header
@@ -52,6 +46,7 @@ header
 	border-bottom: 1px solid black;
 	margin-bottom: -5px;
 }
+
 
 @media all and (max-width: 760px)
 {
