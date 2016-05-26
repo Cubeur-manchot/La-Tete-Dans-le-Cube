@@ -1,0 +1,65 @@
+.sticker
+{
+	display: inline-block;
+	vertical-align: top;
+	height: 30px;
+	margin-top: 2px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 2px;
+}
+
+#face_droite .sticker { width: 30px; }
+#face_avant .sticker { width: 32px; }
+#face_haut .sticker { width: 30px; }
+
+
+.vert { background-color: green; }
+.bleu { background-color: blue; }
+.blanc { background-color: white; }
+.orange { background-color: orange; }
+.rouge { background-color: red; }
+.jaune { background-color: yellow; }
+
+#face_avant, #face_haut, #face_droite
+{
+	display: inline-block;
+	position: absolute;
+	background-color: black;
+	height: 98px;
+	padding: 0px;
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+#face_avant
+{
+	z-index: 3;
+	margin-left: 105px;
+	margin-top: 100px;
+	transform: rotateX(20deg) rotateY(25deg) skewY(-3deg);
+	width: 104px;
+}
+
+#face_haut
+{
+	z-index: 2;
+	margin-left: 125px;
+	margin-top: 38px;
+	transform: skew(16.5deg) rotateX(-70deg) rotateY(5deg) skewY(10deg) rotate(27deg) skewY(-5deg) rotate(-1.1deg);
+	width: 98px;
+}
+
+#face_droite
+{
+	z-index: 1;
+	margin-left: 172px;
+	margin-top: 89px;
+	transform: rotateX(20deg) rotateY(-70deg);
+	width: 98px;
+}
+
+.bouge
+{
+	left: 200px;
+}
