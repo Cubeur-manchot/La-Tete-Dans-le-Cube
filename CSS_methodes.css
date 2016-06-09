@@ -2,3 +2,36 @@ h3, h4
 {
 	margin-bottom: 0px;
 }
+
+.liste_etapes
+{
+	text-align: left;
+}
+
+.etape
+{
+	display: inline-block;
+	text-align: center;
+	width: 150px;
+	position: relative;
+	left: -36px;
+	vertical-align: top;
+	padding: 0px;
+	margin-left: -4px;
+}
+
+.liste_cas_etape
+{
+	text-align: center;
+}
+
+.cas_etape
+{
+	display: inline-block;
+	width: 150px;
+	text-align: center;
+	vertical-align: top;
+	position: relative;
+	left: -36px;
+	margin-left: 10px;
+}
