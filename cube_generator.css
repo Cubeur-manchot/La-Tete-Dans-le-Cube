@@ -1,65 +1,120 @@
-.sticker
+.cube_3D
+{
+	border: 1px dotted black;
+	display: inline-block;
+	margin-right: -3px;
+	margin-left: 0px;
+	height: 130px;
+	width: 129px;
+	padding: 0px;
+}
+
+.cube_3D .face
+{
+	display: inline-block;
+	position: absolute;
+	background-color: black;
+	height: 98px;
+	width: 98px;
+	padding: 0px;
+	border: 1px solid black;
+}
+
+.cube_3D .avant
+{
+	z-index: 3;
+	margin-left: 0px;
+	margin-top: 31px;
+	border-radius: 3px;
+}
+
+.cube_3D .haut
+{
+	z-index: 2;
+	margin-left: 15px;
+	margin-top: -34px;
+	transform: rotateX(-71deg) skew(-17deg);
+	border-radius: 5px;
+}
+
+.cube_3D .droite
+{
+	z-index: 1;
+	margin-left: 64px;
+	margin-top: 15px;
+	transform: rotateY(72deg) skewY(-18deg);
+	border-radius: 4px;
+}
+
+.cube_3D .sticker
 {
 	display: inline-block;
 	vertical-align: top;
 	height: 30px;
+	width: 30px;
 	margin-top: 2px;
 	margin-bottom: 0px;
 	margin-right: 0px;
 	margin-left: 2px;
 }
 
-#face_droite .sticker { width: 30px; }
-#face_avant .sticker { width: 32px; }
-#face_haut .sticker { width: 30px; }
+
+.liste_etapes .cube_3D .face { left: 11px; }
+
+.cas_etape .cube_3D .avant { margin-left: -64px; margin-top: 31px; }
+.cas_etape .cube_3D .haut { margin-left: -49px; }
+.cas_etape .cube_3D .droite { margin-left: 0px; }
 
 
-.vert { background-color: green; }
+.gris { background-color: rgb(150,150,150); }
+.vert { background-color: rgb(75,195,50); }
 .bleu { background-color: blue; }
 .blanc { background-color: white; }
-.orange { background-color: orange; }
+.orange { background-color: rgb(255,151,50); }
 .rouge { background-color: red; }
-.jaune { background-color: yellow; }
+.jaune { background-color: rgb(255,255,50); }
 
-#face_avant, #face_haut, #face_droite
+
+.cube_2D
 {
+	border: 1px dotted black;
 	display: inline-block;
-	position: absolute;
-	background-color: black;
-	height: 98px;
+	margin-right: 0px;
+	margin-left: 0px;
+	height: 150px;
+	width: 150px;
 	padding: 0px;
-	border: 1px solid black;
-	border-radius: 3px;
 }
 
-#face_avant
+.cube_2D .face
 {
-	z-index: 3;
-	margin-left: 105px;
-	margin-top: 100px;
-	transform: rotateX(20deg) rotateY(25deg) skewY(-3deg);
-	width: 104px;
+	border: 2px solid black;
+	display: inline-block;
+	margin: 0px;
+	position: absolute;
 }
 
-#face_haut
+.cube_2D .arriere, .cube_2D .avant
 {
-	z-index: 2;
-	margin-left: 125px;
-	margin-top: 38px;
-	transform: skew(16.5deg) rotateX(-70deg) rotateY(5deg) skewY(10deg) rotate(27deg) skewY(-5deg) rotate(-1.1deg);
-	width: 98px;
+	width: 60px;
+	height: 15px;
+}
+.cube_2D .arriere:before, .cube_2D .avant:before
+{
+	width: 60px;
+	height: 15px;
+	position: relative;
+	top: -15px;
 }
 
-#face_droite
+.cube_2D .droite, .cube_2D .gauche
 {
-	z-index: 1;
-	margin-left: 172px;
-	margin-top: 89px;
-	transform: rotateX(20deg) rotateY(-70deg);
-	width: 98px;
+	width: 15px;
+	height: 60px;
 }
 
-.bouge
+.cube_2D .haut
 {
-	left: 200px;
+	width: 60px;
+	height: 60px;
 }
