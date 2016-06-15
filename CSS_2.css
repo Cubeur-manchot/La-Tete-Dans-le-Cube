@@ -1,4 +1,4 @@
-/*____________ LES HEADERS ET HAUTS DE PAGE ____________*/
+/*____________ HEADER ET BANNIERE ____________*/
 
 header
 {
@@ -24,67 +24,65 @@ header
 }
 
 
+/*____________ MENU DE NAVIGATION ____________*/
 
-/*____________ LES MENUS DE NAVIGATION ET LISTES____________*/
-
-body nav
+nav
 {
-	position:fixed;
+	position: fixed; /* Provisoire, dans l'attente d'un joli truc en javascript */
+	display: inline-block;
 	width: 200px;
-	color:black;
-	font-size: 14px;
-	font-family:Verdana;
 	margin-left: 15px;
 	margin-top: 150px;
 	padding: 0px;
-	display: inline-block;
+	color: black;
+	font-family: Verdana;
+	font-size: 14px;
 }
 
-.bloc_nav
+nav section
 {
 	border-radius: 4px;
-	border:1px solid #868686;
-	margin-bottom: 15px;
 	overflow: hidden;
+	border: 1px solid #868686;
+	margin-bottom: 15px;
 }
 
-.en-tete-nav
+nav .en-tete
 {
-	background-color: rgb(160,0,30);
-	width: 100%;
+	display: block;
 	margin: 0px;
+	background-color: rgb(160,0,30);
 	text-align: center;
 	color: white;
 	text-shadow: black 1px 1px 2px;
+	text-decoration: none;
 }
 
-body nav ul
+nav ul
 {
-	list-style-type:none;
+	list-style-type: none;
 	margin: 0px;
 	padding: 0px;
 }
 
-body nav li
+nav li
 {
-	margin-top: 3px;
-	margin-bottom: -1px;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin: 3px 10px -1px 10px;
 	border-bottom: 1px dotted #868686;
 	font-size: 12px;
 }
 
-body nav li a
+nav li a
 {
 	text-decoration: none;
 	color: blue;
+	display: block;
 }
 
-body nav a:hover
-{
-	color: red;
-}
+nav a:hover { color: red; }
+
+
+/*____________ BOUTON SCROLLING ____________*/
 
 #scroll_to_top
 {
@@ -100,38 +98,24 @@ body nav a:hover
 }
 
 
+/*____________ BLOCS DE CORPS DE PAGE ____________*/
 
-/*____________ LES BLOCS DE CORPS DE PAGE ____________*/
-
-.body-normal
+body
 {
-	background-color:#DDF2FE;
-	margin:auto;
-}
-
-.body-normal #gros_bloc
-{
+	margin: 0px;
 	padding: 0px;
-}
-
-.body-dégradé #gros_bloc
-{
-	width: 92%; 
-	margin: auto;
-	background-color: white;
-	border: 1px black solid;
+	background-color: #DDF2FE;
 }
 
 #corps_de_page
 {
-	margin-left: 230px;
-	margin-right: 15px;
+	margin: 15px 15px 0px 230px;
 	display: inline-block;
 	padding: 0px;
 	min-width: 460px;
 }
 
-section
+#corps_de_page section
 {
 	margin-left: 0px;
 	margin-right: 0px;
@@ -143,16 +127,24 @@ section
 
 .texte
 {
-	position:float;
-	color:black;
-	font-size:12px;
-	font-family:Verdana;
+	position: float;
+	color: black;
+	font-size: 12px;
+	font-family: Verdana;
 }
 
 
+/*____________ TITRES ET PARAGRAPHES ____________*/
 
-
-/*____________ LES TITRES, PARAGRAPHES ET MARQUAGES ____________*/
+h1
+{
+	margin-top: 15px;
+	text-align: center;
+	color: black;
+	font-size: 50px;
+	font-family: boomerang;
+	text-shadow: grey 2px 2px 2px;
+}
 
 p
 {
@@ -164,160 +156,47 @@ p
 	margin-bottom: 3px;
 }
 
-h1
-{
-	text-align: center;
-	color: black;
-	font-size: 50px;
-	font-family: boomerang;
-	text-shadow: grey 2px 2px 2px;
-}
 
-strong
-{
-	display: block;
-	margin-top: 0.6em;
-	margin-bottom: 0.6em;
-}
-
-.bouton_animation
-{
-	font-size: 14px;
-	display: inline-block;
-	background-color: orange;
-	border: 1px solid rgb(100,100,100);
-	border-radius: 3px;
-	text-decoration: none;
-	color: black;
-	padding: 3px 3px 3px 3px;
-	margin: 4px;
-}
-
-.cubes /*taille et position de l'image expliquant les notations du rubik's cube*/
-{
-	width:200px;
-	height:205px;
-	margin-left:350px;
-}
-
-.au-dessus
-{
-	position:absolute;
-	top:480px;
-}
-
-
-
-
-/*___________________ FONDS, COULEURS ET AUTRES ___________________*/
-
-.body-degrade
-{
-	/* Anciens navigateurs */
-	background: white url("gradient-bg.png") repeat-x top;
-	-o-background-size: 100% 100%;
-	-moz-background-size: 100% 100%;
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
-	/* Navigateurs récents */
-	background: -webkit-gradient(
-		linear,
-		left top, left bottom,
-		from(white),
-		to(#3399cc)
-	);
-	background: -webkit-linear-gradient(
-		top,
-		white,
-		#3399cc
-	);
-	background: -moz-linear-gradient(
-		top,
-		white,
-		#3399cc
-	);
-	background: -o-linear-gradient(
-		top,
-		white,
-		#3399cc
-	);
-	background: linear-gradient(
-		top,
-		white,
-		#3399cc
-	);
-}
-
-#color
-{
-	color: blue;
-}
-
-
-
-/*____________ LES FOOTERS ET BAS DE PAGE ____________*/
-
-.liens_externes  /* bloc des liens externes en bas de page, dans pochmann_coins.html */
-{
-	border: 1px solid green;
-}
-
-.copyright  /* texte du copyright dans le pied de page */
-{
-	text-align: center;
-	font-size: 8px;
-}
+/*____________ FOOTER ____________*/
 
 footer
 {
-	position:float;
-	border:1px #868686 solid;
-	border-left:0px;
-	border-right:0px;
-	color:black;
-	font-family:Verdana;
-	width:55%;
-	margin: auto;
-	margin-top: 50px;
-	margin-bottom:5px;
+	width: 55%;
+	margin: 50px auto 5px auto;
+	border-top: 1px solid #868686;
+	border-bottom: 1px solid #868686;
 	text-align: center;
-	font-size: 10px;
+	color: black;
+	font-family: Verdana;
+	font-size: 9px;
 }
 
-footer p
+footer p { text-align: center; }
+
+footer .icone
 {
-	text-align: center;
-	font-size: 10px;
+	display: inline-block;
+	height: 17px;
+	width: 17px;
+	margin-left: 5px;
+	border-radius: 3px;
+	border: 1px solid white;
+	box-shadow: 1px 1px 1px grey;
+	vertical-align: bottom;
 }
 
 
+/*____________ POLICE A INTEGRER ____________*/
 
-/*____________ MEDIA QUERIES _________*/
-@media all and (max-width: 889px) {
-	.menu
-	{
-		position:absolute;
-	}
-	.nav-Enzo ul
-	{
-		position:absolute;
-	}
+@font-face
+{
+	font-family: 'boomerang';
+	src: url('fonts/boomeran.eot');
+	src: url('fonts/boomeran.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/boomeran.woff2') format('woff2'),
+		 url('fonts/boomeran-.woff') format('woff'),
+		 url('fonts/boomeran.ttf') format('truetype'),
+		 url('fonts/boomeran.svg#boomerangregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
-
-/*Integration des polices à telecharger*/
-
-@font-face {
-    font-family: 'boomerang';
-    src: url('fonts/boomeran.eot');
-    src: url('fonts/boomeran.eot?#iefix') format('embedded-opentype'),
-         url('fonts/boomeran.woff2') format('woff2'),
-         url('fonts/boomeran-.woff') format('woff'),
-         url('fonts/boomeran.ttf') format('truetype'),
-         url('fonts/boomeran.svg#boomerangregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
