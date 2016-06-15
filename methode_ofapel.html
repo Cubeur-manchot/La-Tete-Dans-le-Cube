@@ -3,103 +3,95 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Méthode Ofapel</title>
-		<link href="CSS_2.css" type="text/css" rel="stylesheet" media="all"/>
 		<link href="images/logo_cube.png" type="img/ico" rel="icon"/>
+		<link href="CSS_2.css" type="text/css" rel="stylesheet" media="all">
+		<link href="CSS_methodes.css" type="text/css" rel="stylesheet" media="all">
+		<link href="cube_generator.css" type="text/css" rel="stylesheet" media="all">
+		<script type="text/javascript" src="cube_generator.js"></script>
+		<script type="text/javascript" src="parallélisation.js"></script>
 	</head>
-	<body class="body-normal">
-	<div id="gros_bloc">
-		<nav>
-			<div class="bloc_nav">
-				<p class="en-tete-nav">MENU</p>
-				<ul>
-					<li><a href="#">Actualités</a></li>
-					<li><a href="#">Réussir le cube !</a></li>
-					<li><a href="#">Speedcubing 3x3</a></li>
-					<li><a href="#">Officiels WCA</a></li>
-					<li><a href="#">Encyclopédie</a></li>
-					<li><a href="#">Catalogue</a></li>
-					<li><a href="#">Entretient / Modding</a></li>
-					<li><a href="#">Cubes Exotiques</a></li>
-				</ul>
-			</div>
-			<div class="bloc_nav">
-				<p class="en-tete-nav">Nous contacter :</p>
-				<ul>
-					<li><a href="mailto:julien.combaz@gmail.com">akira1250</a></li>
-					<li><a href="mailto:matthieu.aubert17@gmail.com">Cubeur-manchot</a></li>
-					<li><a href="mailto:enzoguerin@gmail.com">Bushizo</a></li>
-					<li><a href="mailto:flodedge@gmail.com">Blenderiste09</a></li>
-				</ul>
-			</div>
-		</nav>
-		<header>
-			<img id="banniere"  src="images/banniere.png" alt="banniere du site"/>
-		</header>
-		<a href="#" id="scroll_to_top"><img src="images/scroll-top.png" height="20" width="20"/></a>
+	<body>
+		<script>nav_scroll_banniere();</script>
 		<section id="corps_de_page">
-			<div class="texte"><p>
-			<h1>La méthode Ofapel</h1>
-			<ul>Les étapes :
-				<li>Face avec premier étage</li>
-				<li>CLL</li>
-				<li>Arêtes du dernier étage</li>
-				<li>Étage central</li>
+			<h1>La méthode Ofapel !</h1>
+			<h2>Les étapes :</h2>
+			<ul class="liste_etapes">
+				<li class="etape"><script>create_cube_3D("gris","gris","gris","gris","jaune","gris","gris","gris","gris","gris","gris","gris","gris","vert","gris","vert","vert","vert","gris","gris","gris","gris","orange","gris","orange","orange","orange");</script>
+				<br/>Face avec premier étage</li>
+				<li class="etape"><script>create_cube_3D("jaune","gris","jaune","gris","jaune","gris","jaune","gris","jaune","vert","gris","vert","gris","vert","gris","vert","vert","vert","orange","gris","orange","gris","orange","gris","orange","orange","orange");</script>
+				<br/>CLL</li>
+				<li class="etape"><script>create_cube_3D("jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","vert","vert","vert","gris","vert","gris","vert","vert","vert","orange","orange","orange","gris","orange","gris","orange","orange","orange");</script>
+				<br/>Arêtes du dernier étage</li>
+				<li class="etape"><script>create_cube_3D("jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","vert","vert","vert","vert","vert","vert","vert","vert","vert","orange","orange","orange","orange","orange","orange","orange","orange","orange");</script>
+				<br/>Étage central (orientation puis permutation)</li>
 			</ul>
-			ICI METTRE UN SCHÉMA DES ÉTAPES</p>
 			<h2>Étape 1 : Face avec premier étage</h2>
-				<p>Cette étape se déroule exactement comme pour la méthode débutante classique. 
-				Cette étape est intuitive. 
-				Pour plus d'informations, allez voir directement <a href="#">le tutoriel de la méthode débutante</a>.
-				<br/>
-				Lorsque cette étape est finie, placer la face résolue vers le bas, comme sur l'image en haut de page. 
-				Dans ce tutoriel nous résolvons la face blanche en premier, mais libre à vous de commencer par celle que vous voulez.</p>
-				<br/>
+				<p>Cette étape est intuitive et se déroule exactement comme pour la méthode débutante classique. 
+				Pour plus d'informations, allez voir directement <a href="methode_debutant.html#face">le tutoriel de la méthode débutante</a>.<br/>
+				Lorsque cette étape est finie, placer la face résolue vers le bas, comme sur les images en haut de page. 
+				Dans ce tutoriel nous résolvons la face blanche en premier, mais libre à vous de commencer par celle que vous voulez, le principe est le même.</p><br/>
 			<h2>Étape 2 : CLL</h2>
-				<p>Cette étape consiste à rédoudre les coins du dernier étage en un algo, appelé CLL (Corners of the Last Layer). 
-				Il y a 42 cas de CLL différents, que vous pouvez trouver sur <a href="#">la page des CLL</a>.
-				<br/>
+				<p>Cette étape consiste à résoudre les coins du dernier étage en un algo, appelé CLL (Corners of the Last Layer). 
+				Il y a 42 cas de CLL différents, que vous pouvez trouver sur <a href="#">la page des CLL</a>.<br/>
 				Vous pouvez aussi décider de faire cette étape en 2 fois pour réduire le nombre d'algos à apprendre. 
-				Pour cela, je vous conseille d'aller voir <a href="#">les CLL 2-look</a> (9 algos à apprendre).
-				</p>
-				<br/>
+				Pour cela, je vous conseille d'aller voir <a href="#">les CLL 2-look</a> (9 algos à apprendre).</p><br/>
 			<h2>Étape 3 : Arêtes du dernier étage</h2>
-				<p>Ici on va résoudre les arêtes du dernier étage, 
-				en les prenant sur l'étage intermédiaire et en les plaçant là où il faut. 
-				Ceci se fait assez intuitivement, il y a seulement 1 cas et son symétrique.
-				<br/>
-				D'abord, repérer sur la tranche centrale une pièce qui contient du jaune, et la placer en FR (devant à droite, comme sur la photo). 
-				Repérer son emplacement associé, et l'amener en UF avec un mouvement U, U', U2 (ou rien du tout).
-				</p>
-				<ul class="cas_etape">Il y a ensuite 2 cas possibles :
-					<li><ul>Si le sticker jaune regarde à gauche : IMAGE
-						<li>Amener l'emplacement en FL en faisant les mouvements L' U L</li>
-						<li>Rentrer la pièce dans son emplacement en faisant le mouvement E'</li>
-						<li>Remonter l'emplacement à sa place avec L' U' L</li>
-					</ul>
-					<li><ul>Si le sticker jaune regarde vers nous : IMAGE
-						<li>Faire le mouvement E'</li>
-						<li>Amener l'emplacement en FR en faisant les mouvements R U' R'</li>
-						<li>Rentrer la pièce dans son emplacement en faisant le mouvement E</li>
-						<li>Remonter l'emplacement à sa place avec R U R'</li>
-					</ul>
+				<p>Ici on va résoudre les arêtes du dernier étage, en les prenant successivement sur l'étage intermédiaire et en les plaçant où elles doivent aller. 
+				Ceci se fait assez intuitivement, il y a seulement 1 cas et son symétrique.</p>
+				<ul>On va procéder comme suit :
+					<li>Repérer sur la tranche centrale une pièce qui contient du jaune, et se placer de façon à avoir le sticker jaune qui pointe vers vous.</li>
+					<li>Repérer l'emplacement de la pièce. Pour cela on regarde la couleur du second sticker de cette même pièce (rappelez-vous, le premier était jaune).</li>
+					<li>À l'aide d'un mouvement U, U', U2 (ou rien du tout), amener l'emplacement en face de vous.</li>
+					<li>Exécuter une des deux formule ci-dessous, selon le cas dans lequel vous êtes (sticker jaune pointant à droite ou à gauche).</li>
+					<li>Réaligner la face U à l'aide d'un mouvement U, U' ou U2 (ou rien du tout).</li>
+					<li>Recommencer de processus pour placer successivement les 4 arêtes.</li>
 				</ul>
-				<p>On peut voir que le second cas est un mouvement E' puis le symétrique du premier cas.
-				<br/>
-				Après on peut tomber sur un cas un peu plus casse-pied : s'il n'y a aucun sticker jaune sur la tranche centrale, 
-				mais que le dernier étage n'est quand même pas entièrement résolu (par exemple des pièces retournées et/ou à échanger). 
-				Dans ce cas, il faut insérer n'importe quelle pièce de la tranche centrale à la place d'une pièce mal placée du dernier étage, en utilisant par exemple le premier cas. 
-				Ensuite on aura un sticker jaune sur la tranche centrale et on pourra continuer tranquillement jusqu'à placer nos 4 arêtes.
-				</p>
-				<br/>
+				<ul class="liste_cas_etape">
+					<li class="cas_etape"><script>create_cube_3D("jaune","gris","jaune","gris","jaune","gris","jaune","gris","jaune","vert","gris","vert","gris","vert","gris","vert","vert","vert","orange","gris","orange","gris","orange","gris","orange","orange","orange");</script>
+					<p>Le sticker jaune est à gauche : E L' U L E' L' U' L</p></li>
+					<li class="cas_etape"><script>create_cube_3D("jaune","gris","jaune","gris","jaune","gris","jaune","gris","jaune","vert","gris","vert","gris","vert","gris","vert","vert","vert","orange","gris","orange","gris","orange","gris","orange","orange","orange");</script>
+					<p>Le sticker jaune est à droite : E' R U' R' E R U' R'</p></li>
+				</ul><br/>
 			<h2>Étape 4 : Étage central</h2>
-				<p>blablabla</p>
-				<br/>
-				</div>
+				<p>Pour cette dernière étape il faut, comme vous vous en doutez, résoudre les arêtes de l'étage central. 
+				Nous le ferons en deux étapes : d'abord orienter, puis permuter. Tout d'abord nous allons nous placer de façon à avoir l'étage central (non résolu) verticalement, comme sur les images qui vont suivre.</p>
+				<h3>Étape 4.1 : Orientation</h3>
+				<p>Nous allons commencer par repérer les arêtes mal orienter, puis les orienter. 
+				Dans notre cas, une arête est mal orientée si et seulement si elle possède un sticker qui n'est ni de la couleur de la face à laquelle il appartient, ni de la couleur de la face opposée. 
+				<ul>Concrètement :
+					<li>Un sticker bleu ou vert sur une face bleue ou verte impliquera que l'arête correspondante est bien orientée.</li>
+					<li>Un sticker orange ou rouge sur une face orange ou rouge impliquera que l'arête correspondante est bien orientée.</li>
+					<li>Un sticker bleu ou vert sur une face orange ou rouge impliquera que l'arête correspondante est mal orientée.</li>
+					<li>Un sticker orange ou rouge sur une face bleue ou verte impliquera que l'arête correspondante est mal orientée.</li>
+				</ul>
+				<ul class="liste_cas_etape">
+					<li class="cas_etape"><script>create_cube_3D("vert","bleu","vert","vert","vert","vert","vert","bleu","vert","orange","rouge","orange","orange","orange","orange","orange","rouge","orange","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune");</script>
+					<p>Les 4 arêtes sont bien orientées : on a de la chance, on peut passer directement à la permutation !</p></li>
+					<li class="cas_etape"><script>create_cube_3D("vert","orange","vert","vert","vert","vert","vert","orange","vert","orange","vert","orange","orange","orange","orange","orange","rouge","orange","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune");</script>
+					<p>2 arêtes adjacentes mal orientées : (M' U M' U M') U2 (M U M U M) U2</p></li>
+					<li class="cas_etape"><script>create_cube_3D("vert","rouge","vert","vert","vert","vert","vert","vert","vert","orange","rouge","orange","orange","orange","orange","orange","bleu","orange","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune");</script>
+					<p>2 arêtes opposées mal orientées : F2 (M' U M' U M') U2 (M U M U M) U2 F2 (c'est simplement F2, puis la même chose que le cas précédent, puis de nouveau F2)</p></li>
+					<li class="cas_etape"><script>create_cube_3D("vert","rouge","vert","vert","vert","vert","vert","orange","vert","orange","vert","orange","orange","orange","orange","orange","bleu","orange","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune");</script>
+					<p>4 arêtes mal orientées : (M' U M' U M') U2 (M U M U M) U2 M'2 (M' U M' U M') U2 (M U M U M) U2 M'2 (c'est simplement exécuter la formule précédente deux fois)</p></li>
+				</ul>
+				<h3>Étape 4.2 : Permutation</h3>
+				<p>Pour cette étape on va tout simplement permuter les pièces pour finir le cube. 
+				Il n'y a en fait que 3 cas différents à résoudre :</p>
+				<ul class="liste_cas_etape">
+					<li class="cas_etape"><script>create_cube_3D("vert","bleu","vert","vert","vert","vert","vert","bleu","vert","orange","rouge","orange","orange","orange","orange","orange","rouge","orange","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune");</script>
+					<p>4 arêtes à échanger deux à deux de façon opposées (aucun sticker sur la bonne face) : U2 M'2 U2 M' U2 M'2 U2 M'</p></li>
+					<li class="cas_etape"><script>create_cube_3D("vert","vert","vert","vert","vert","vert","vert","vert","vert","orange","rouge","orange","orange","orange","orange","orange","rouge","orange","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune");</script>
+					<p>4 arêtes à échanger deux à deux de façon adjacentes (4 stickers sur les bonnes faces et 4 sur les mauvaises faces) : M'2 U2 M'2 U2</p></li>
+					<li class="cas_etape"><script>create_cube_3D("vert","vert","vert","vert","vert","vert","vert","bleu","vert","orange","orange","orange","orange","orange","orange","orange","rouge","orange","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune");</script>
+					<p>3 stickers à échanger (avec l'arête correcte en DB et l'arête avec aucun bon sticker en DF) : M' U2 M U2</p></li>
+				</ul>
+			<h2>Bonus : pistes d'amélioration</h2>
+				<ul>
+					<li>Pour aller plus vite, vous pouvez apprendre un algo spécifique pour le cas où il y a 4 arêtes mal orientées.</li>
+					<li>Pour fusionner les étapes 4.1 et 4.2, vous pouvez aussi apprendre des algo pour certains cas, comme par exemple les 3-cycles, voire carrément tous les cas de l'étape 4, soit par setup + <a href="#">ELL</a>, soit directement avec des algos spécifiques.</li>
+					<li>Pour augmenter la probabilité de skip pour les CLL à 1/12, vous pouvez apprendre des techniques comme la <a href="#">Winter Variation (27 algos)</a> et la <a href="#">Summer Variation (27 algos)</a>.</li>
+				</ul>
 		</section>
-		<footer>
-			<p>Site en développement par Cubeur-Manchot, Bushizo et Blenderiste09.</p>
-			<p class="copyright">Copyright 2016. Pour toute demande, suggestion ou menace de mort, envoyez à l'adresse matthieu.aubert17@gmail.com</p>
-		</footer>
-	</div>
+		<script>footer();</script>
 	</body>
 </html>
