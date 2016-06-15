@@ -6,48 +6,17 @@
 		<link href="CSS_2.css" type="text/css" rel="stylesheet" media="all">
 		<link href="CSS_glossaire.css" type="text/css" rel="stylesheet" media="all">
 		<link href="images/logo_cube.png" type="img/ico" rel="icon"/>
+		<script type="text/javascript" src="parallélisation.js"></script>
 	</head>
 	<body class="body-normal">
 	<div id="gros_bloc">
-		<nav>
-			<div class="bloc_nav">
-				<p class="en-tete-nav">MENU</p>
-				<ul>
-					<li><a href="#">Actualités</a></li>
-					<li><a href="methode_debutant.html">Réussir le cube !</a></li>
-					<li><a href="#">Speedcubing 3x3</a></li>
-					<li><a href="#">Officiels WCA</a></li>
-					<li><a href="#">Encyclopédie</a></li>
-					<li><a href="#">Catalogue</a></li>
-					<li><a href="#">Entretient / Modding</a></li>
-					<li><a href="#">Cubes Exotiques</a></li>
-				</ul>
-			</div>
-			<div class="bloc_nav">
-				<p class="en-tete-nav">Nous contacter :</p>
-				<ul>
-					<li><a href="mailto:julien.combaz@gmail.com">akira1250</a></li>
-					<li><a href="mailto:matthieu.aubert17@gmail.com">Cubeur-manchot</a></li>
-					<li><a href="mailto:enzoguerin@gmail.com">Bushizo</a></li>
-					<li><a href="mailto:flodedge@gmail.com">Blenderiste09</a></li>
-					<li><a href="mailto:daktlas@gmail.com">Antarès</a></li>
-				</ul>
-			</div>
-		</nav>
-		<header>
-			<img id="banniere"  src="images/banniere.png" alt="bannière du site"/>
-		</header>
-		<a href="#" id="scroll_to_top" title="Haut de page"><img src="images/scroll-top.png" height="40" width="40" alt=""/></a>
+		<script>nav_scroll_banniere();</script>
 		<section id="corps_de_page">
 			<div id="texte_debut">
 				<h1>Glossaire</h1>
-				<p>Pour vous aidez, les mots sont classés selon 7 catégories 
-				(puzzle, pièce de puzzle, technique, méthode, set d'algos, compétition et autre) 
-				et sont triés par ordre alphabétique.
-				<br/>
-				(*) Petit conseil pour chercher plus vite : utilisez le raccourci clavier CTRL + F et tapez le mot à rechercher.
-				<br/>
-				Note d'un manchot : Par la suite, un jeu de filtres sera appliquable.</p>
+				<p>Pour vous aidez, les mots sont classés selon 7 catégories (puzzle, pièce de puzzle, technique, méthode, set d'algos, compétition et autre) et sont triés par ordre alphabétique.
+				<br/>(*) Petit conseil pour chercher plus vite : utilisez le raccourci clavier CTRL + F et tapez le mot à rechercher, ou utilisez la barre verticale à droite.
+				<br/>Note d'un manchot : Par la suite, un jeu de filtres sera appliquable.</p>
 			</div>
 			<table id="tableau-glossaire">
 				<tr>
@@ -876,11 +845,8 @@
 				<a href="#y">Y</a>
 				<a href="#z">Z</a>
 			</div>
-			</section>
-		<footer>
-			<p>Site en développement par Cubeur-Manchot, Bushizo et Blenderiste09.</p>
-			<p class="copyright">Copyright 2016. Pour toute demande, suggestion ou menace de mort, envoyez à l'adresse <a href="mailto:matthieu.aubert17@gmail.com">matthieu.aubert17@gmail.com</a></p>
-		</footer>
+		</section>
+		<script>footer();</script>
 	</div>
 	</body>
 </html>
