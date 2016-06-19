@@ -3,6 +3,19 @@ h3, h4
 	margin-bottom: 0px;
 }
 
+.bouton_animation
+{
+	font-size: 10px;
+	display: inline-block;
+	background-color: rgb(200,200,200);
+	border: 1px solid rgb(100,100,100);
+	border-radius: 3px;
+	text-decoration: none;
+	color: black;
+	padding: 3px 3px 3px 3px;
+	margin: 4px;
+}
+
 .liste_etapes
 {
 	text-align: left;
@@ -34,4 +47,5 @@ h3, h4
 	position: relative;
 	left: -36px;
 	margin-left: 10px;
+	font-size: 10px;
 }
