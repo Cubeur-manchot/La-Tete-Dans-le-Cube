@@ -1,3 +1,5 @@
+/*____________ CUBES 3D ____________*/
+
 .cube_3D
 {
 	border: 1px dotted black;
@@ -66,14 +68,7 @@
 .cas_etape .cube_3D .droite { margin-left: 0px; }
 
 
-.gris { background-color: rgb(150,150,150); }
-.vert { background-color: rgb(75,195,50); }
-.bleu { background-color: blue; }
-.blanc { background-color: white; }
-.orange { background-color: rgb(255,151,50); }
-.rouge { background-color: red; }
-.jaune { background-color: rgb(255,255,50); }
-
+/*____________ CUBES 2D ____________*/
 
 .cube_2D
 {
@@ -81,40 +76,140 @@
 	display: inline-block;
 	margin-right: 0px;
 	margin-left: 0px;
-	height: 150px;
-	width: 150px;
+	height: 137px;
+	width: 137px;
 	padding: 0px;
 }
 
 .cube_2D .face
 {
-	border: 2px solid black;
-	display: inline-block;
-	margin: 0px;
+	border: 2px solid black; 
 	position: absolute;
 }
 
-.cube_2D .arriere, .cube_2D .avant
+.cube_2D .arriere
 {
-	width: 60px;
-	height: 15px;
-}
-.cube_2D .arriere:before, .cube_2D .avant:before
-{
-	width: 60px;
-	height: 15px;
-	position: relative;
-	top: -15px;
+	height: 0px;
+	width: 93px;
+	border-top: none;
+	border-bottom: 22px solid black;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	margin-left: 16px;
+	margin-top: 0px;
+	perspective: 260px;
+	transform: rotateY(21deg);
 }
 
-.cube_2D .droite, .cube_2D .gauche
+.cube_2D .face_arriere
 {
-	width: 15px;
-	height: 60px;
+	margin-left: -1px;
+	margin-top: -5px;
+	transform: rotateX(55deg);
+	width: 96px;
+	height: 32px;
+	z-index: 3;
+}
+
+.cube_2D .avant
+{
+	height: 0px;
+	width: 93px;
+	border-top: 22px solid black;
+	border-bottom: none;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	margin-left: 16px;
+	margin-top: 115px;
+	perspective: 260px;
+	transform: rotateY(21deg);
+}
+
+.cube_2D .face_avant
+{
+	margin-left: -1px;
+	margin-top: -26px;
+	transform: rotateX(-55deg);
+	width: 96px;
+	height: 32px;
+	z-index: 3;
+}
+
+.cube_2D .droite
+{
+	height: 93px;
+	width: 0px;
+	border-top: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-left: 22px solid black;
+	border-right: none;
+	margin-left: 115px;
+	margin-top: 16px;
+	perspective: 260px;
+	transform: rotateX(21deg);
+}
+
+.cube_2D .face_droite
+{
+	margin-left: -26px;
+	margin-top: -1px;
+	transform: rotateY(55deg);
+	width: 32px;
+	height: 96px;
+	z-index: 3;
+}
+
+.cube_2D .gauche
+{
+	height: 93px;
+	width: 0px;
+	border-top: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-left: none;
+	border-right: 22px solid black;
+	margin-left: 0px;
+	margin-top: 16px;
+	perspective: 260px;
+	transform: rotateX(21deg);
+}
+
+.cube_2D .face_gauche
+{
+	margin-left: -6px;
+	margin-top: -1px;
+	transform: rotateY(-55deg);
+	width: 32px;
+	height: 96px;
+	z-index: 3;
 }
 
 .cube_2D .haut
 {
-	width: 60px;
-	height: 60px;
+	width: 95px;
+	height: 94px;
+	margin-left: 19px;
+	margin-top: 20px;
+	z-index: 1;
 }
+
+.cube_2D .haut .sticker { margin: 0px 0px -5px 0px; }
+
+.cube_2D .sticker
+{
+	width: 30px;
+	height: 30px;
+	margin: 0px 0px -4px 0px;
+	border: 1px solid black;
+	display: inline-block;
+}
+
+
+/*____________ COULEURS DE STICKERS ____________*/
+
+.gris { background-color: rgb(150,150,150); }
+.vert { background-color: rgb(75,195,50); }
+.bleu { background-color: blue; }
+.blanc { background-color: white; }
+.orange { background-color: rgb(255,151,50); }
+.rouge { background-color: red; }
+.jaune { background-color: rgb(255,255,50); }
