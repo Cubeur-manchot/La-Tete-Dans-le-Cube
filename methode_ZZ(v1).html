@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Méthode ZZ</title>
+		<meta charset="utf-8" />
+		<link href="CSS_2.css" type="text/css" rel="stylesheet" media="all">
+		<link href="images/logo_cube.png" type="img/ico" rel="icon"/>
+        <style type="text/css">
+            tab { padding-left: 2em; }
+            tab2 { padding-left: 4em; }
+        </style>
+    </head>
+    
+    <body class="body-normal">
+            <div id="gros_bloc">
+            <nav>
+			<div class="bloc_nav">
+				<p class="en-tete-nav">MENU</p>
+				<ul>
+					<li><a href="#">Actualités</a></li>
+					<li><a href="#">Réussir le cube !</a></li>
+					<li><a href="#">Speedcubing 3x3</a></li>
+					<li><a href="#">Officiels WCA</a></li>
+					<li><a href="#">Encyclopédie</a></li>
+					<li><a href="#">Catalogue</a></li>
+					<li><a href="#">Entretient / Modding</a></li>
+					<li><a href="#">Cubes Exotiques</a></li>
+				</ul>
+			</div>
+			<div class="bloc_nav">
+				<p class="en-tete-nav">Nous contacter :</p>
+				<ul>
+					<li><a href="mailto:julien.combaz@gmail.com">akira1250</a></li>
+					<li><a href="mailto:matthieu.aubert17@gmail.com">Cubeur-manchot</a></li>
+					<li><a href="mailto:enzoguerin@gmail.com">Bushizo</a></li>
+					<li><a href="mailto:flodedge@gmail.com">Blenderiste09</a></li>
+				</ul>
+			</div>
+		</nav>
+		<header>
+			<img id="banniere"  src="images/banniere.png" alt="banniere du site"/>
+		</header>
+            	<a href="#" id="scroll_to_top"><img src="images/scroll-top.png" height="20" width="20"/></a>
+		<section id="corps_de_page">
+            
+            
+        <h1>La méthode ZZ (Zbigniew Zborowski)</h1>
+        <h2>Sommaire :</h2>
+            <ul>
+                <li><h3><a href="#1">Présentation de la méthode</a></h3></li>
+                <ul>
+                    <li><a href="#2">Les étapes</a></li>
+                    <li><a href="#3">Avantages</a></li>
+                    <li><a href="#4">Inconvénients</a></li>
+                </ul>
+                <li><h3><a href="#5">Résolution du cube</a></h3></li>
+                <ul>
+                    <li><a href="#6">L'EOLine</a></li>
+                    <li><a href="#7">Les ZZF2l</a></li>
+                    <li><a href="#8">Le dernier étage</a></li>
+                    <li><a href="#9">Exemples de résolution</a></li>
+                </ul>
+            </ul>
+        <h2 id = "1">Présentation de la méthode</h2>
+        <ul>
+            <li><h3 id = "2"> Les étapes</h3></li>
+                <ul>
+                    <li><strong>EOLine :</strong> Orientation de toutes les arêtes et placement des arêtes DF et DB afin de former une ligne</li>
+                    <li><strong>ZZF2l :</strong> Résolution des deux premières couronnes à l'aide des mouvements R, L et U</li>
+                    <li><strong>Dernier étage</strong> Orientation des coins du dernier étage et permutation des pièces du dernier étage à l'aide d'algorithmes</li>
+                </ul><br/>
+            
+            <li><h3 id = "3">Avantages</h3></li>
+                <ul>
+                    <li>Après l'EOLine le cube peut être résolu en n'utilisant que des mouvements R,L et U</li>
+                    <li>Pas besoin de rotations de cube</li>
+                    <li>Un nombre de mouvement pour résoudre le cube bas (théoriquement 44 mouvements en utilisant les ZBLL)</li>
+                    <li>Un dernier étage pouvant être résolu en 1 fois à l'aide de "seulement" 494 algorithmes. </li>
+                </ul><br/>
+        
+            <li><h3 id = "4">Inconvénients</h3></li>
+                <ul><p>
+                    <li>L'EOline est une étape difficile</li>
+                    <li>Une inspection importante est nécessaire avant la résolution, ce qui est problématique par exemple lors de résolution de gros cubes à l'aide d'une méthode de réduction </li>
+                    <li>Le blockbuilding n'est pas toujours évident pour les personnes habituées à CFOP </li>
+                </p></ul><br/>
+        </ul>
+            
+        <h2 id = "5">Résolution du cube</h2>
+
+            <h3 id = "6"><tab>Étape 1 : L'EOLine</tab></h3>
+              
+            <strong><tab2>Qu'est ce que l'orientation des arêtes ?</tab2></strong><br/><br/>
+            
+                    <tab>Tout</tab> d'abord : "une arêtes est bien orientée lorsqu'on peux l'amener à sa place en n'utilisant que des mouvements L,R,U et D. Mais comment savoir si une arêtes est bien orientée sans avoir besoin de la déplacer ? C'est justement ce que je vais vous montrer maintenant. On va commencer par choisir une orientation pour le cube qu'on conservera jusqu'à ce qu'il soit résolu.<br/><br/>
+                    
+                    Une arête est mal orientée
+            <ul>
+                <li>Si un sticker de couleur R ou L est sur les face U, D, F ou B </li>
+                <li>Si un sticker de couleur U ou D est sur les faces R ou L et/ou sur la couronne des faces U et D</li>
+            </ul>
+            
+            <strong>Attention :</strong> Le nombre d'arêtes mal orienté est <strong>toujours</strong> pair.<br/><br/>
+            <strong><tab2>Orienter les arêtes</tab2></strong><br/><br/>
+            
+            <tab>Maintenant</tab> que nous savons où se trouvent les arêtes mal orientées, occupons nous de les réorienter. La stratégie de base pour cela est d'amener 4 arêtes arêtes mal orientées sur la face F à l'aide de mouvements R, L, U et D puis de faire un mouvement F ou F'. En effet les mouvements F et F' changent l'orientation des arêtes positionnées sur cette face.<br/><br/>
+            <tab>Des</tab> fois, il n'y aura que deux arêtes à réorienter, dans ce cas là, il faut procéder comme cela. Tout d'abord placer l'une des arêtes mal orientées sur la face F, puis faire un mouvement F ou F'. Puis remplacer cette arête par l'autre arête mal orientée sans toucher aux autres de la face F avant de faire un mouvement F ou F'.<br/><br/>
+            <tab>La face B peut être utilisée de la même manière que la face F pour orienter les arêtes.</tab><br/><br/>
+            
+            <strong><tab2>Finir la ligne</tab2></strong><br/><br/>
+            <tab>Enfin</tab> placer les arêtes DF et DB à l'aide de mouvements R, U, L, D, F2 et B2 afin de former une ligne.<br/>
+            
+            <h3 id ="7">Étape 2 : Les ZZF2l</h3>
+            <tab>Ici</tab>, le but va être de construire deux blocks 1*2*3, un de chaque coté de la line afin de finir les deux premières couronnes du cube. Cette étape peut être comparée aux F2l de la méthode Fridrich/CFOP mais seul les mouvements R, U et L sont requis pour construire les blocks. De plus, les arêtes DL et DR n'étant pas encore placées la liberté de mouvement est plus grande qu'avec CFOP.<br/>
+            
+            <h3 id = "8">Étape 3 : Le dernier étage</h3>
+            
+            <tab>Il y a énormément de variantes pour terminer le cube, je ne parlerai ici que de 3.</tab>
+            
+            <ul>
+                <li><strong>OCLL + PLL :</strong> Les OCLL (7 algorithmes) orientent les coins du dernier étage, puis les PLL (21 algorithmes) permutent les pièces afin de terminer le dernier étage. Cette variante permet de résoudre le dernier étage en théoriquement 19,14 mouvement en moyenne à l'aide de seulement 28 algorithmes. De plus les PLL sont des algorithmes aussi utilisés dans la méthode CFOP</li><br/>
+                <li><strong>COLL + EPLL :</strong> Les COLL (42 algorithmes) orientent et permutent les coins du dernier étage, puis les EPLL (4 algorithmes) permutent les arêtes du dernier étage. La moyenne de mouvement avec cette méthode est de 18,53. Les EPLL sont des algorithmes très rapides à effectuer.</li><br/>
+                <li><strong>ZBLL :</strong> Les ZBLL (494 algorithmes) permettent de résoudre le dernier étage en une fois en très peu de mouvements (12,08). Il est possible de faire du "phasing" c'est à dire influencer la permutation des arêtes pendant les ZZF2l afin de réduire le nombre d'algorithmes à  167. Cette étape intuitive rajoute en moyenne 2 mouvement à la résolution, c'est une autre variante nommée ZZ-b.</li><br/>
+            </ul>
+            
+            <h3 id = "9">Exemple de résolution</h3>
+            
+                    <strong>Scramble :</strong> B2 L' U D2 R2 U F' R L2 D' L2 U2 L2 U L2 B2 R2 B2 R<br/><br/>       
+                    L D F L2 R D' <strong>//EOLine (6 mouvements)</strong> <br/>
+                    U2 R2 U' R  <strong>// Block 2*2*1 à droite (4 mouvements)</strong><br/>
+                    U2 L2 U' L U' L2 U2<strong> //Block 2*2*1 à gauche (7 mouvements)</strong> <br/>
+                    L2 U2 L U2 L' U L <strong> //Block 3*3*1 à gauche (7 mouvements)</strong> <br/>
+                    U R U R' U' R U2 R' U' R <strong>//Block 3*3*1 à droite (10 mouvements, soit 34 mouvements pour les 2 premières couronnes)</strong><br/><br/>
+                    Puis selon la variante utilisée :
+            
+                    <ul>
+                        <li>U2 F' r U R' U' r' F R <strong>//OCLL (9 mouvements)</strong><br/>
+                            U2 F R U' R' U' R U R' F' R U R' U' R' F R F' U2 <strong>//PLL (19 mouvements, soit 62 mouvements en tout)</strong></li><br/>
+                        <li>U' L U2 L D L' U2 L D' L2 <strong>//COLL (10 mouvements)</strong><br/>
+                            M2 U M' U2 M U M2 <strong>//EPLL (7 mouvements, soit 51 mouvements en tout)</strong></li><br/>
+                        <li>L U2 L' U' L2 D L' U' L D' L2 U <strong>//ZBLL (12 mouvements, soit 46 mouvements en tout)</strong></li><br/>
+                    </ul>
+            
+    </body>
+</html>
