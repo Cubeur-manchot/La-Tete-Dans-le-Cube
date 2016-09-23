@@ -1,77 +1,6 @@
-/*____________ CUBES 3D ____________*/
-
-.cube_3D
-{
-	border: 1px dotted black;
-	display: inline-block;
-	margin-right: -3px;
-	margin-left: 0px;
-	height: 141px;
-	width: 141px;
-	padding: 0px;
-}
-
-.cube_3D .face
-{
-	display: inline-block;
-	position: absolute;
-	background-color: black;
-	height: 98px;
-	width: 98px;
-	padding: 0px;
-	border: 1px solid black;
-}
-
-.cube_3D .avant
-{
-	z-index: 3;
-	margin-left: 0px;
-	margin-top: 41px;
-	border-radius: 1px 0px 3px 3px ;
-}
-
-.cube_3D .haut
-{
-	z-index: 2;
-	margin-left: 20px;
-	margin-top: -29px;
-	transform: skew(-45deg) rotateX(-65deg);
-	border-radius: 5px 5px 0px 5px;
-}
-
-.cube_3D .droite
-{
-	z-index: 1;
-	margin-left: 70px;
-	margin-top: 20px;
-	transform: skewY(-45deg) rotateY(-65deg);
-	border-radius: 0px 5px 5px 3px;
-}
-
-.cube_3D .sticker
-{
-	display: inline-block;
-	vertical-align: top;
-	height: 30px;
-	width: 30px;
-	margin-top: 2px;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	margin-left: 2px;
-	border-radius: 2px;
-}
-
-
-.liste_etapes .cube_3D .face { left: 11px; }
-
-.cas_etape .cube_3D .avant { margin-left: -64px; margin-top: 31px; }
-.cas_etape .cube_3D .haut { margin-left: -49px; }
-.cas_etape .cube_3D .droite { margin-left: 0px; }
-
-
 /*____________ CUBES 2D ____________*/
 
-.cube_2D
+.cube_3x3x3_2D
 {
 	border: 1px dotted black;
 	display: inline-block;
@@ -82,13 +11,14 @@
 	padding: 0px;
 }
 
-.cube_2D .face
+.cube_3x3x3_2D .face
 {
+	z-index: 1;
 	border: 2px solid black; 
 	position: absolute;
 }
 
-.cube_2D .arriere
+.cube_3x3x3_2D .arriere
 {
 	height: 0px;
 	width: 93px;
@@ -102,17 +32,18 @@
 	transform: rotateY(21deg);
 }
 
-.cube_2D .face_arriere
+.cube_3x3x3_2D .face_arriere
 {
 	margin-left: -1px;
 	margin-top: -5px;
 	transform: rotateX(55deg);
 	width: 96px;
 	height: 32px;
+	position: absolute;
 	z-index: 3;
 }
 
-.cube_2D .avant
+.cube_3x3x3_2D .avant
 {
 	height: 0px;
 	width: 93px;
@@ -126,17 +57,18 @@
 	transform: rotateY(21deg);
 }
 
-.cube_2D .face_avant
+.cube_3x3x3_2D .face_avant
 {
 	margin-left: -1px;
 	margin-top: -26px;
 	transform: rotateX(-55deg);
 	width: 96px;
 	height: 32px;
+	position: absolute;
 	z-index: 3;
 }
 
-.cube_2D .droite
+.cube_3x3x3_2D .droite
 {
 	height: 93px;
 	width: 0px;
@@ -150,17 +82,18 @@
 	transform: rotateX(21deg);
 }
 
-.cube_2D .face_droite
+.cube_3x3x3_2D .face_droite
 {
 	margin-left: -26px;
 	margin-top: -1px;
 	transform: rotateY(55deg);
 	width: 32px;
 	height: 96px;
+	position: absolute;
 	z-index: 3;
 }
 
-.cube_2D .gauche
+.cube_3x3x3_2D .gauche
 {
 	height: 93px;
 	width: 0px;
@@ -174,17 +107,18 @@
 	transform: rotateX(21deg);
 }
 
-.cube_2D .face_gauche
+.cube_3x3x3_2D .face_gauche
 {
 	margin-left: -6px;
 	margin-top: -1px;
 	transform: rotateY(-55deg);
 	width: 32px;
 	height: 96px;
+	position: absolute;
 	z-index: 3;
 }
 
-.cube_2D .haut
+.cube_3x3x3_2D .haut
 {
 	width: 95px;
 	height: 94px;
@@ -193,9 +127,9 @@
 	z-index: 1;
 }
 
-.cube_2D .haut .sticker { margin: 0px 0px -5px 0px; }
+.cube_3x3x3_2D .haut .sticker { margin: 0px 0px -5px 0px; }
 
-.cube_2D .sticker
+.cube_3x3x3_2D .sticker
 {
 	width: 30px;
 	height: 30px;
@@ -203,6 +137,282 @@
 	border: 1px solid black;
 	display: inline-block;
 }
+
+
+
+/*____________ CUBES 3D ____________*/
+
+/* 2x2 */
+
+.cube_2x2x2_3D
+{
+	border: 1px dotted black;
+	display: inline-block;
+	margin-right: -3px;
+	margin-left: 0px;
+	height: 141px;
+	width: 141px;
+	padding: 0px;
+}
+
+.cube_2x2x2_3D .face
+{
+	display: inline-block;
+	position: absolute;
+	background-color: black;
+	height: 98px;
+	width: 98px;
+	padding: 0px;
+	border: 1px solid black;
+}
+
+.cube_2x2x2_3D .avant
+{
+	z-index: 2;
+	margin-left: 0px;
+	margin-top: 41px;
+	border-radius: 1px 0px 4px 3px ;
+}
+
+.cube_2x2x2_3D .haut
+{
+	z-index: 1;
+	margin-left: 20px;
+	margin-top: -29px;
+	transform: skew(-45deg) rotateX(-65deg);
+	border-radius: 5px 7px 0px 5px;
+}
+
+.cube_2x2x2_3D .droite
+{
+	z-index: 3;
+	margin-left: 69px;
+	margin-top: 20px;
+	transform: skewY(-45deg) rotateY(-65deg);
+	border-radius: 0px 7px 5px 3px;
+}
+
+.cube_2x2x2_3D .sticker
+{
+	display: inline-block;
+	vertical-align: top;
+	height: 45px;
+	width: 45px;
+	margin-top: 2px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 2px;
+	border-radius: 3px;
+}
+
+.liste_etapes .cube_2x2x2_3D .face { left: 11px; }
+.cas_etape .cube_2x2x2_3D .avant { margin-left: -64px; margin-top: 31px; }
+.cas_etape .cube_2x2x2_3D .haut { margin-left: -49px; }
+.cas_etape .cube_2x2x2_3D .droite { margin-left: 0px; }
+
+/* 3x3 */
+.cube_3x3x3_3D
+{
+	border: 1px dotted black;
+	display: inline-block;
+	margin-right: -3px;
+	margin-left: 0px;
+	height: 141px;
+	width: 141px;
+	padding: 0px;
+}
+
+.cube_3x3x3_3D .face
+{
+	display: inline-block;
+	position: absolute;
+	background-color: black;
+	height: 98px;
+	width: 98px;
+	padding: 0px;
+	border: 1px solid black;
+}
+
+.cube_3x3x3_3D .avant
+{
+	z-index: 3;
+	margin-left: 0px;
+	margin-top: 41px;
+	border-radius: 1px 0px 3px 3px ;
+}
+
+.cube_3x3x3_3D .haut
+{
+	z-index: 2;
+	margin-left: 20px;
+	margin-top: -29px;
+	transform: skew(-45deg) rotateX(-65deg);
+	border-radius: 5px 5px 0px 5px;
+}
+
+.cube_3x3x3_3D .droite
+{
+	z-index: 1;
+	margin-left: 70px;
+	margin-top: 20px;
+	transform: skewY(-45deg) rotateY(-65deg);
+	border-radius: 0px 5px 5px 3px;
+}
+
+.cube_3x3x3_3D .sticker
+{
+	display: inline-block;
+	vertical-align: top;
+	height: 30px;
+	width: 30px;
+	margin-top: 2px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 2px;
+	border-radius: 2px;
+}
+
+.liste_etapes .cube_3x3x3_3D .face { left: 11px; }
+.cas_etape .cube_3x3x3_3D .avant { margin-left: -64px; margin-top: 31px; }
+.cas_etape .cube_3x3x3_3D .haut { margin-left: -49px; }
+.cas_etape .cube_3x3x3_3D .droite { margin-left: 0px; }
+
+/* 4x4 */
+
+.cube_4x4x4_3D
+{
+	border: 1px dotted black;
+	display: inline-block;
+	margin-right: -3px;
+	margin-left: 0px;
+	height: 141px;
+	width: 141px;
+	padding: 0px;
+}
+
+.cube_4x4x4_3D .face
+{
+	display: inline-block;
+	position: absolute;
+	background-color: black;
+	height: 98px;
+	width: 98px;
+	padding: 0px;
+	border: 1px solid black;
+}
+
+.cube_4x4x4_3D .avant
+{
+	z-index: 2;
+	margin-left: 0px;
+	margin-top: 41px;
+	border-radius: 1px 0px 4px 3px ;
+}
+
+.cube_4x4x4_3D .haut
+{
+	z-index: 1;
+	margin-left: 20px;
+	margin-top: -29px;
+	transform: skew(-45deg) rotateX(-65deg);
+	border-radius: 5px 5px 0px 5px;
+}
+
+.cube_4x4x4_3D .droite
+{
+	z-index: 3;
+	margin-left: 69px;
+	margin-top: 20px;
+	transform: skewY(-45deg) rotateY(-65deg);
+	border-radius: 0px 5px 5px 3px;
+}
+
+.cube_4x4x4_3D .sticker
+{
+	display: inline-block;
+	vertical-align: top;
+	height: 22px;
+	width: 22px;
+	margin-top: 2px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 2px;
+	border-radius: 2px;
+}
+
+.liste_etapes .cube_4x4x4_3D .face { left: 11px; }
+.cas_etape .cube_4x4x4_3D .avant { margin-left: -64px; margin-top: 31px; }
+.cas_etape .cube_4x4x4_3D .haut { margin-left: -49px; }
+.cas_etape .cube_4x4x4_3D .droite { margin-left: 0px; }
+
+/* 5x5 */
+
+.cube_5x5x5_3D
+{
+	border: 1px dotted black;
+	display: inline-block;
+	margin-right: -3px;
+	margin-left: 0px;
+	height: 152px;
+	width: 153px;
+	padding: 0px;
+}
+
+.cube_5x5x5_3D .face
+{
+	display: inline-block;
+	position: absolute;
+	background-color: black;
+	height: 106px;
+	width: 106px;
+	padding: 0px;
+	border: 1px solid black;
+}
+
+.cube_5x5x5_3D .avant
+{
+	z-index: 2;
+	margin-left: 0px;
+	margin-top: 44px;
+	border-radius: 2px 0px 2px 3px ;
+}
+
+.cube_5x5x5_3D .haut
+{
+	z-index: 1;
+	margin-left: 22px;
+	margin-top: -32px;
+	transform: skew(-45deg) rotateX(-65deg);
+	border-radius: 5px 4px 0px 5px;
+}
+
+.cube_5x5x5_3D .droite
+{
+	z-index: 3;
+	margin-left: 76px;
+	margin-top: 22px;
+	transform: skewY(-45deg) rotateY(-65deg);
+	border-radius: 0px 4px 5px 3px;
+}
+
+.cube_5x5x5_3D .sticker
+{
+	display: inline-block;
+	vertical-align: top;
+	height: 19px;
+	width: 19px;
+	margin-top: 2px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 2px;
+	border-radius: 2px;
+}
+
+.liste_etapes .cube_5x5x5_3D .face { left: 11px; }
+.cas_etape .cube_5x5x5_3D .avant { margin-left: -64px; margin-top: 31px; }
+.cas_etape .cube_5x5x5_3D .haut { margin-left: -49px; }
+.cas_etape .cube_5x5x5_3D .droite { margin-left: 0px; }
+
 
 
 /*____________ COULEURS DE STICKERS ____________*/
@@ -214,3 +424,6 @@
 .orange { background-color: rgb(255,151,50); }
 .rouge { background-color: red; }
 .jaune { background-color: rgb(255,255,50); }
+.noir { background-color: black; }
+.rose { background-color: rgb(255, 0, 127); }
+.turquoise { background-color: rgb(37, 253, 233); }
