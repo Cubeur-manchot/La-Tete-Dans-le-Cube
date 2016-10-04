@@ -1,0 +1,67 @@
+/* ________________________________________ 2x2 ________________________________________ */
+
+.cube_2x2x2_2D
+{
+	border: 1px dotted black;
+	display: inline-block;
+	margin-right: -3px;
+	margin-left: 0px;
+	height: 141px;
+	width: 141px;
+	padding: 0px;
+}
+
+.face
+{
+	background-color: black;
+	display: inline-block;
+	margin: 5px;
+}
+
+.laterale
+{
+	height: 20px;
+	width: 98px;
+}
+
+.haut
+{
+	height: 99px;
+	width: 99px;
+}
+
+.sticker
+{
+	display: inline-block
+}
+
+.haut .sticker
+{
+	height: 45px;
+	width: 45px;
+	margin: 3px 0px -4px 3px;
+	border-radius: 3px;
+}
+
+.laterale .sticker
+{
+	height: 10px;
+	width: 10px;
+	margin: 4px;
+}
+
+.laterale .n1
+{
+	border-top: none;
+	border-bottom: 22px solid;
+	border-left: 10px solid transparent;
+	border-right: none;
+}
+
+.laterale .n2
+{
+	border-top: none;
+	border-bottom: 22px solid;
+	border-left: none;
+	border-right: 10px transparent;
+}
