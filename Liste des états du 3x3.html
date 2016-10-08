@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Cube Generator</title>
+		<link href="images/logo_cube.png" type="img/ico" rel="icon"/>
+		<link href="cube_generator_3D.css" type="text/css" rel="stylesheet" media="all">
+		<link href="CSS_methodes.css" type="text/css" rel="stylesheet" media="all">
+		<link href="style_general.css" type="text/css" rel="stylesheet" media="all">
+		<script type="text/javascript" src="cube_generator.js"></script>
+		<script type="text/javascript" src="parallélisation.js"></script>
+	</head>
+	<body>
+		<script>nav_scroll_banniere();</script>
+		<section id="corps_de_page">
+			<h1>Liste des états du 3x3</h1>
+			<ul class="liste_etapes">
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["vert","vert","vert","vert","vert","vert","vert","vert","vert"],["orange","orange","orange","orange","orange","orange","orange","orange","orange"]);</script>
+				<br/>État 1 : 3x3x3</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["gris","gris","gris","gris","gris","gris","gris","gris","gris"],["gris","gris","gris","vert","vert","vert","vert","vert","vert"],["gris","gris","gris","orange","orange","orange","orange","orange","orange"]);</script>
+				<br/>État 2 : 2x3x3</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["gris","gris","gris","gris","gris","gris","gris","gris","gris"],["gris","gris","gris","gris","gris","gris","vert","vert","vert"],["gris","gris","gris","gris","gris","gris","orange","orange","orange"]);</script>
+				<br/>État 3 : 1x3x3</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune","jaune"],["vert","vert","vert","gris","gris","gris","vert","vert","vert"],["orange","orange","orange","gris","gris","gris","orange","orange","orange"]);</script>
+				<br/>État 4 : 1x3x3 (x2)</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["gris","gris","gris","gris","gris","gris","gris","gris","gris"],["gris","gris","gris","gris","gris","vert","gris","gris","vert"],["gris","gris","gris","orange","orange","gris","orange","orange","gris"]);</script>
+				<br/>État 5 : 1x2x2</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["gris","gris","gris","gris","gris","gris","gris","gris","gris"],["gris","gris","gris","vert","gris","vert","vert","gris","vert"],["gris","gris","gris","orange","orange","gris","orange","orange","gris"]);</script>
+				<br/>État 6 : 1x2x2 (x2a)</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["gris","gris","gris","gris","gris","gris","gris","gris","gris"],["gris","gris","gris","vert","gris","gris","vert","gris","gris"],["gris","gris","gris","gris","orange","orange","gris","orange","orange"]);</script>
+				<br/>État 7 : 1x2x2 (x2o)</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["gris","gris","gris","gris","gris","gris","gris","gris","gris"],["gris","gris","gris","vert","gris","gris","vert","gris","gris"],["gris","gris","gris","gris","orange","orange","gris","orange","orange"]);</script>
+				<br/>État 8 : 1x2x3 + 1x2x2</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["gris","gris","gris","gris","gris","gris","gris","gris","gris"],["gris","gris","gris","vert","gris","vert","vert","gris","vert"],["gris","gris","gris","orange","orange","orange","orange","orange","orange"]);</script>
+				<br/>État 9 : 1x2x3 (x2)</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["jaune","gris","jaune","gris","gris","gris","jaune","gris","jaune"],["gris","gris","gris","vert","gris","vert","vert","gris","vert"],["gris","gris","gris","orange","orange","orange","orange","orange","orange"]);</script>
+				<br/>État 10 : 1x2x3 (x2) + CO</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["jaune","gris","jaune","gris","gris","gris","jaune","gris","jaune"],["vert","gris","vert","vert","gris","vert","vert","gris","vert"],["orange","gris","orange","orange","orange","orange","orange","orange","orange"]);</script>
+				<br/>État 11 : 1x2x3 (x2) + CLL</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["gris","gris","gris","gris","gris","gris","gris","gris","gris"],["gris","gris","gris","vert","vert","gris","vert","vert","gris"],["gris","gris","gris","gris","orange","orange","gris","orange","orange"]);</script>
+				<br/>État 12 : F2L-1</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["jaune","jaune","gris","jaune","jaune","gris","gris","gris","gris"],["gris","gris","gris","vert","vert","gris","vert","vert","gris"],["gris","gris","gris","gris","orange","orange","gris","orange","orange"]);</script>
+				<br/>État 13 : Tripod</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["gris","gris","gris","gris","gris","gris","gris","gris","gris"],["gris","gris","gris","gris","vert","vert","gris","vert","vert"],["gris","gris","gris","orange","orange","gris","orange","orange","gris"]);</script>
+				<br/>État 14 : 2x2x2</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["gris","gris","gris","gris","gris","gris","gris","gris","gris"],["gris","gris","gris","gris","vert","vert","gris","vert","vert"],["gris","gris","gris","orange","orange","orange","orange","orange","orange"]);</script>
+				<br/>État 15 : 2x2x3</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["gris","gris","gris","gris","gris","gris","gris","gris","gris"],["gris","gris","gris","gris","vert","gris","gris","vert","gris"],["gris","gris","gris","gris","orange","gris","gris","orange","gris"]);</script>
+				<br/>État 16 : Cross</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["gris","gris","gris","gris","gris","gris","gris","gris","gris"],["gris","gris","gris","gris","vert","gris","gris","vert","gris"],["gris","gris","gris","gris","orange","gris","gris","gris","gris"]);</script>
+				<br/>État 17 : Mock cross</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["jaune","gris","jaune","gris","gris","gris","jaune","gris","jaune"],["vert","gris","vert","gris","gris","gris","vert","gris","vert"],["orange","gris","orange","gris","gris","gris","orange","gris","orange"]);</script>
+				<br/>État 18 : 8 Coins</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["gris","gris","gris","gris","gris","gris","gris","gris","gris"],["gris","gris","gris","gris","gris","gris","vert","gris","vert"],["gris","gris","gris","gris","gris","gris","orange","gris","orange"]);</script>
+				<br/>État 19 : 4 Coins</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["gris","gris","gris","gris","gris","gris","gris","gris","gris"],["gris","gris","gris","gris","gris","vert","gris","gris","vert"],["gris","gris","gris","orange","orange","orange","orange","orange","orange"]);</script>
+				<br/>État 20 : 1x2x3</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["gris","gris","gris","gris","gris","gris","gris","gris","gris"],["gris","gris","gris","gris","gris","gris","gris","gris","vert"],["gris","gris","gris","gris","gris","gris","orange","orange","orange"]);</script>
+				<br/>État 21 : 1x1x3</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["gris","gris","gris","gris","gris","gris","gris","gris","gris"],["gris","gris","gris","gris","gris","gris","vert","gris","vert"],["gris","gris","gris","gris","gris","gris","orange","orange","orange"]);</script>
+				<br/>État 22 : 1x1x3 (x2)</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["gris","gris","gris","gris","gris","gris","gris","gris","gris"],["gris","gris","gris","vert","vert","gris","vert","vert","gris"],["gris","gris","gris","gris","orange","gris","gris","gris","gris"]);</script>
+				<br/>État 23 : Mock X-cross</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["gris","gris","gris","gris","gris","gris","gris","gris","gris"],["gris","gris","gris","vert","vert","gris","vert","vert","gris"],["gris","gris","gris","gris","orange","gris","gris","orange","gris"]);</script>
+				<br/>État 24 : X-cross</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["gris","gris","gris","gris","gris","gris","gris","gris","gris"],["gris","gris","gris","vert","vert","gris","vert","vert","gris"],["gris","gris","gris","gris","orange","orange","gris","orange","orange"]);</script>
+				<br/>État 25 : XX-cross (o)</li>
+				<li class="etape"><script>create_cube_NxNxN_3D(3,["gris","gris","gris","gris","gris","gris","gris","gris","gris"],["gris","gris","gris","vert","vert","gris","vert","vert","gris"],["gris","gris","gris","gris","orange","gris","gris","orange","gris"]);</script>
+				<br/>État 26 : XX-cross (a)</li>
+			</ul>
+			</section>
+		<script>footer();</script>
+	</body>
+</html>

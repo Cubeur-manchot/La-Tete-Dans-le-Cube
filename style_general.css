@@ -171,11 +171,16 @@ footer .icone
 	height: 17px;
 	width: 17px;
 	margin-left: 5px;
-	border-radius: 3px;
+	border-radius: 8px;
 	border: 1px solid white;
 	box-shadow: 1px 1px 1px grey;
 	vertical-align: bottom;
 }
+
+footer .carre { border-radius: 3px; }
+footer .rond { border-radius : 10px; }
+
+
 
 
 /*____________ POLICE A INTEGRER ____________*/
