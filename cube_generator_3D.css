@@ -1,552 +1,139 @@
-/* ________________________________________ 2x2 ________________________________________ */
-
-.cube_2x2x2_3D
+/* __________ Cubes __________ */
+ .cube_3D
 {
 	border: 1px dotted black;
 	display: inline-block;
 	margin-right: -3px;
 	margin-left: 0px;
-	height: 141px;
-	width: 141px;
 	padding: 0px;
 }
+ 
+.c2x2x2_3D, .c3x3x3_3D, .c4x4x4_3D { height: 141px; width: 141px; }
+.c5x5x5_3D { height: 152px; width: 153px; }
+.c6x6x6_3D { height: 167px; width: 167px; }
+.c7x7x7_3D { height: 193px; width: 192px; }
+.c8x8x8_3D { height: 219px; width: 219px; }
+.c9x9x9_3D { height: 247px; width: 247px; }
 
-.cube_2x2x2_3D .face
+
+/* __________ Faces __________ */
+.cube_3D .face
 {
 	display: inline-block;
 	position: absolute;
 	background-color: black;
-	height: 98px;
-	width: 98px;
-	padding: 0px;
+	padding : 0px;
 	border: 1px solid black;
 }
 
-.cube_2x2x2_3D .avant
-{
-	z-index: 2;
-	margin-left: 0px;
-	margin-top: 41px;
-	border-radius: 1px 0px 4px 3px ;
-}
+.c2x2x2_3D .face, .c3x3x3_3D .face, .c4x4x4_3D .face { height: 98px; width: 98px; }
+.c5x5x5_3D .face { height: 106px; width: 106px; }
+.c6x6x6_3D .face { height: 116px; width: 116px; }
+.c7x7x7_3D .face { height: 134px; width: 134px; }
+.c8x8x8_3D .face { height: 153px; width: 153px; }
+.c9x9x9_3D .face { height: 172px; width: 172px; }
+
 
-.cube_2x2x2_3D .haut
-{
-	z-index: 1;
-	margin-left: 20px;
-	margin-top: -29px;
-	transform: skew(-45deg) rotateX(-65deg);
-	border-radius: 5px 7px 0px 5px;
-}
+/* __________ Faces avant __________ */
+.cube_3D .avant { z-index: 2; margin-left: 0px; }
 
-.cube_2x2x2_3D .droite
-{
-	z-index: 3;
-	margin-left: 69px;
-	margin-top: 20px;
-	transform: skewY(-45deg) rotateY(-65deg);
-	border-radius: 0px 7px 5px 3px;
-}
+.c2x2x2_3D .avant, .c3x3x3_3D .avant, .c4x4x4_3D .avant { margin-top: 41px; }
+.c5x5x5_3D .avant { margin-top: 44px; }
+.c6x6x6_3D .avant { margin-top: 49px; }
+.c7x7x7_3D .avant { margin-top: 57px; }
+.c8x8x8_3D .avant { margin-top: 65px; }
+.c9x9x9_3D .avant { margin-top: 74px; }
 
-.cube_2x2x2_3D .sticker
-{
-	display: inline-block;
-	vertical-align: top;
-	height: 45px;
-	width: 45px;
-	margin-top: 2px;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	margin-left: 2px;
-	border-radius: 3px;
-}
+.c2x2x2_3D .avant { border-radius: 1px 0px 4px 3px; }
+.c3x3x3_3D .avant { border-radius: 1px 0px 3px 3px; }
+.c4x4x4_3D .avant { border-radius: 1px 0px 4px 3px; }
+.c5x5x5_3D .avant, .c6x6x6_3D .avant, .c7x7x7_3D .avant, .c8x8x8_3D .avant, .c9x9x9_3D .avant { border-radius: 2px 0px 2px 3px; }
 
-.liste_etapes .cube_2x2x2_3D .face { left: 11px; }
-.cas_etape .cube_2x2x2_3D .avant { margin-left: -64px; margin-top: 31px; }
-.cas_etape .cube_2x2x2_3D .haut { margin-left: -49px; }
-.cas_etape .cube_2x2x2_3D .droite { margin-left: 0px; }
 
-/* ________________________________________ 3x3 ________________________________________ */
+/* __________ Faces haut __________ */
+.cube_3D .haut { z-index: 1; transform: skew(-45deg) rotateX(-65deg); }
 
-.cube_3x3x3_3D
-{
-	border: 1px dotted black;
-	display: inline-block;
-	margin-right: -3px;
-	margin-left: 0px;
-	height: 141px;
-	width: 141px;
-	padding: 0px;
-}
+.c2x2x2_3D .haut, .c3x3x3_3D .haut, .c4x4x4_3D .haut { margin-left: 20px; margin-top: -29px; }
+.c5x5x5_3D .haut { margin-left: 22px; margin-top: -32px; }
+.c6x6x6_3D .haut { margin-left: 24px; margin-top: -34px; }
+.c7x7x7_3D .haut { margin-left: 29px; margin-top: -39px; }
+.c8x8x8_3D .haut { margin-left: 33px; margin-top: -45px; }
+.c9x9x9_3D .haut { margin-left: 37px; margin-top: -50px; }
 
-.cube_3x3x3_3D .face
-{
-	display: inline-block;
-	position: absolute;
-	background-color: black;
-	height: 98px;
-	width: 98px;
-	padding: 0px;
-	border: 1px solid black;
-}
+.c2x2x2_3D .haut { border-radius: 5px 7px 0px 5px; }
+.c3x3x3_3D .haut, .c4x4x4_3D .haut, .c5x5x5_3D .haut, .c6x6x6_3D .haut, .c7x7x7_3D .haut { border-radius: 5px 5px 0px 5px; }
+.c8x8x8_3D .haut, .c9x9x9_3D .haut { border-radius: 5px 5px 0px 2px; }
 
-.cube_3x3x3_3D .avant
-{
-	z-index: 3;
-	margin-left: 0px;
-	margin-top: 41px;
-	border-radius: 1px 0px 3px 3px ;
-}
+/* __________ Faces droite __________ */
+.cube_3D .droite { z-index: 3; transform: skewY(-45deg) rotateY(-65deg); }
 
-.cube_3x3x3_3D .haut
-{
-	z-index: 2;
-	margin-left: 20px;
-	margin-top: -29px;
-	transform: skew(-45deg) rotateX(-65deg);
-	border-radius: 5px 5px 0px 5px;
-}
+.c2x2x2_3D .droite, .c3x3x3_3D .droite, .c4x4x4_3D .droite { margin-left: 69px; margin-top: 20px; }
+.c5x5x5_3D .droite { margin-left: 76px; margin-top: 22px }
+.c6x6x6_3D .droite { margin-left: 83px; margin-top: 24px; }
+.c7x7x7_3D .droite { margin-left: 96px; margin-top: 28px; }
+.c8x8x8_3D .droite { margin-left: 109px; margin-top: 32px; }
+.c9x9x9_3D .droite { margin-left: 123px; margin-top: 37px; }
 
-.cube_3x3x3_3D .droite
-{
-	z-index: 1;
-	margin-left: 70px;
-	margin-top: 20px;
-	transform: skewY(-45deg) rotateY(-65deg);
-	border-radius: 0px 5px 5px 3px;
-}
+.c2x2x2_3D .droite { border-radius: 0px 7px 5px 3px; }
+.c3x3x3_3D .droite, .c4x4x4_3D .droite, .c5x5x5_3D .droite, .c6x6x6_3D .droite, .c7x7x7_3D .droite, .c8x8x8_3D .droite, .c9x9x9_3D .droite { border-radius: 0px 4px 5px 3px; }
 
-.cube_3x3x3_3D .sticker
-{
-	display: inline-block;
-	vertical-align: top;
-	height: 30px;
-	width: 30px;
-	margin-top: 2px;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	margin-left: 2px;
-	border-radius: 2px;
-}
 
-.liste_etapes .cube_3x3x3_3D .face { left: 11px; }
-.cas_etape .cube_3x3x3_3D .avant { margin-left: -64px; margin-top: 31px; }
-.cas_etape .cube_3x3x3_3D .haut { margin-left: -49px; }
-.cas_etape .cube_3x3x3_3D .droite { margin-left: 0px; }
+/* __________ Stickers __________ */
+.cube_3D .sticker { display: inline-block; vertical-align: top; border-radius: 2px; }
 
-/* ________________________________________ 4x4 ________________________________________ */
+.c2x2x2_3D .sticker { height: 45px; width: 45px; }
+.c3x3x3_3D .sticker { height: 30px; width: 30px; }
+.c4x4x4_3D .sticker { height: 22px; width: 22px; }
+.c5x5x5_3D .sticker { height: 19px; width: 19px; }
+.c2x2x2_3D .sticker, .c3x3x3_3D .sticker, .c4x4x4_3D .sticker, .c5x5x5_3D .sticker { margin: 2px 0px 0px 2px; }
 
-.cube_4x4x4_3D
-{
-	border: 1px dotted black;
-	display: inline-block;
-	margin-right: -3px;
-	margin-left: 0px;
-	height: 141px;
-	width: 141px;
-	padding: 0px;
-}
+.c6x6x6_3D .sticker, .c7x7x7_3D .sticker, .c8x8x8_3D .sticker, .c9x9x9_3D .sticker { height: 17px; width: 17px; margin: 1px 0px -1px 2px; }
 
-.cube_4x4x4_3D .face
-{
-	display: inline-block;
-	position: absolute;
-	background-color: black;
-	height: 98px;
-	width: 98px;
-	padding: 0px;
-	border: 1px solid black;
-}
 
-.cube_4x4x4_3D .avant
-{
-	z-index: 2;
-	margin-left: 0px;
-	margin-top: 41px;
-	border-radius: 1px 0px 4px 3px ;
-}
 
-.cube_4x4x4_3D .haut
-{
-	z-index: 1;
-	margin-left: 20px;
-	margin-top: -29px;
-	transform: skew(-45deg) rotateX(-65deg);
-	border-radius: 5px 5px 0px 5px;
-}
 
-.cube_4x4x4_3D .droite
-{
-	z-index: 3;
-	margin-left: 69px;
-	margin-top: 20px;
-	transform: skewY(-45deg) rotateY(-65deg);
-	border-radius: 0px 5px 5px 3px;
-}
+/* __________ Liste d'étapes et Cas d'étapes __________ */         /* ATTENTION : Cette partie n'est pas encore testée et adaptée ! */
+.liste_etapes .c2x2x2_3D .face { left: 11px; }
+.cas_etape .c2x2x2_3D .avant { margin-left: -64px; margin-top: 31px; }
+.cas_etape .c2x2x2_3D .haut { margin-left: -49px; }
+.cas_etape .c2x2x2_3D .droite { margin-left: 0px; }
 
-.cube_4x4x4_3D .sticker
-{
-	display: inline-block;
-	vertical-align: top;
-	height: 22px;
-	width: 22px;
-	margin-top: 2px;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	margin-left: 2px;
-	border-radius: 2px;
-}
+.liste_etapes .c3x3x3_3D .face { left: 11px; }
+.cas_etape .c3x3x3_3D .avant { margin-left: -64px; margin-top: 31px; }
+.cas_etape .c3x3x3_3D .haut { margin-left: -49px; }
+.cas_etape .c3x3x3_3D .droite { margin-left: 0px; }
 
-.liste_etapes .cube_4x4x4_3D .face { left: 11px; }
-.cas_etape .cube_4x4x4_3D .avant { margin-left: -64px; margin-top: 31px; }
-.cas_etape .cube_4x4x4_3D .haut { margin-left: -49px; }
-.cas_etape .cube_4x4x4_3D .droite { margin-left: 0px; }
+.liste_etapes .c4x4x4_3D .face { left: 11px; }
+.cas_etape .c4x4x4_3D .avant { margin-left: -64px; margin-top: 31px; }
+.cas_etape .c4x4x4_3D .haut { margin-left: -49px; }
+.cas_etape .c4x4x4_3D .droite { margin-left: 0px; }
 
-/* ________________________________________ 5x5 ________________________________________ */
+.liste_etapes .c5x5x5_3D .face { left: 11px; }
+.cas_etape .c5x5x5_3D .avant { margin-left: -64px; margin-top: 31px; }
+.cas_etape .c5x5x5_3D .haut { margin-left: -49px; }
+.cas_etape .c5x5x5_3D .droite { margin-left: 0px; }
 
-.cube_5x5x5_3D
-{
-	border: 1px dotted black;
-	display: inline-block;
-	margin-right: -3px;
-	margin-left: 0px;
-	height: 152px;
-	width: 153px;
-	padding: 0px;
-}
+.liste_etapes .c6x6x6_3D .face { left: 11px; }
+.cas_etape .c6x6x6_3D .avant { margin-left: -64px; margin-top: 31px; }
+.cas_etape .c6x6x6_3D .haut { margin-left: -49px; }
+.cas_etape .c6x6x6_3D .droite { margin-left: 0px; }
 
-.cube_5x5x5_3D .face
-{
-	display: inline-block;
-	position: absolute;
-	background-color: black;
-	height: 106px;
-	width: 106px;
-	padding: 0px;
-	border: 1px solid black;
-}
+.liste_etapes .c7x7x7_3D .face { left: 11px; }
+.cas_etape .c7x7x7_3D .avant { margin-left: -64px; margin-top: 31px; }
+.cas_etape .c7x7x7_3D .haut { margin-left: -49px; }
+.cas_etape .c7x7x7_3D .droite { margin-left: 0px; }
 
-.cube_5x5x5_3D .avant
-{
-	z-index: 2;
-	margin-left: 0px;
-	margin-top: 44px;
-	border-radius: 2px 0px 2px 3px ;
-}
+.liste_etapes .c8x8x8_3D .face { left: 11px; }
+.cas_etape .c8x8x8_3D .avant { margin-left: -64px; margin-top: 31px; }
+.cas_etape .c8x8x8_3D .haut { margin-left: -49px; }
+.cas_etape .c8x8x8_3D .droite { margin-left: 0px; }
 
-.cube_5x5x5_3D .haut
-{
-	z-index: 1;
-	margin-left: 22px;
-	margin-top: -32px;
-	transform: skew(-45deg) rotateX(-65deg);
-	border-radius: 5px 4px 0px 5px;
-}
+.liste_etapes .c9x9x9_3D .face { left: 11px; }
+.cas_etape .c9x9x9_3D .avant { margin-left: -64px; margin-top: 31px; }
+.cas_etape .c9x9x9_3D .haut { margin-left: -49px; }
+.cas_etape .c9x9x9_3D .droite { margin-left: 0px; }
 
-.cube_5x5x5_3D .droite
-{
-	z-index: 3;
-	margin-left: 76px;
-	margin-top: 22px;
-	transform: skewY(-45deg) rotateY(-65deg);
-	border-radius: 0px 4px 5px 3px;
-}
-
-.cube_5x5x5_3D .sticker
-{
-	display: inline-block;
-	vertical-align: top;
-	height: 19px;
-	width: 19px;
-	margin-top: 2px;
-	margin-bottom: 0px;
-	margin-right: 0px;
-	margin-left: 2px;
-	border-radius: 2px;
-}
-
-.liste_etapes .cube_5x5x5_3D .face { left: 11px; }
-.cas_etape .cube_5x5x5_3D .avant { margin-left: -64px; margin-top: 31px; }
-.cas_etape .cube_5x5x5_3D .haut { margin-left: -49px; }
-.cas_etape .cube_5x5x5_3D .droite { margin-left: 0px; }
-
-/* ________________________________________ 6x6 ________________________________________ */
-
-.cube_6x6x6_3D
-{
-	border: 1px dotted black;
-	display: inline-block;
-	margin-right: -3px;
-	margin-left: 0px;
-	height: 167px;
-	width: 167px;
-	padding: 0px;
-}
-
-.cube_6x6x6_3D .face
-{
-	display: inline-block;
-	position: absolute;
-	background-color: black;
-	height: 116px;
-	width: 116px;
-	padding: 0px;
-	border: 1px solid black;
-}
-
-.cube_6x6x6_3D .avant
-{
-	z-index: 2;
-	margin-left: 0px;
-	margin-top: 49px;
-	border-radius: 2px 0px 3px 3px ;
-}
-
-.cube_6x6x6_3D .haut
-{
-	z-index: 1;
-	margin-left: 24px;
-	margin-top: -34px;
-	transform: skew(-45deg) rotateX(-65deg);
-	border-radius: 5px 4px 0px 5px;
-}
-
-.cube_6x6x6_3D .droite
-{
-	z-index: 3;
-	margin-left: 83px;
-	margin-top: 24px;
-	transform: skewY(-45deg) rotateY(-65deg);
-	border-radius: 0px 4px 5px 3px;
-}
-
-.cube_6x6x6_3D .sticker
-{
-	display: inline-block;
-	vertical-align: top;
-	height: 17px;
-	width: 17px;
-	margin-top: 1px;
-	margin-bottom: -1px;
-	margin-right: 0px;
-	margin-left: 2px;
-	border-radius: 2px;
-}
-
-.liste_etapes .cube_6x6x6_3D .face { left: 11px; }
-.cas_etape .cube_6x6x6_3D .avant { margin-left: -64px; margin-top: 31px; }
-.cas_etape .cube_6x6x6_3D .haut { margin-left: -49px; }
-.cas_etape .cube_6x6x6_3D .droite { margin-left: 0px; }
-
-/* ________________________________________ 7x7 ________________________________________ */
-
-.cube_7x7x7_3D
-{
-	border: 1px dotted black;
-	display: inline-block;
-	margin-right: -3px;
-	margin-left: 0px;
-	height: 193px;
-	width: 192px;
-	padding: 0px;
-}
-
-.cube_7x7x7_3D .face
-{
-	display: inline-block;
-	position: absolute;
-	background-color: black;
-	height: 134px;
-	width: 134px;
-	padding: 0px;
-	border: 1px solid black;
-}
-
-.cube_7x7x7_3D .avant
-{
-	z-index: 2;
-	margin-left: 0px;
-	margin-top: 57px;
-	border-radius: 2px 0px 2px 3px ;
-}
-
-.cube_7x7x7_3D .haut
-{
-	z-index: 1;
-	margin-left: 29px;
-	margin-top: -39px;
-	transform: skew(-45deg) rotateX(-65deg);
-	border-radius: 5px 5px 0px 5px;
-}
-
-.cube_7x7x7_3D .droite
-{
-	z-index: 3;
-	margin-left: 96px;
-	margin-top: 28px;
-	transform: skewY(-45deg) rotateY(-65deg);
-	border-radius: 0px 5px 5px 2px;
-}
-
-.cube_7x7x7_3D .sticker
-{
-	display: inline-block;
-	vertical-align: top;
-	height: 17px;
-	width: 17px;
-	margin-top: 1px;
-	margin-bottom: -1px;
-	margin-right: 0px;
-	margin-left: 2px;
-	border-radius: 2px;
-}
-
-.liste_etapes .cube_7x7x7_3D .face { left: 11px; }
-.cas_etape .cube_7x7x7_3D .avant { margin-left: -64px; margin-top: 31px; }
-.cas_etape .cube_7x7x7_3D .haut { margin-left: -49px; }
-.cas_etape .cube_7x7x7_3D .droite { margin-left: 0px; }
-
-
-/* ________________________________________ 8x8 ________________________________________ */
-
-.cube_8x8x8_3D
-{
-	border: 1px dotted black;
-	display: inline-block;
-	margin-right: -3px;
-	margin-left: 0px;
-	height: 219px;
-	width: 219px;
-	padding: 0px;
-}
-
-.cube_8x8x8_3D .face
-{
-	display: inline-block;
-	position: absolute;
-	background-color: black;
-	height: 153px;
-	width: 153px;
-	padding: 0px;
-	border: 1px solid black;
-}
-
-.cube_8x8x8_3D .avant
-{
-	z-index: 2;
-	margin-left: 0px;
-	margin-top: 65px;
-	border-radius: 2px 0px 2px 3px ;
-}
-
-.cube_8x8x8_3D .haut
-{
-	z-index: 1;
-	margin-left: 33px;
-	margin-top: -45px;
-	transform: skew(-45deg) rotateX(-65deg);
-	border-radius: 5px 5px 0px 2px;
-}
-
-.cube_8x8x8_3D .droite
-{
-	z-index: 3;
-	margin-left: 109px;
-	margin-top: 32px;
-	transform: skewY(-45deg) rotateY(-65deg);
-	border-radius: 0px 3px 5px 2px;
-}
-
-.cube_8x8x8_3D .sticker
-{
-	display: inline-block;
-	vertical-align: top;
-	height: 17px;
-	width: 17px;
-	margin-top: 1px;
-	margin-bottom: -1px;
-	margin-right: 0px;
-	margin-left: 2px;
-	border-radius: 2px;
-}
-
-.liste_etapes .cube_8x8x8_3D .face { left: 11px; }
-.cas_etape .cube_8x8x8_3D .avant { margin-left: -64px; margin-top: 31px; }
-.cas_etape .cube_8x8x8_3D .haut { margin-left: -49px; }
-.cas_etape .cube_8x8x8_3D .droite { margin-left: 0px; }
-
-
-/* ________________________________________ 9x9 ________________________________________ */
-
-.cube_9x9x9_3D
-{
-	border: 1px dotted black;
-	display: inline-block;
-	margin-right: -3px;
-	margin-left: 0px;
-	height: 247px;
-	width: 247px;
-	padding: 0px;
-}
-
-.cube_9x9x9_3D .face
-{
-	display: inline-block;
-	position: absolute;
-	background-color: black;
-	height: 172px;
-	width: 172px;
-	padding: 0px;
-	border: 1px solid black;
-}
-
-.cube_9x9x9_3D .avant
-{
-	z-index: 2;
-	margin-left: 0px;
-	margin-top: 74px;
-	border-radius: 2px 0px 2px 3px ;
-}
-
-.cube_9x9x9_3D .haut
-{
-	z-index: 1;
-	margin-left: 37px;
-	margin-top: -50px;
-	transform: skew(-45deg) rotateX(-65deg);
-	border-radius: 5px 5px 0px 2px;
-}
-
-.cube_9x9x9_3D .droite
-{
-	z-index: 3;
-	margin-left: 123px;
-	margin-top: 37px;
-	transform: skewY(-45deg) rotateY(-65deg);
-	border-radius: 0px 4px 5px 2px;
-}
-
-.cube_9x9x9_3D .sticker
-{
-	display: inline-block;
-	vertical-align: top;
-	height: 17px;
-	width: 17px;
-	margin-top: 1px;
-	margin-bottom: -1px;
-	margin-right: 0px;
-	margin-left: 2px;
-	border-radius: 2px;
-}
-
-.liste_etapes .cube_9x9x9_3D .face { left: 11px; }
-.cas_etape .cube_9x9x9_3D .avant { margin-left: -64px; margin-top: 31px; }
-.cas_etape .cube_9x9x9_3D .haut { margin-left: -49px; }
-.cas_etape .cube_9x9x9_3D .droite { margin-left: 0px; }
-
-
-
-/*____________ COULEURS DE STICKERS ____________*/
+/* __________ Couleurs de stickers __________ */
 
 .gris { background-color: rgb(150,150,150); }
 .vert { background-color: rgb(75,195,50); }

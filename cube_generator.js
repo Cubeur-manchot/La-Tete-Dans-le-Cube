@@ -1,6 +1,6 @@
 function create_cube_3x3x3_2D([u11,u12,u13,u21,u22,u23,u31,u32,u33],[b1,b2,b3],[l1,l2,l3],[r1,r2,r3],[f1,f2,f3])
 {
-	document.write('<div class="cube_3x3x3_2D"><div class="face arriere"><div class="face_arriere">');
+	document.write('<div class="cube_2D 3x3x3_2D"><div class="face arriere"><div class="face_arriere">');
 		document.write('<div id="b1" class="sticker ' + b1 + '"></div>');
 		document.write('<div id="b2" class="sticker ' + b2 + '"></div>');
 		document.write('<div id="b3" class="sticker ' + b3 + '"></div></div></div>');
@@ -31,7 +31,7 @@ function create_cube_3x3x3_2D([u11,u12,u13,u21,u22,u23,u31,u32,u33],[b1,b2,b3],[
 function create_cube_NxNxN_3D(taille,u,f,r)
 {
 	var faces = { 'haut': u, 'avant': f, 'droite': r };
-	var html = '<div class="cube_'+taille+'x'+taille+'x'+taille+'_3D">';
+	var html = '<div class="cube_3D c'+taille+'x'+taille+'x'+taille+'_3D">';
 	for (var face in faces) {
 		html += '<div class="face ' + face + '">';
 		for (var color of faces[face])
