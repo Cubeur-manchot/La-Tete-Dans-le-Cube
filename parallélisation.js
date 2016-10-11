@@ -28,8 +28,7 @@ function banniere()
 function footer()
 {
 	var html = '<footer><p>Site en développement par Cubeur-Manchot, Bushizo et Blenderiste09.</p>';
-	html += '<a href="https://github.com/Cubeur-manchot/La-Tete-Dans-le-Cube"><img src="images/logo_github.png" class="icone rond" style="border-radius: 10px;"/></a>';
-	html += '<a href="https://www.facebook.com/cubing.LaTeteDansleCube/?fref=ts"><img src="images/logo_facebook.png" class="icone carre"/></a>'
+	html += '<a href="https://github.com/Cubeur-manchot/La-Tete-Dans-le-Cube"><img src="images/logo_github.png" class="icone rond"/></a>';
 	html += '<a href="https://plus.google.com/104817566374853194180"><img src="images/logo_google_plus.png" class="icone carre"/></a>';
 	html += '<a href="plan_du_site.html"><img src="images/logo_sitemap.png" class="icone carre"/></a>';
 	html += '<p>Pour toute demande, suggestion ou menace de mort, envoyez à l\'adresse latetedanslecube@gmail.com</p></footer>';

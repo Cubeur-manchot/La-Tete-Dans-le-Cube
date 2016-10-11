@@ -65,3 +65,157 @@
 	border-left: none;
 	border-right: 10px transparent;
 }
+/*____________ 3x3 ____________*/
+
+.cube_3x3x3_2D
+{
+	border: 1px dotted black;
+	display: inline-block;
+	margin-right: 0px;
+	margin-left: 0px;
+	height: 137px;
+	width: 137px;
+	padding: 0px;
+}
+
+.cube_3x3x3_2D .face
+{
+	z-index: 1;
+	border: 2px solid black; 
+	position: absolute;
+}
+
+.cube_3x3x3_2D .arriere
+{
+	height: 0px;
+	width: 93px;
+	border-top: none;
+	border-bottom: 22px solid black;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	margin-left: 16px;
+	margin-top: 0px;
+	perspective: 260px;
+	transform: rotateY(21deg);
+}
+
+.cube_3x3x3_2D .face_arriere
+{
+	margin-left: -1px;
+	margin-top: -5px;
+	transform: rotateX(55deg);
+	width: 96px;
+	height: 32px;
+	position: absolute;
+	z-index: 3;
+}
+
+.cube_3x3x3_2D .avant
+{
+	height: 0px;
+	width: 93px;
+	border-top: 22px solid black;
+	border-bottom: none;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	margin-left: 16px;
+	margin-top: 115px;
+	perspective: 260px;
+	transform: rotateY(21deg);
+}
+
+.cube_3x3x3_2D .face_avant
+{
+	margin-left: -1px;
+	margin-top: -26px;
+	transform: rotateX(-55deg);
+	width: 96px;
+	height: 32px;
+	position: absolute;
+	z-index: 3;
+}
+
+.cube_3x3x3_2D .droite
+{
+	height: 93px;
+	width: 0px;
+	border-top: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-left: 22px solid black;
+	border-right: none;
+	margin-left: 115px;
+	margin-top: 16px;
+	perspective: 260px;
+	transform: rotateX(21deg);
+}
+
+.cube_3x3x3_2D .face_droite
+{
+	margin-left: -26px;
+	margin-top: -1px;
+	transform: rotateY(55deg);
+	width: 32px;
+	height: 96px;
+	position: absolute;
+	z-index: 3;
+}
+
+.cube_3x3x3_2D .gauche
+{
+	height: 93px;
+	width: 0px;
+	border-top: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-left: none;
+	border-right: 22px solid black;
+	margin-left: 0px;
+	margin-top: 16px;
+	perspective: 260px;
+	transform: rotateX(21deg);
+}
+
+.cube_3x3x3_2D .face_gauche
+{
+	margin-left: -6px;
+	margin-top: -1px;
+	transform: rotateY(-55deg);
+	width: 32px;
+	height: 96px;
+	position: absolute;
+	z-index: 3;
+}
+
+.cube_3x3x3_2D .haut
+{
+	width: 95px;
+	height: 94px;
+	margin-left: 19px;
+	margin-top: 20px;
+	z-index: 1;
+}
+
+.cube_3x3x3_2D .haut .sticker { margin: 0px 0px -5px 0px; }
+
+.cube_3x3x3_2D .sticker
+{
+	width: 30px;
+	height: 30px;
+	margin: 0px 0px -4px 0px;
+	border: 1px solid black;
+	display: inline-block;
+}
+
+
+
+/*____________ COULEURS DE STICKERS ____________*/
+
+.gris { background-color: rgb(150,150,150); }
+.vert { background-color: rgb(75,195,50); }
+.bleu { background-color: blue; }
+.blanc { background-color: white; }
+.orange { background-color: rgb(255,151,50); }
+.rouge { background-color: red; }
+.jaune { background-color: rgb(255,255,50); }
+.noir { background-color: black; }
+.rose { background-color: rgb(255, 0, 127); }
+.turquoise { background-color: rgb(37, 253, 233); }
