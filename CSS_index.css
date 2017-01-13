@@ -16,15 +16,12 @@ header a
 	text-shadow: white 1px 1px 1px;
 	line-height: 40px;
 }
-
-
 header .bouton_ma
 {
 	line-height: 20px;
     margin-top: -1px;
     text-align: center;
 }
-
 header
 {
 	display: block;
@@ -38,22 +35,11 @@ header
 	min-width: 675px;
 	text-align: center;
 }
-
-#banniere_index
-{
-	width: 100%;
-	height: 100px;
-	border-bottom: 1px solid black;
-	margin-bottom: -5px;
-}
-
+nav { margin-top: 160px; }
 
 @media all and (max-width: 760px)
 {
-	header #encyclopedie
-	{
-		font-size: 13px;
-	}
+	header #encyclopedie { font-size: 13px; }
 }
 
 #actualites { background-color: rgb(255,0,0); }
@@ -65,12 +51,13 @@ header
 #entretient { background-color: rgb(150,0,255); }
 #exotiques { background-color: rgb(255,0,150); }
 
+#actualites:hover { background: radial-gradient(rgb(255,0,0) 70%,rgb(255,120,120)); }
+#reussir:hover { background: radial-gradient(rgb(255,150,0) 70%,rgb(255,180,70)); }
+#speedcubing:hover { background: radial-gradient(rgb(255,255,0) 70%,rgb(255,255,210)); }
+#officielswca:hover { background: radial-gradient(rgb(0,255,0) 70%,rgb(182,255,182)); }
+#encyclopedie:hover { background: radial-gradient(rgb(0,255,255) 70%,rgb(220,255,255)); }
+#catalogue:hover { background: radial-gradient(rgb(55,55,255) 70%,rgb(85,85,255)); }
+#entretient:hover { background: radial-gradient(rgb(150,0,200) 70%,rgb(180,80,255)); }
+#exotiques:hover { background: radial-gradient(rgb(255,0,150) 70%,rgb(255,110,210)); }
 
-#actualites:hover { background: radial-gradient(rgb(255,0,0) 70%,rgb(255,120,120)); position: relative; left: 1px; top: 1px; }
-#reussir:hover { background: radial-gradient(rgb(255,150,0) 70%,rgb(255,180,70)); position: relative; left: 1px; top: 1px; }
-#speedcubing:hover { background: radial-gradient(rgb(255,255,0) 70%,rgb(255,255,210)); position: relative; left: 1px; top: 1px; }
-#officielswca:hover { background: radial-gradient(rgb(0,255,0) 70%,rgb(182,255,182)); position: relative; left: 1px; top: 1px; }
-#encyclopedie:hover { background: radial-gradient(rgb(0,255,255) 70%,rgb(220,255,255)); position: relative; left: 1px; top: 1px; }
-#catalogue:hover { background: radial-gradient(rgb(55,55,255) 70%,rgb(85,85,255)); position: relative; left: 1px; top: 1px; }
-#entretient:hover { background: radial-gradient(rgb(150,0,200) 70%,rgb(180,80,255)); position: relative; left: 1px; top: 1px; }
-#exotiques:hover { background: radial-gradient(rgb(255,0,150) 70%,rgb(255,110,210)); position: relative; left: 1px; top: 1px; }
+#actualites:hover, #reussir:hover, #speedcubing:hover, #officielswca:hover, #encyclopedie:hover, #catalogue:hover, #entretient:hover, #exotiques:hover { position: relative; left: 1px; top: 1px;  }
