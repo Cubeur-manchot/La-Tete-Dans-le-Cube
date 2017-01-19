@@ -1,0 +1,90 @@
+.liste_cas { text-align: center; }
+.liste_cas .cas
+{
+	display: inline-block;
+	width: 650px;
+	height: 150px;
+	margin: 5px;
+	border: 1px solid black;
+	padding: 0px;
+	list-style: none;
+	vertical-align: top;
+	text-align: left;
+	background-color: rgb(240,240,240);
+}
+.liste_cas .cas img
+{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	border-right: 1px solid black;
+	background-image: url("images/image_introuvable.png");
+	vertical-align: middle;
+}
+.liste_cas .cas .nom
+{
+	display: inline-block;
+	width: 500px;
+	height: 20px;
+	margin: 0px 0px 0px 150px;
+	padding: 5px 0px 5px 0px;
+	border-bottom: 1px solid black;
+	background-color: rgb(180,180,180);
+	text-align: center;
+}
+.liste_cas .cas .boite_algos
+{
+	display: inline-block;
+	width: 350px;
+	height: 120px; /* par défaut, sinon il faudra changer ça dans le js pour les cas avec plein d'algos */
+	margin: 0px 0px 0px 150px;
+	padding: 0px 0px 0px 0px;
+}
+.liste_cas .cas .algo_bouton
+{
+	display: inline-block;
+	width: 100%;
+	height: 25px;
+	padding: 0px 0px 0px 0px;
+	border-bottom: 1px dotted grey;
+	margin: -5px 0px 0px 0px;
+	transform: translate(0px,5px);
+}
+.liste_cas .cas .bouton
+{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin: 0px 0px 0px 0px;
+	border: 1px solid black;
+	background-image: linear-gradient(#CFCFCF, #CFCFCF);
+	border-radius: 3px;
+}
+.liste_cas .cas .bouton:hover
+{
+	background-image: linear-gradient(#AFAFAF, #E5E5E5);
+}
+.liste_cas .cas .algo
+{
+	display: inline-block;
+	width: auto;
+	height: 100%;
+	margin: 0px 0px 0px 10px;
+	padding: 5px 0px 0px 0px;
+	vertical-align: top;
+	font-size: 12px;
+	text-align: left;
+}
+.liste_cas .cas .info
+{
+	display: inline-block;
+	position: absolute;
+	width: 139px;
+	height: 109px;
+	margin-left: 0px;
+	margin-top: 0px;
+	padding: 5px;
+	background-color: rgb(220,220,220);
+	border-left: 1px solid black;
+	font-size: 12px;
+}

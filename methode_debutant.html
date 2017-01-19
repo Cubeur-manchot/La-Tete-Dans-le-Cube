@@ -2,108 +2,237 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Méthode débutante</title>
-		<link href="CSS_2.css" type="text/css" rel="stylesheet" media="all">
+		<title>Méthode Débutante</title>
 		<link href="images/logo_cube.png" type="img/ico" rel="icon"/>
+		<link href="CSS_general.css" type="text/css" rel="stylesheet" media="all">
+		<link href="CSS_methodes.css" type="text/css" rel="stylesheet" media="all">
+		<script src="parallelisation.js" type="text/javascript"></script>
+		<script src="script_methodes.js" type="text/javascript"></script>
 	</head>
-	<body class="body-normal">
-	<div id="gros_bloc">
-		<nav>
-			<div class="bloc_nav">
-				<p class="en-tete-nav">MENU</p>
-				<ul>
-					<li><a href="#">Actualités</a></li>
-					<li><a href="#">Réussir le cube !</a></li>
-					<li><a href="#">Speedcubing 3x3</a></li>
-					<li><a href="#">Officiels WCA</a></li>
-					<li><a href="#">Encyclopédie</a></li>
-					<li><a href="#">Catalogue</a></li>
-					<li><a href="#">Entretient / Modding</a></li>
-					<li><a href="#">Cubes Exotiques</a></li>
-				</ul>
-			</div>
-			<div class="bloc_nav">
-				<p class="en-tete-nav">Nous contacter :</p>
-				<ul>
-					<li><a href="mailto:julien.combaz@gmail.com">akira1250</a></li>
-					<li><a href="mailto:matthieu.aubert17@gmail.com">Cubeur-manchot</a></li>
-					<li><a href="mailto:enzoguerin@gmail.com">Bushizo</a></li>
-					<li><a href="mailto:flodedge@gmail.com">Blenderiste09</a></li>
-				</ul>
-			</div>
-		</nav>
-		<header>
-			<img id="banniere"  src="images/banniere.png" alt="banniere du site"/>
-		</header>
-		<a href="#" id="scroll_to_top"><img src="images/scroll-top.png" height="20" width="20"/></a>
+	<body>
+		<script>nav_scroll();</script>
 		<section id="corps_de_page">
-			<h1>Résoudre pour la première fois le Rubik's Cube !</h1>
-			<div class="texte"><p>Si vous êtes ici, c'est parce que vous voulez apprendre à résoudre le Rubik's Cube, soit pour enfin venir à bout de ce casse-tête mythique, soit pour avoir l'air intelligent X).<br /><br />Ce tutoriel est garanti réussite, qui que vous soyez, vous pouvez résoudre le "casse-tête parfait" sans trop d'encombres (ou même avec, la satisfaction à la fin n'en sera que plus grande!) et assez rapidement si vous y mettez le temps.<br />Si vous avez des questions ou que vous ne comprenez pas une partie de ce tutoriel, n'hésitez pas à consulter la partie "Aide et rapports" où vous trouverez un chat (du verbe Anglais "to chat"="discuter", pas l'animal bien sûr!) et où vous pourrez dire aux gentils webmasters ce qui ne va pas. Toutefois, ne les spammez pas, patientez, ils finiront par vous répondre ;). <br /><br />On va résoudre le Cube de manière méthodique, c'est à dire pas n'importe comment : on peut le faire tranche par tranche, face par face, en agrandissant des bloc, etc... Nous allons nous intéresser à la méthode la plus facile à assimiler, la Méthode Tranche par Tranche pour Débutants, que l'on abrègera "MTTD".<br />Pour arriver à nos fins, nous aurons besoin certes d'intuition, mais aussi d'algorithmes, des suites de mouvement qui on une action spécifique sur le cube. Exemple : faire tourner trois coins dans le sens des aiguilles d'une montre. <br />Pour les transcrire, nous utiliserons la notation internationale, la plus utilisée, partout. Mais si vous êtes fâchés avec l'Anglais, nous utiliserons aussi la notation "Made in LTDC" ;), qui est tout en Français. Il est cependant recommandé d'utiliser la notation internationale.<br />Enfin, vous devrez connaitre le nom des pièces du Cube ainsi que leur spécifités. Sur ce, on commence tout de suite, c'est parti!<br />
-<ul>
-<li><a href="#1.1">1.1 : La croix</a></li>
-<li><a href="#1.2">1.2 : La face avec la couronne</a></li>
-<li><a href="#2">2 : La tranche du milieu (deuxième couronne)</a></li>
-<li><a href="#3.1">3.1 : faire une croix sur la dernière tranche</a></li>
-<li><a href="#3.2">3.2 : orienter la croix</a></li>
-<li><a href="#3.3">3.3 : permuter les coins</a></li>
-<li><a href="#3.4">3.4 : orienter les coins</a></li>
-</ul><h2>0.1 : La notation</h2><br /><br />Comme dit plus haut, pour faire des suites de mouvements, nous allons utiliser un code : <br /><br /><img src="images/rubiks_cube.jpg" alt="notations du cube" class="cubes"/ ><br />C'est simple :<br />
-	<ul>
-		<li>On note "U" pour la face haute car "haut" en Anglais se dit "up"</li>
-		<li>On note "D" pour la face du bas car "bas" en Anglais se dit "down"</li>
-		<li>On note "R" pour la face droite car "droite" en Anglais se dit "right"</li>
-		<li>On note "L" pour la face gauche car "gauche" en Anglais se dit "left"</li>
-		<li>On note "F" pour la face de devant car "devant" en Anglais se dit "front"</li>
-		<li>Et enfin, on note "B" pour la face de derrière car "derrière" en Anglais se dit "back"</li>
-	</ul>Code en Français :<ul>
-		<li>On note "H" pour la face haute</li>
-		<li>On note "B" pour la face du bas</li>
-		<li>On note "D" pour la face droite</li>
-		<li>On note "G" pour la face gauche</li>
-		<li>On note "Av" pour la face avant</li>
-		<li>Et enfin, on note "Ar" pour la face arrière</li>
-	</ul>Deux autres petites règles : si la lettre est suivie d'un "2", on tourne la face d'un demi-tour. Sinon on tourne la face d'un quart de tour seulement.<br /> Si la lettre est suivie d'un apostrophe «'», on tourne la face d'un quart de tour dans le sens inverse des aiguilles d'une montre. Sinon on tourne la face dans le sens des aiguilles d'une montre.<br />Exemple : R U2 F' D R' L2 ou D H2 Av' Ar D' G2 : <ol>
-		<li>tourner la face droite d'un quart de tour dans le sens des aiguilles d'une montre</li>
-		<li>tourner la face haute d'un demi tour (le sens n'a pas d'importance puisque c'est un demi-tour)</li>
-		<li>tourner la face avant d'un quart de tour dans le sens inverse des aguilles d'une montre</li>
-		<li>tourner la face du bas d'un quart de tour dans le sens des aiguilles d'une montre</li>
-		<li>tourner la face droite d'un quart de tour dans le sens inverse des aiguilles d'une montre</li>
-		<li>enfin, tourner la face gauche d'un demi tour</li>
-	</ol>La face de devant (F ou Av) sur les schémas est celle qui est la plus à gauche.<br /><h2>0.2 : Les pièces qui composent le rubik's cube</h2><br />Le Rubik's Cube est composé de 26 pièces cubiques, ainsi que d'un centre au cœur du cube, le "core" dont nous ne nous occuperons pas, vu qu'il n'a pas beaucoup d'intérêt. Autrement, sur ces 26 pièces, il y a : <ul>
-		<li>6 pièces de centres, immobiles, qui ont une seule couleur</li>
-		<li>8 pièces de coins, qui ont trois couleurs</li>
-		<li>Ainsi que 12 pièces d'arête, qui ont deux couleurs</li>
-</ul>Il est important de préciser le nom des pièces, puisque je vais les appeler ainsi, et croyez-moi, "coin", "arête" et "centre", ce sont des mots que vous entendrez très souvent dans le monde du Cube!<br />À partir de maintenant, nous pouvons enfin rentrer au cœur du sujet, la RÉSOLUTION!!<br /><br /><h2 id="1.1">1.1 : La croix</h2><br />C'est parti!<br />Commencez par choisir une couleur présente sur votre Rubik's Cube et on va tenter de faire une croix de même couleur avec un centre et quatre arêtes : <br /><img src="images/la_croix.png" alt="croix de couleur sur un rubik's cube" class="cubes" /><br /> Attention à bien faire correspondre les couleur des arêtes et celles des centres sur les côtés, c'est important. Pour cette partie, je ne peux pas vraiment vous aider car cette étape est intuitive : il y a plusieurs millions de cas, je ne peux pas tous les expliquer ;). Mais avec un peu d'entraînement, vous y arriverez de plus en plus vite et de plus en plus facilement! Courage!<br /><br /><h2 id="1.2">1.2 : La face avec la couronne</h2><br />Maintenant que vous avez votre croix, il faut maintenant mettre en place les coins, eux aussi à la bonne place : <br /><img src="images/la_couronne.gif" alt="couronne de couleur sur un rubik's cube" class="cubes" /><br />Il y a là aussi une part d'intuitivité, mais si vous bloquez, voici un peu d'aide : trouvez le coin qui a les mêmes couleurs que les trois face sur lequel vous voulez le placer, mettez-le ensuite dessous de là où vous voulez le mettre, et répétez cet algorithme jusqu'à ce que le coin se positionne dans le bon sens là où vous le souhaitez : R' D' R D ou D' B' D B ; si au bout de six répétitions cela n'a pas fonctionné, c'est que vous avez fait une erreur quelque part. Retrouvez votre coin et recommencez, la persévérence paie toujours :)<br /><br /><h2 id="2">2 : La tranche du milieu (deuxième couronne)</h2><br /><br />Si vous êtes ici, c'est parce que vous avez réussi à réaliser la première face!<br />Il va mainenant falloir s'attaquer à la deuxième couronne, ne vous découragez pas, c'est l'étape la plus facile :) Commencez par mettre votre Cube de manière à ce que la face précédemment faite soit sur la face du dessous (D ou B, suivant la notation choisie).<br />On va donc chercher à mettre les arêtes de la tranche du milieu à leur emplacement respectifs (là où il y a une croix) : <br /><img src="images/la_couronne.jpg" alt="la deuxième couronne complétée sur un rubik's cube" class="cubes" /><br />On va donc repérer les arêtes qui vont dans la deuxième couronne : facile, ce sont celles qui n'ont pas la couleur de la face opposée à la face que vous avez faite! Par exemple, sur un rubik's cube classique avec l'agencement des couleurs "mondial", si vous avez fait une face verte, les arêtes qui iront dans la deuxième couronne n'auront ni vert, ni bleu, simple non?<br />Prenez donc une arête qui respecte ces conditions, placez la juste au dessus du centre de sa même couleur, de la même manière que sur la photo :<br /><img src="images/placage_aretes.jpg" alt="schéma de la démarche à suivre pour placer les arêtes dans la deuxième couronne" class="cubes" /><br />Ensuite, il faut évaluer : l'arête doit-elle se placer à droite ou à gauche? Dans les deux cas, voici les algorithmes :<br />
-<ul>
-<li>Pour placer l'arête à droite : [Anglais]U R U' R' F R' F' R ou [Français] H D H' D' Av D' Av' D</li>
-<li>Pour placer l'arête à gauche : [Anglais] U' L' U L F' L F L'ou [Français] H' G' H G Av' G Av G'</li>
-</ul><br />
-Si aucune arête n'est sur la face haute ou qu'elle est à sa place mais pas dans le bon sens, utilisez un des deux algorithmes pour sortir une arête, la placer pour en décoincer une autre, etc...<br />Voila, la deuxième couronne est faite, nous pouvons à présent passer à la troisième et dernière partie, la dernière face!<br /><br /><h2 id="3.1">3.1 : faire une croix sur la dernière tranche</h2><br /><br />Nous voila à la troisième et dernière partie de la résolution du Rubik's Cube!<br />Notre but va être de faire une croix sur la face haute, toujours en tenant la face faite en bas. Pour faire cette croix, trois cas possibles, un seul algorithme, nous y viendrons bientôt.<br />Soit il y a trois pièces de la couleur de la face haute qui forment un petit "L", soit trois cubes qui font une ligne "-", soit le seul cube du centre qui fait donc un point ".".<br />Premièrement, on va essayer d'avoir ce "L". Pour cela, si vous avez une ligne, mettez-la de sorte à ce qu'elle soit verticale en face de vous :<br /><img src="images/ligne.jpg" alt="la ligne un rubik's cube" class="cubes" /><br /> et si vous avez un point, il n'y a pas 36 solutions :D. Executez ensuite cet algorithme : <ul>
-<li>En Anglais : R' U' F' U F R</li>
-<li>Et en Français : D' H' Av' H Av D</li>
-</ul>
-Si vous aviez une ligne, vous avez maintenant un "L", et si vous aviez un point vous avez une ligne, auquel cas il faudra refaire l'algorithme mais avec la ligne.<br />Maintenant que nous avons le "L", nous allons le positionner en tournant la face haute de manière à ce qu'il soit un "L" symétrique, comme s'il était vu dans un miroir :<br /><img src="images/petit_l.jpg" alt="le l inversé sur un rubik's cube" class="cubes" /><br />Puis de refaire l'algorithme écrit plus haut. Vous voila normalement avec une croix!<br /><h2 id="3.2">3.2 : orienter la croix</h2><br /><br />Mais comme vous avez pu le remarquer, cette croix n'est pas orientée, c'est à dire que les couleurs des arêtes ne correspondent pas avec celles de la deuxième couronne : essayez de tourner la face haute autant de fois que vous le voudrez, les couleur ne correspondront pas!<br />Voila une image : (insérer une image)<br />Mais rassurez-vous, grâce aux super algorithmes, nous allons orienter cette croix! Trouvez en tournant la face haute deux couleurs bien orientées, qui donc correspondent bien au schéma de couleur du cube. Placez-les sur la face arrière et sur la face droite et faites :<br />
-<ul>
-<li>Anglais : R U R' U R U2 R' U</li>
-<li>Français : D H D' H D H2 D' H</li>
-</ul>
-Si les couleurs correctes n'étaient pas adjacentes mais opposées, faites l'algorithme deux fois en commençant par mettre les couleurs opposées à la verticale devant vous. Ça y est! Votre deuxième croix est faite!<br /><h2 id="3.3">3.3 : permuter les coins</h2><br /><br />Cette fois-ci, nous allons permuter les coins de la face haute, afin de les mettre à leur place. Pour ce faire, deux petits algorithmes seront nécéssaires. Commencez par regarder sur la face haute sans la tourner s'il y a des coins biens placés, c'est à dire à leur place, mais pas forcément dans le bon sens : (image)<br />Mettez le coin à ne pas faire bouger à votre gauche, devant vous et faites :
-<ul>
-<li>Pour faire tourner les coins dans le sens inverse des aiguilles d'une montre : [Anglais] R U' L' U R' U' L U [Français] D H' G' H D' H' R' H'</li>
-<li>Pour faire tourner les coins dans le sens des aiguilles d'une montre : [Anglais] L' U R U' L U R' U' [Français] G' H D H' G H' D' H'</li>
-</ul>
-Si aucun coin n'est préalablement bien placé, faites une ou deux fois un de ces deux algorithmes pour en mettre un au bon endroit.<br /><br /><h2 id="3.4">3.4 : orienter les coins</h2><br /><br />Courage, c'est la dernière étape, et en plus de cela, elle est facile à faire!<br />Il vous suffit de prendre n'importe quel coin de la face haute qui ne soit pas correctement orienté, c'est à dire qui ne soit pas tourné dans n'importe quel sens, de le mettre en face de vous à votre droite, et de répéter un algorithme jusqu'à ce que le coin soit bien orienté.
-<ul>
-<li>Anglais : R' D' R D</li>
-<li>Français : D' B' D B</li>
-</ul>
-Mais, me direz vous, «le cube est maintenant tout mélangé!» En effet, mais tournez la face haut pour le prochain coin non orienté et refaites la même chose avec tout les autres coins non orientés, et si vous avez tout fait correctement, bravo, VOTRE CUBE EST RÉSOLU!!!<br />J'éspère que ma méthode était claire, si vous avez eu des problèmes, surtout, n'hésitez pas à les signaler.<br />Vous pouvez maintenant être fier de vous, impressionner vos proches et essayer d'aller de plus en plus vite! Bienvenue dans le monde merveilleux du Rubik's Cube!<br /><img src="images/rubiks_cube.jpg" alt="notations du cube" class="cubes"/ ><br /></p>
-			</div>
+		<h1>Résoudre le Rubik's Cube pour la première fois !
+		<br/>La méthode débutante (étage par étage)</h1>
+		<p>Si vous êtes ici, c'est parce que vous voulez apprendre à résoudre le Rubik's Cube, soit pour enfin venir à bout de ce casse-tête mythique, soit pour avoir l'air intelligent X)<br/>
+		Ce tutoriel est garanti réussite, qui que vous soyez, vous pouvez résoudre le "casse-tête parfait" sans trop d'encombres (ou même avec, la satisfaction à la fin n'en sera que plus grande !) et assez rapidement si vous y mettez le temps.<br/>
+		Si vous avez des questions ou que vous ne comprenez pas une partie de ce tutoriel, n'hésitez pas à nous contacter grâce à l'onglet "Nous contacter" dans le menu à gauche.<br/>
+		Si le menu à gauche ne s'affiche pas, c'est que JavaScript est désactivé sur votre navigateur. Il faut le réactiver, sinon vous ne pourrez pas voir correctement les pages du site, notamment les images de cube (c'est un peu embêtant). Ne vous inquiétez pas, je ne vous mettrai pas de virus :)</p>
+		<p>Nous allons nous intéresser à la méthode la plus facile à assimiler, la méthode étage par étage pour débutants.<br/>
+		Il est très fortement conseillé de lire la partie 0, notamment sur la notation internationale. Elle peut paraître un peu rébarbative, mais je vous assure qu'elle est fondamentale dans le monde du cube.<br/>
+		Dernière chose, pour les formules au début il est conseillé de vous faire votre anti-sèche, par exemple sur des post-its, comme ça si vous avez un trou de mémoire (ça vous arrivera forcément, croyez-moi) vous aurez la formule sur vous. À force de faire la formule, elle va "rentrer dans les doigts", mais au début c'est plus facile en gardant son anti-sèche dans la poche ;)<br/>
+		Trève de blabla, voici les étapes :</p>
+		<ul class="liste_etapes">
+			<li>Étape 0: Préliminaires<ul>
+				<li>0.1: Les différentes pièces du cube</li>
+				<li>0.2: La notation internationale</li>
+			</ul></li>
+			<li>Étape 1: Première face avec premier étage</li>
+			<li>Étape 2: Tranche centrale</li>
+			<li>Étape 3: Orienter les arêtes du dernier étage</li>
+			<li>Étape 4: Permuter les arêtes du dernier étage</li>
+			<li>Étape 5: Permuter les coins du dernier étage</li>
+			<li>Étape 6: Orienter les coins du dernier étage</li>
+		</ul>
+		<h2>Étape 0 : Préliminaires</h2>
+			<h3>Étape 0.1 : Les pièces qui composent le rubik's cube</h3>
+				<p>Le Rubik's Cube est composé de 26 pièces cubiques, ainsi que d'un "core" au centre du cube. 
+				Parmi ces 26 pièces, il y a :</p>
+				<ul>
+					<li>6 pièces de centres, qui ont chacune une seule couleur, situés au milieu des faces</li>
+					<li>8 pièces de coins, qui ont chacune trois couleurs, situés aux angles du cube</li>
+					<li>12 pièces d'arête, qui ont chacune deux couleurs, ce sont les autres pièces</li>
+				</ul>
+				<p>Les centres restent toujours au centre et sont fixes les unes par rapport aux autres, et ce sont eux qui définissent les faces. Par exemple, si le centre bleu est sur une face, alors lorsque le cube sera résolu cette face sera bleue.<br/>
+				Chaque pièce d'un type restera toujours de ce type, et ne pourra aller qu'à la place des autres pièces de ce type. Par exemple un coin restera toujours un coin, et ne pourra jamais se retrouver à la place d'un centre ou d'une arête.</p>
+			<h3>Étape 0.2 : La notation internationale</h3>
+				<p>Pour faire des suites de mouvements, nous allons utiliser un code assez simple. Chaque mouvement est composé d'une lettre (U, R, L, F, B ou D) suivie ou pas d'un caractère (', 2 ou rien).<br/>
+				Voici comment fonctionnent les lettres :</p>
+				<ul>
+					<li>"U" pour la face du haut car "haut" en Anglais se dit "up"</li>
+					<li>"D" pour la face du bas car "bas" en Anglais se dit "down"</li>
+					<li>"R" pour la face de droite car "droite" en Anglais se dit "right"</li>
+					<li>"L" pour la face de gauche car "gauche" en Anglais se dit "left"</li>
+					<li>"F" pour la face de devant car "devant" en Anglais se dit "front"</li>
+					<li>"B" pour la face de derrière car "derrière" en Anglais se dit "back"</li>
+				</ul>
+				<p>Et enfin comment fonctionnent les caractères :</p>
+				<ul>
+					<li>si la lettre n'est suivie de rien, le mouvement associé est d'un quart de tour dans le sens horaire</li>
+					<li>si la lettre est suivie d'un apostrophe, le mouvement associé est d'un quart de tour dans le sens anti-horaire</li>
+					<li>si la lettre est suivie d'un 2, le mouvement associé est d'un demi tour (peu importe horaire ou anti-horaire, remarquez que c'est la même chose)</li>
+				</ul>
+				<p>Par exemple, un mouvement R consiste à tourner la face de droite dans le sens horaire (on "monte" à droite), un mouvement U' consiste à tourner la face du haut dans le sens anti-horaire, et un mouvement F2 consiste à faire un demi-tour de la face avant.<br/>
+				Ah et aussi un autre mouvement dont on va se servir : M consiste à descendre la tranche du milien, M' consiste à monter cette tranche du milieu, et M2 consiste à faire un demi-tour de cette tranche.<br/>
+				Pour plus de détails sur la notation internationale, allez voir directement <a href="notation.html">la page de ce site sur la notation internationale</a> (seule la partie du début vous sera utile pour le moment). À partir de maintenant, nous pouvons enfin rentrer dans le cœur du sujet, la résolution !</p>
+		<h2>Étape 1 : Première face avec premier étage</h2>
+			<p>Ici, c'est une grosse étape, mais tout de même intuitive. Il y a plusieurs façons de faire, je vais vous montrer quelques techniques. Essayez déjà par vous-même d'assembler quelques pièces, ce sera à la fois plus efficace et mieux d'apprendre par vous-même. Dans ce tutoriel nous commencerons par une face blanche, mais libre à vous de commencer par celle qui vous plait.</p>
+			<h3>Étape 1.a : Insérer un coin</h3>
+				<p>Pour insérer un coin dans notre face blanche, il faut déjà placer la face blanche vers le haut. Après, il faut tourner la face du bas afin d'amener le coin juste en-dessous de là où il doit aller. Ensuite, il va falloir successivement chasser le coin, descendre la colonne, amener le coin dans son emplacement, et remonter la colonne. Il y a un cas et son symétrique, selon si votre sticker blanc regarde à droite ou à gauche :</p>
+				<ul class="liste_cas_methode" data-etape="insertion_coin_debutant">
+					<li class="cas">
+						<div class="nom">Le sticker blanc regarde à droite</div>
+						<div class="algo">D L D' L'</div>
+					</li>
+					<li class="cas">
+						<div class="nom">Le sticker blanc regarde à gauche</div>
+						<div class="algo">D' R' D R</div>
+					</li>
+				</ul>
+				<p>Et si le coin ne regarde ni à droite ni à gauche, mais plutôt en bas, c'est un peu spécial, il faut faire comme ça :</p>
+				<ul class="liste_cas_methode" data-etape="insertion_coin_debutant">
+					<li class="cas">
+						<div class="nom">Le sticker blanc regarde en bas</div>
+						<div class="algo">D' R' D2 R D' R' D R</div>
+					</li>
+				</ul>
+				<p>Vous voyez que pour le cas avec le coin qui regarde en bas, on se ramène à un cas de base plus sympa où le coin regarde à droite.</p>
+			<h3>Étape 1.b : Insérer une arête</h3>
+				<p>Si vous avez compris le coup de "je descends la colonne, j'insère dans l'emplacement, je remonte la colonne" pour les coins, vous aurez plus de facilité pour les arêtes. Il y a cette fois-ci 4 cas, 2 cas quand l'arête est sur la tranche du milieu et 2 cas quand l'arête est sur la tranche du bas.<br/>
+				Commençons par les cas où l'arête regarde en bas :</p>
+				<ul class="liste_cas_methode" data-etape="insertion_arete_debutant">
+					<li class="cas">
+						<div class="nom">Le sticker blanc regarde vers nous</div>
+						<div class="algo">D' M D M'</div>
+					</li>
+					<li class="cas">
+						<div class="nom">Le sticker blanc regarde en bas</div>
+						<div class="algo">M D2 M'</div>
+					</li>
+				</ul>
+				<p>Vous pouvez voir que le premier cas c'est exactement comme pour les coins. Pour le second cas, la formule fait 3 mouvements donc pas vraiment de difficulté non plus.<br/>
+				Et si l'arête est sur la tranche du milieu, on va faire une petite rotation de cube afin de mettre notre face blanche à gauche, puis selon le cas :</p>
+				<ul class="liste_cas_methode" data-etape="insertion_coin_debutant">
+					<li class="cas">
+						<div class="nom">Le sticker blanc regarde vers nous</div>
+						<div class="algo">M U' M' U</div>
+					</li>
+					<li class="cas">
+						<div class="nom">Le sticker blanc regarde vers l'arrière</div>
+						<div class="algo">M' U M U'</div>
+					</li>
+				</ul>
+				<p>Vous pouvez voir que là aussi c'est exactement la même chose que pour les coins, on chasse la pièce, on amène l'emplacement, on insère la pièce dans l'emplacement et on réaligne la tranche dans la face.</p>
+			<h3>Étape 1.c : Un coin est mal orienté ou mal placé</h3>
+				<h4>Coin mal orienté</h4>
+				<p>Si un coin est mal orientée, comment on fait ? En fait il suffit de :</p>
+				<ul>
+					<li>Insérer n'importe quel autre coin à la place de celui qui est mal orienté, simplement avec D' R' D R.</li>
+					<li>Réinsérer le coin correctement, comme vous avez appris juste au-dessus.</li>
+				</ul>
+				<h4>Coin mal placé</h4>
+				<p>N'oubliez pas que je vous ai dit qu'il fallait faire la première face ET la première couronne en même temps :P Bon, heureusement pour vous c'est assez facile de déplacer un coin (et aussi une arête, c'est pareil). Par exemple, si le coin blanc-orange-vert est à côté du coin blanc-bleu-rouge, on voit bien que les couleurs ne correspondent pas. Dans ce cas, il faut :</p>
+				<ul>
+					<li>Aller chercher le bon coin, celui qui doit aller à la place du coin mal placé.</li>
+					<li>Enlèver ce coin de la face blanche avec D' R' D R.</li>
+					<li>Insérer ce coin au bon endroit, maintenant ça y est notre coin est bien placé.</li>
+					<li>Le pauvre coin chassé, il faut le réinsérer là où on est allés chercher le bon coin.</li>
+				</ul>
+				<p>Normalement en ayant fait ce processus une ou deux fois vos coins sont correctement permutés. Si ce n'est pas le cas au bout de deux fois, c'est que vous n'avez pas bien fait quelque chose, il faut reprendre cette partie calmement. C'est une étape qui doit être comprise, pas exécutée bêtement, n'hésitez pas à y passer le temps qu'il faut.</p>
+			<h3>Étape 1.d : Une arête est mal orientée ou mal placée</h3>
+				<h4>Arête mal orientée</h4>
+				<p>Si une arête est mal orientée, comment on fait ? C'est encore plus facile que pour les coins :</p>
+				<ul>
+					<li>Insérer n'importe quelle autre arête à la place de celle qui est mal orientée, simplement avec D' M D M'.</li>
+					<li>Aligner l'arête sous son emplacement avec un D'.</li>
+					<li>Réinsérer l'arête correctement avec M D2 M.</li>
+				</ul>
+				<h4>Arête mal placée</h4>
+				<p>Encore une fois, si vous avez compris le principe pour les coins, c'est encore plus facile pour les arêtes. Par exemple si l'arête blanc-vert est entre les coins blanc-vert-rouge et blanc-rouge-bleu, on voit bien que le sticker vert entre les coins rouges ça ne correspond pas. La démarche est la suivante</p>
+				<ul>
+					<li>Aller chercher la bonne arête, celle qui doit aller à la place de l'arête mal placée.</li>
+					<li>Enlèver cette arête de la face blanche avec D' M D M'.</li>
+					<li>Insérer cette arête à la place de la mauvaise, comme on a appris un peu plus haut.</li>
+					<li>La mauvaise arête a été chassée, il faut la réinsérer à l'endroit où était l'autre arête.</li>
+				</ul>
+				<p>De même que pour les coins, après avoir fait ce processus une, deux ou trois fois vos arêtes sont correctement permutées. Si ce n'est pas le cas au bout de trois fois, c'est que vous n'avez pas bien fait quelque chose, il faut refaire cette partie consciencieusement. Ne brûlez pas les étapes, ce sont les premières qui déterminent si vous avez bien compris comment fonctionne le cube.</p>
+		<h2>Étape 2 : Deuxième étage</h2>
+			<p>Ici, on va devoir placer les résoudre les arêtes du deuxième étage pour compléter celui-ci. Pour cela on va apprendre et utiliser une formule qui s'appelle "le Belge", c'est la formule la plus célèbre dans le monde du cube. À partir de maintenant et jusqu'à la fin de la résolution, notre face déjà faite se placera en bas, on y verra plus clair pour la suite. On va aussi aligner la face de façon à ce que les centres du deuxième étage correspondent avec notre première face.<br/>
+			Tout d'abord il faut repérer une arête qui doit aller sur le second étage (si vous avez commencé par la face blanche, ce sont les arêtes qui ne contiennent pas de jaune), et tourner la face U pour faire correspondre la couleur de l'arête avec celle du centre (par exemple pour l'arête rouge-bleu, si le sticker bleu regarde en haut, le sticker rouge doit être juste à côté du centre rouge). Ensuite il y aura une formule et sa symétrique :</p>
+			<ul class="liste_cas_methode" data-etape="belge">
+				<li class="cas">
+					<div class="nom">L'arête doit s'insérer à droite</div>
+					<div class="algo">U R U' R' U' F' U F</div>
+				</li>
+				<li class="cas">
+					<div class="nom">L'arête doit s'insérer à gauche</div>
+					<div class="algo">U' L' U L U F U' F'</div>
+				</li>
+			</ul>
+			<p>Pour retenir cette formule, il faut simplement retenir l'histoire du belge :</p>
+			<ul>
+				<li>U</li>
+				<li>R</li>
+				<li>U'</li>
+				<li>R'</li>
+				<li>U'</li>
+				<li>F'</li>
+				<li>U</li>
+				<li>F</li>
+			</ul>
+			<p>Après avoir fait cette formule quelques fois pour insérer les arêtes une par une, vous devez déjà y voir plus clair. Mais il est possible que certaines arêtes soient mal placées ou bien mal orientées. Il faut faire exactement pareil que pour la première face :</p>
+			<ul>
+				<li>Insérer n'importe quelle autre arête à la place de l'actuelle, à l'aide d'un belge.</li>
+				<li>Réinsérer notre arête correctement, encore à l'aide d'un belge.</li>
+			</ul>
+			<p>Cette étape est assez répétitive, mais elle nécessite une seule séquence pour résoudre toute la deuxième couronne, c'est super rentable !</p>
+		<h2>Étape 3 : Orienter les arêtes du dernier étage pour former une croix</h3>
+			<p>Ici, une seule formule pour orienter les 4 arêtes : F U R U' R' F'. Il y a 3 orientations possibles des arêtes : petit V, grande barre, point. Si on a un point, la formule va nous ramener à la grande barre, si on a la grande barre, la formule va nous ramener au petit V, et si on a un V, la formule va orienter les arêtes correctement :</p>
+			<ul class="liste_cas_methode" data-etape="EOLL">
+				<li class="cas">
+					<div class="nom">Petit V, on le place au fond à gauche</div>
+					<div class="algo">F U R U' R' F'</div>
+				</li>
+				<li class="cas">
+					<div class="nom">Grande Barre, on la place horizontalement</div>
+					<div class="algo">F U R U' R' F'</div>
+				</li>
+				<li class="cas">
+					<div class="nom">Le Point, on le place comme on veut</div>
+					<div class="algo">F U R U' R' F'</div>
+				</li>
+			</ul>
+			<p>Cette formule est très courte (6 mouvements) donc pas très difficile à retenir. Faites la quelques fois "à blanc", elle va rentrer facilement dans les doigts ;)</p>
+		<h2>Étape 4 : Permuter les arêtes de la croix</h2>
+			<p>Encore une fois, une seule formule pour cette étape, cette fois-ci ce sera "la chaise", et là aussi il y aura une petite histoire pour la retenir. La formule est R U2 R' U' R' U' R', et elle échange l'arête de devant et celle de droite. Voici comment retenir la formule :</p>
+			<ul>
+				<li>R</li>
+				<li>U2</li>
+				<li>R'</li>
+				<li>U'</li>
+				<li>R</li>
+				<li>U'</li>
+				<li>R'</li>
+			</ul>
+		<h2>Étape 5 : Permuter les coins</h2>
+			<p>Vous devez remarquer qu'on approche de la fin, c'est bon signe ! Maintenant il s'agit de permuter les coins, toujours avec une seule formule, celle-ci s'appelle "les amis", et elle fait L' U R U' L U R' U'. Pour la retenir c'est assez facile, soit on la retient avec son rythme ("monter à gauche, aller à gauche, monter à droite, aller à droite, descendre à gauche, aller à gauche, descendre à droite, aller à droite), soit par la petite histoire des amis :</p>
+			<ul>
+				<li>L'</li>
+				<li>U</li>
+				<li>R</li>
+				<li>U'</li>
+				<li>L</li>
+				<li>U</li>
+				<li>R'</li>
+				<li>U'</li>
+			</ul>
+			<p>Et comment l'utiliser ? Elle va tout simplement permuter 3 coins (celui devant à gauche et les deux de derrière). La démarche est la suivante :</p>
+			<ul>
+				<li>Regarder si on a au moins un coin de bien placé (pas forcément bien orienté), si c'est le cas on le place devant à droite et on fait la formule des amis une fois. Soit les coins sont tous bien permutés, et on peut passer à l'étape suivante, soit il faut recommencer une deuxième fois. Si au bout de deux fois ce n'est toujours pas bon, vous avez dû faire une erreur quelque part.</li>
+				<li>Si aucun coin n'est dans son emplacement, il faut d'abord faire une fois la formule des amis, sans se soucier de la position des coins. Ensuite, croyez moi il y a exactement un coin bien placé (pas forcément bien orienté), et vous êtes dans le cas juste au-dessus.</li>
+			</ul>
+		<h2>Étape 6 : Orienter les coins</h2>
+			<p>On va y arriver, courage, plus que quelques pièces !<br/>
+			La dernière formule... en réalité vous la connaissez déjà, elle s'appelle "la double-chaise". Comme son nom l'indique, elle consiste à faire une chaise classique avec la main droite, suivie de sa symétrique avec la main gauche : R U2 R' U' R U' R' L' U2 L U L' U L. On voit bien les deux parties symétriques, qui rend la formule globale très facile à retenir, même si elle est un peu longue.<br/>
+			Pour l'utiliser c'est simple, elle oriente les deux coins de droite. Les deux stickers qui sont sur la face de droite vont monter sur la face de haut.<br/>
+			Et si vous avec deux coins adjacents et dont les stickers jaunes ne regardent pas dans la même direction, il suffit de faire la formule deux fois.<br/>
+			Et si vous avez deux coins diagonalement opposés mal orientés, il faut les placer de façon à ce qu'ils regardent vers vous et à droite, puis faire une double-chaise, et vous retomberez sur le cas facile.<br/>
+			Et si vous avez trois coins mal orientés ou plus il suffit de faire cette double-chaise deux fois.<br/>
+			Après quelques doubles-chaises, votre cube doit être terminé, vous pouvez allez frimer devant votre entourage ;)</p>
+		<h2>Étape 7</h2>
+			<p>Quoi ?! Une étape 7 ?! On ne m'avait pas prévenu, réclamation !<br/>
+			Pas d'inquiétude enfin... Le mieux, lorsque vous venez de finir votre premier cube, est de remélanger le cube, et de réessayer de le résoudre plusieurs fois d'affilée, afin de voir si vous avez bien compris tous les principes. Ça fait mal au coeur, mais c'est le meilleur des exercices, croyez moi. Bon courage pour la suite de votre vie cubique ! ;)
 		</section>
-		<footer>
-			<p>Site en développement par Cubeur-Manchot, Bushizo et Blenderiste09.</p>
-			<p class="copyright">Copyright 2015. Pour toute demande, suggestion ou menace de mort, envoyez à l'adresse combaz.julien@gmail.com</p>
-		</footer>
-	</div>
+	<script>footer();</script>
 	</body>
 </html>
